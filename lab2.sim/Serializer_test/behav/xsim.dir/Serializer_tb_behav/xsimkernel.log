@@ -1,0 +1,7 @@
+Running: xsim.dir/Serializer_tb_behav/xsimk.exe -simmode gui -wdb Serializer_tb_behav.wdb -simrunnum 0 -socket 55591
+Design successfully loaded
+Design Loading Memory Usage: 18248 KB (Peak: 18248 KB)
+Design Loading CPU Usage: 406 ms
+Simulation completed
+Simulation Memory Usage: 18968 KB (Peak: 18968 KB)
+Simulation CPU Usage: 468 ms

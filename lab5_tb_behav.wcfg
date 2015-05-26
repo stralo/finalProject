@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="lab5_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="lab5_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="27" />
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/Serializer/ser_in_char" type="array">
+      <obj_property name="ElementShortName">ser_in_char[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ser_in_char[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/QPSK_Modulator/qpskSignal" type="array">
+      <obj_property name="ElementShortName">qpskSignal[29:0]</obj_property>
+      <obj_property name="ObjectShortName">qpskSignal[29:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/spiClk" type="logic">
+      <obj_property name="ElementShortName">spiClk</obj_property>
+      <obj_property name="ObjectShortName">spiClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/sampleClk" type="logic">
+      <obj_property name="ElementShortName">sampleClk</obj_property>
+      <obj_property name="ObjectShortName">sampleClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/syncForDAC" type="logic">
+      <obj_property name="ElementShortName">syncForDAC</obj_property>
+      <obj_property name="ObjectShortName">syncForDAC</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/serialClkForDAC" type="logic">
+      <obj_property name="ElementShortName">serialClkForDAC</obj_property>
+      <obj_property name="ObjectShortName">serialClkForDAC</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/serialForDAC" type="logic">
+      <obj_property name="ElementShortName">serialForDAC</obj_property>
+      <obj_property name="ObjectShortName">serialForDAC</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/dacConversionDone" type="logic">
+      <obj_property name="ElementShortName">dacConversionDone</obj_property>
+      <obj_property name="ObjectShortName">dacConversionDone</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/rawQPSKSignal" type="array">
+      <obj_property name="ElementShortName">rawQPSKSignal[11:0]</obj_property>
+      <obj_property name="ObjectShortName">rawQPSKSignal[11:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/RsRx" type="logic">
+      <obj_property name="ElementShortName">RsRx</obj_property>
+      <obj_property name="ObjectShortName">RsRx</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/qpskSignal" type="array">
+      <obj_property name="ElementShortName">qpskSignal[11:0]</obj_property>
+      <obj_property name="ObjectShortName">qpskSignal[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/masterClk" type="logic">
+      <obj_property name="ElementShortName">masterClk</obj_property>
+      <obj_property name="ObjectShortName">masterClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/MF_I/mf_out_val" type="array">
+      <obj_property name="ElementShortName">mf_out_val[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mf_out_val[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/symbolClk" type="logic">
+      <obj_property name="ElementShortName">symbolClk</obj_property>
+      <obj_property name="ObjectShortName">symbolClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/MF_Q/mf_out_val" type="array">
+      <obj_property name="ElementShortName">mf_out_val[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mf_out_val[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/CarriageRecoveryLoop/PE_strobe" type="logic">
+      <obj_property name="ElementShortName">PE_strobe</obj_property>
+      <obj_property name="ObjectShortName">PE_strobe</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/CarriageRecoveryLoop/sample_clk" type="logic">
+      <obj_property name="ElementShortName">sample_clk</obj_property>
+      <obj_property name="ObjectShortName">sample_clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/CarriageRecoveryLoop/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/CarriageRecoveryLoop/xI" type="array">
+      <obj_property name="ElementShortName">xI[15:0]</obj_property>
+      <obj_property name="ObjectShortName">xI[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/CarriageRecoveryLoop/xQ" type="array">
+      <obj_property name="ElementShortName">xQ[15:0]</obj_property>
+      <obj_property name="ObjectShortName">xQ[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/CarriageRecoveryLoop/phase_error" type="array">
+      <obj_property name="ElementShortName">phase_error[15:0]</obj_property>
+      <obj_property name="ObjectShortName">phase_error[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/CarriageRecoveryLoop/y_ploop" type="array">
+      <obj_property name="ElementShortName">y_ploop[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y_ploop[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/CarriageRecoveryLoop/yI_out" type="array">
+      <obj_property name="ElementShortName">yI_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">yI_out[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/CarriageRecoveryLoop/yI" type="array">
+      <obj_property name="ElementShortName">yI[31:0]</obj_property>
+      <obj_property name="ObjectShortName">yI[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/CarriageRecoveryLoop/yQ" type="array">
+      <obj_property name="ElementShortName">yQ[31:0]</obj_property>
+      <obj_property name="ObjectShortName">yQ[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/CarriageRecoveryLoop/yQ_out" type="array">
+      <obj_property name="ElementShortName">yQ_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">yQ_out[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/peakClk" type="logic">
+      <obj_property name="ElementShortName">peakClk</obj_property>
+      <obj_property name="ObjectShortName">peakClk</obj_property>
+   </wvobject>
+</wave_config>

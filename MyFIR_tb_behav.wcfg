@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="MyFIR_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="MyFIR_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="18" />
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/aclk" type="logic">
+      <obj_property name="ElementShortName">aclk</obj_property>
+      <obj_property name="ObjectShortName">aclk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/s_axis_data_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/s_axis_data_tready" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/s_axis_data_tdata" type="array">
+      <obj_property name="ElementShortName">s_axis_data_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tdata[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/m_axis_data_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/dut/m_axis_data_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/m_axis_data_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata[31:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/s_axis_data_tdata_data" type="array">
+      <obj_property name="ElementShortName">s_axis_data_tdata_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tdata_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/m_axis_data_tdata_data" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata_data[29:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_data[29:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/binIdx29" type="array">
+      <obj_property name="ElementShortName">binIdx29[15:0]</obj_property>
+      <obj_property name="ObjectShortName">binIdx29[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/binIdx27" type="array">
+      <obj_property name="ElementShortName">binIdx27[15:0]</obj_property>
+      <obj_property name="ObjectShortName">binIdx27[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/binIdx26" type="array">
+      <obj_property name="ElementShortName">binIdx26[15:0]</obj_property>
+      <obj_property name="ObjectShortName">binIdx26[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/binIdx25" type="array">
+      <obj_property name="ElementShortName">binIdx25[15:0]</obj_property>
+      <obj_property name="ObjectShortName">binIdx25[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/binIdx28" type="array">
+      <obj_property name="ElementShortName">binIdx28[15:0]</obj_property>
+      <obj_property name="ObjectShortName">binIdx28[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">53</obj_property>
+      <obj_property name="radix_otherWidth">11</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/binIdx30" type="array">
+      <obj_property name="ElementShortName">binIdx30[15:0]</obj_property>
+      <obj_property name="ObjectShortName">binIdx30[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">30</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/CLOCK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLOCK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLOCK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/T_HOLD" type="other">
+      <obj_property name="ElementShortName">T_HOLD</obj_property>
+      <obj_property name="ObjectShortName">T_HOLD</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MyFIR_tb/T_STROBE" type="other">
+      <obj_property name="ElementShortName">T_STROBE</obj_property>
+      <obj_property name="ObjectShortName">T_STROBE</obj_property>
+   </wvobject>
+</wave_config>

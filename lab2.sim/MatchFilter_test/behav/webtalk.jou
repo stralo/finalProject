@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Apr 25 23:25:50 2015
+# Process ID: 4656
+# Log file: O:/engs128/lab3/lab2.sim/MatchFilter_test/behav/webtalk.log
+# Journal file: O:/engs128/lab3/lab2.sim/MatchFilter_test/behav\webtalk.jou
+#-----------------------------------------------------------
+source O:/engs128/lab3/lab2.sim/MatchFilter_test/behav/xsim.dir/MatchFilter_tb_behav/webtalk/xsim_webtalk.tcl -notrace

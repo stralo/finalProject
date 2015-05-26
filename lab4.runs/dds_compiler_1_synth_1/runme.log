@@ -1,0 +1,386 @@
+
+*** Running vivado
+    with args -log dds_compiler_1.vds -m64 -mode batch -messageDb vivado.pb -source dds_compiler_1.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source dds_compiler_1.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a35tcpg236-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property webtalk.parent_dir O:/engs128/lab4_withCRLoop/lab4.cache/wt [current_project]
+# set_property parent.project_path O:/engs128/lab4_withCRLoop/lab4.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language VHDL [current_project]
+# read_ip o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'dds_compiler_1' generated file not found 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'dds_compiler_1' generated file not found 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'dds_compiler_1' generated file not found 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'dds_compiler_1' generated file not found 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1_funcsim.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'dds_compiler_1' generated file not found 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1_funcsim.vhdl'. Please regenerate to continue.
+# set_property is_locked true [get_files o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci]
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# catch { write_hwdef -file dds_compiler_1.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top dds_compiler_1 -part xc7a35tcpg236-1 -mode out_of_context
+Command: synth_design -top dds_compiler_1 -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 252.191 ; gain = 89.402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dds_compiler_1' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/synth/dds_compiler_1.vhd:69]
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0.vhd:112' bound to instance 'U0' of component 'dds_compiler_v6_0' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/synth/dds_compiler_1.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'dds_compiler_v6_0__parameterized0' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0.vhd:222]
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_viv' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45808' bound to instance 'i_synth' of component 'dds_compiler_v6_0_viv' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'dds_compiler_v6_0_viv__parameterized0' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45932]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv' (1#1) [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized0' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized0' (1#1) [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'dds_compiler_v6_0_core' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:44678]
+INFO: [Synth 8-638] synthesizing module 'dds_compiler_v6_0_rdy' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:44422]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_rdy' of component 'xbip_pipe_v3_0_viv' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:44504]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized2' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized2' (1#1) [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'dds_compiler_v6_0_rdy' (2#1) [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:44422]
+INFO: [Synth 8-3491] module 'sin_cos' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:37730' bound to instance 'i_rom' of component 'sin_cos' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45499]
+INFO: [Synth 8-638] synthesizing module 'sin_cos__parameterized0' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:37764]
+INFO: [Synth 8-4472] Detected and applied attribute rom_style = distributed [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:38071]
+INFO: [Synth 8-4472] Detected and applied attribute rom_style = block [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:38072]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_phase_in_zero_del' of component 'xbip_pipe_v3_0_viv' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:38826]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized4' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized4' (2#1) [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_addr_reg_c' of component 'xbip_pipe_v3_0_viv' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:38919]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_original_sin_ms' of component 'xbip_pipe_v3_0_viv' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:39155]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized6' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized6' (2#1) [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_original_sin_ls' of component 'xbip_pipe_v3_0_viv' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:39167]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized8' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized8' (2#1) [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_original_cos_ms' of component 'xbip_pipe_v3_0_viv' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:39179]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_original_cos_ls' of component 'xbip_pipe_v3_0_viv' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:39191]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_cardinal_sin_ms' of component 'xbip_pipe_v3_0_viv' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:39210]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_cardinal_sin_ls' of component 'xbip_pipe_v3_0_viv' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:39222]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_cardinal_cos_ms' of component 'xbip_pipe_v3_0_viv' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:39234]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_cardinal_cos_ls' of component 'xbip_pipe_v3_0_viv' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:39246]
+INFO: [Synth 8-256] done synthesizing module 'sin_cos__parameterized0' (3#1) [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:37764]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_final_sin' of component 'xbip_pipe_v3_0_viv' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45632]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized10' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized10' (3#1) [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_final_cos' of component 'xbip_pipe_v3_0_viv' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45644]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_sin_op' of component 'xbip_pipe_v3_0_viv' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45672]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized12' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized12' (3#1) [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_cos_op' of component 'xbip_pipe_v3_0_viv' [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45688]
+WARNING: [Synth 8-3848] Net RFD in module/entity dds_compiler_v6_0_core does not have driver. [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:44666]
+INFO: [Synth 8-256] done synthesizing module 'dds_compiler_v6_0_core' (4#1) [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:44678]
+WARNING: [Synth 8-3848] Net m_axis_data_tlast in module/entity dds_compiler_v6_0_viv__parameterized0 does not have driver. [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45889]
+WARNING: [Synth 8-3848] Net m_axis_data_tuser in module/entity dds_compiler_v6_0_viv__parameterized0 does not have driver. [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45890]
+WARNING: [Synth 8-3848] Net m_axis_phase_tdata in module/entity dds_compiler_v6_0_viv__parameterized0 does not have driver. [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45894]
+WARNING: [Synth 8-3848] Net m_axis_phase_tlast in module/entity dds_compiler_v6_0_viv__parameterized0 does not have driver. [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45895]
+WARNING: [Synth 8-3848] Net m_axis_phase_tuser in module/entity dds_compiler_v6_0_viv__parameterized0 does not have driver. [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45896]
+WARNING: [Synth 8-3848] Net s_phase_tlast in module/entity dds_compiler_v6_0_viv__parameterized0 does not have driver. [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:46144]
+INFO: [Synth 8-256] done synthesizing module 'dds_compiler_v6_0_viv__parameterized0' (5#1) [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45932]
+INFO: [Synth 8-256] done synthesizing module 'dds_compiler_v6_0__parameterized0' (6#1) [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0.vhd:222]
+INFO: [Synth 8-256] done synthesizing module 'dds_compiler_1' (7#1) [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/synth/dds_compiler_1.vhd:69]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 424.133 ; gain = 261.344
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 424.133 ; gain = 261.344
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1_ooc.xdc] for cell 'U0'
+Parsing XDC File [O:/engs128/lab4_withCRLoop/lab4.runs/dds_compiler_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [O:/engs128/lab4_withCRLoop/lab4.runs/dds_compiler_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 600.281 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:27 ; elapsed = 00:01:35 . Memory (MB): peak = 600.281 ; gain = 437.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:27 ; elapsed = 00:01:35 . Memory (MB): peak = 600.281 ; gain = 437.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  O:/engs128/lab4_withCRLoop/lab4.runs/dds_compiler_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:01:35 . Memory (MB): peak = 600.281 ; gain = 437.492
+---------------------------------------------------------------------------------
+Trying to map ROM "sin_cos_lut" into Block RAM due to explicit "ram_style" or "rom_style" specification
+Trying to map ROM "sin_cos_lut" into Block RAM due to explicit "ram_style" or "rom_style" specification
+WARNING: [Synth 8-3848] Net RFD in module/entity dds_compiler_v6_0_core does not have driver. [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:44666]
+WARNING: [Synth 8-3848] Net m_axis_data_tlast in module/entity dds_compiler_v6_0_viv__parameterized0 does not have driver. [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45889]
+WARNING: [Synth 8-3848] Net m_axis_data_tuser in module/entity dds_compiler_v6_0_viv__parameterized0 does not have driver. [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45890]
+WARNING: [Synth 8-3848] Net m_axis_phase_tdata in module/entity dds_compiler_v6_0_viv__parameterized0 does not have driver. [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45894]
+WARNING: [Synth 8-3848] Net m_axis_phase_tlast in module/entity dds_compiler_v6_0_viv__parameterized0 does not have driver. [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45895]
+WARNING: [Synth 8-3848] Net m_axis_phase_tuser in module/entity dds_compiler_v6_0_viv__parameterized0 does not have driver. [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:45896]
+WARNING: [Synth 8-3848] Net s_phase_tlast in module/entity dds_compiler_v6_0_viv__parameterized0 does not have driver. [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:46144]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:30 ; elapsed = 00:01:38 . Memory (MB): peak = 600.281 ; gain = 437.492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:30 ; elapsed = 00:01:38 . Memory (MB): peak = 600.281 ; gain = 437.492
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:35 ; elapsed = 00:01:43 . Memory (MB): peak = 600.281 ; gain = 437.492
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:01:35 ; elapsed = 00:01:43 . Memory (MB): peak = 600.281 ; gain = 437.492
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:01:44 . Memory (MB): peak = 600.281 ; gain = 437.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:01:44 . Memory (MB): peak = 600.281 ; gain = 437.492
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:36 ; elapsed = 00:01:44 . Memory (MB): peak = 600.281 ; gain = 437.492
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:36 ; elapsed = 00:01:44 . Memory (MB): peak = 600.281 ; gain = 437.492
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:51 ; elapsed = 00:02:00 . Memory (MB): peak = 600.281 ; gain = 437.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:02:00 . Memory (MB): peak = 613.777 ; gain = 450.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:52 ; elapsed = 00:02:01 . Memory (MB): peak = 623.387 ; gain = 460.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:53 ; elapsed = 00:02:01 . Memory (MB): peak = 623.387 ; gain = 460.598
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:53 ; elapsed = 00:02:01 . Memory (MB): peak = 623.387 ; gain = 460.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:53 ; elapsed = 00:02:01 . Memory (MB): peak = 623.387 ; gain = 460.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |CARRY4      |     8|
+|2     |LUT2        |     9|
+|3     |LUT3        |    33|
+|4     |LUT4        |    18|
+|5     |LUT5        |    35|
+|6     |LUT6        |    23|
+|7     |RAMB18E1_2  |     1|
+|8     |RAMB36E1_14 |     1|
+|9     |RAMB36E1_15 |     1|
+|10    |RAMB36E1_16 |     1|
+|11    |RAMB36E1_17 |     1|
+|12    |RAMB36E1_18 |     1|
+|13    |RAMB36E1_19 |     1|
+|14    |RAMB36E1_20 |     1|
+|15    |SRL16E      |     5|
+|16    |FDRE        |   156|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:53 ; elapsed = 00:02:01 . Memory (MB): peak = 623.387 ; gain = 460.598
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:01:50 . Memory (MB): peak = 623.387 ; gain = 245.074
+Synthesis Optimization Complete : Time (s): cpu = 00:01:53 ; elapsed = 00:02:02 . Memory (MB): peak = 623.387 ; gain = 460.598
+INFO: [Project 1-571] Translating synthesized netlist
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_0' of type 'RAMB36E1' is 'VIRTEX6'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist or constraint file.
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_1' of type 'RAMB36E1' is 'VIRTEX6'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist or constraint file.
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_2' of type 'RAMB36E1' is 'VIRTEX6'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist or constraint file.
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_3' of type 'RAMB36E1' is 'VIRTEX6'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist or constraint file.
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_4' of type 'RAMB36E1' is 'VIRTEX6'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist or constraint file.
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_5' of type 'RAMB36E1' is 'VIRTEX6'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist or constraint file.
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_6' of type 'RAMB36E1' is 'VIRTEX6'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist or constraint file.
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_7' of type 'RAMB18E1' is 'VIRTEX6'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist or constraint file.
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+58 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:52 ; elapsed = 00:01:59 . Memory (MB): peak = 623.387 ; gain = 421.223
+# rename_ref -prefix_all dds_compiler_1_
+INFO: [Coretcl 2-1174] Renamed 19 cell refs.
+# write_checkpoint -noxdef dds_compiler_1.dcp
+# catch { report_utilization -file dds_compiler_1_utilization_synth.rpt -pb dds_compiler_1_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 623.387 ; gain = 0.000
+# if { [catch {
+#   file copy -force O:/engs128/lab4_withCRLoop/lab4.runs/dds_compiler_1_synth_1/dds_compiler_1.dcp o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.dcp
+# } _RESULT ] } { 
+#   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
+# }
+# if { [catch {
+#   write_verilog -force -mode synth_stub o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1_stub.v
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_vhdl -force -mode synth_stub o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1_stub.vhdl
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_verilog -force -mode funcsim o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1_funcsim.v
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_vhdl -force -mode funcsim o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1_funcsim.vhdl
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
+# }
+INFO: [Common 17-206] Exiting Vivado at Sun May 03 15:31:59 2015...

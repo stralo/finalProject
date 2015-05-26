@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="MatchFilter_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="MatchFilter_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="29" />
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/inSample" type="array">
+      <obj_property name="ElementShortName">inSample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">inSample[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/sampleClk" type="logic">
+      <obj_property name="ElementShortName">sampleClk</obj_property>
+      <obj_property name="ObjectShortName">sampleClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/symbolClk" type="logic">
+      <obj_property name="ElementShortName">symbolClk</obj_property>
+      <obj_property name="ObjectShortName">symbolClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/peakClk" type="logic">
+      <obj_property name="ElementShortName">peakClk</obj_property>
+      <obj_property name="ObjectShortName">peakClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/outBit" type="logic">
+      <obj_property name="ElementShortName">outBit</obj_property>
+      <obj_property name="ObjectShortName">outBit</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/curr_state" type="other">
+      <obj_property name="ElementShortName">curr_state</obj_property>
+      <obj_property name="ObjectShortName">curr_state</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/incrementCounter" type="logic">
+      <obj_property name="ElementShortName">incrementCounter</obj_property>
+      <obj_property name="ObjectShortName">incrementCounter</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/dspEn" type="logic">
+      <obj_property name="ElementShortName">dspEn</obj_property>
+      <obj_property name="ObjectShortName">dspEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/numMultiplications" type="other">
+      <obj_property name="ElementShortName">numMultiplications</obj_property>
+      <obj_property name="ObjectShortName">numMultiplications</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/romRdAddr" type="array">
+      <obj_property name="ElementShortName">romRdAddr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">romRdAddr[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/romDataOut" type="array">
+      <obj_property name="ElementShortName">romDataOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">romDataOut[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/numMultiplications" type="other">
+      <obj_property name="ElementShortName">numMultiplications</obj_property>
+      <obj_property name="ObjectShortName">numMultiplications</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/incrementCounter" type="logic">
+      <obj_property name="ElementShortName">incrementCounter</obj_property>
+      <obj_property name="ObjectShortName">incrementCounter</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/h" type="array">
+      <obj_property name="ElementShortName">h[15:0]</obj_property>
+      <obj_property name="ObjectShortName">h[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/x" type="array">
+      <obj_property name="ElementShortName">x[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/x" type="array">
+      <obj_property name="ElementShortName">x[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/prod" type="array">
+      <obj_property name="ElementShortName">prod[31:0]</obj_property>
+      <obj_property name="ObjectShortName">prod[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/prod" type="array">
+      <obj_property name="ElementShortName">prod[31:0]</obj_property>
+      <obj_property name="ObjectShortName">prod[31:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/accum" type="array">
+      <obj_property name="ElementShortName">accum[49:0]</obj_property>
+      <obj_property name="ObjectShortName">accum[49:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/accum" type="array">
+      <obj_property name="ElementShortName">accum[49:0]</obj_property>
+      <obj_property name="ObjectShortName">accum[49:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">30</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/shiftRegister[128]" type="array">
+      <obj_property name="ElementShortName">[128][15:0]</obj_property>
+      <obj_property name="ObjectShortName">shiftRegister[128][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/shiftRegister[127]" type="array">
+      <obj_property name="ElementShortName">[127][15:0]</obj_property>
+      <obj_property name="ObjectShortName">shiftRegister[127][15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/outputRegEn" type="logic">
+      <obj_property name="ElementShortName">outputRegEn</obj_property>
+      <obj_property name="ObjectShortName">outputRegEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/resetMAC" type="logic">
+      <obj_property name="ElementShortName">resetMAC</obj_property>
+      <obj_property name="ObjectShortName">resetMAC</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/yOut" type="array">
+      <obj_property name="ElementShortName">yOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">yOut[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/yOut" type="array">
+      <obj_property name="ElementShortName">yOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">yOut[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/binaryPoint30" type="array">
+      <obj_property name="ElementShortName">binaryPoint30[15:0]</obj_property>
+      <obj_property name="ObjectShortName">binaryPoint30[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchFilter_tb/uut/mf_out_serialBit" type="logic">
+      <obj_property name="ElementShortName">mf_out_serialBit</obj_property>
+      <obj_property name="ObjectShortName">mf_out_serialBit</obj_property>
+   </wvobject>
+</wave_config>

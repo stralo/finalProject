@@ -1,0 +1,2252 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+Process ID: 5552
+
+Current time: 	5/3/15 2:50:59 PM
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1200
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	C:/Xilinx/Vivado/2014.4/tps/win64/jre
+
+User name: 	d37581q
+User directory: O:/engs128/lab4_withCRLoop
+User country: 	US
+User language: 	en
+User locale: 	en_US
+Vivado preferences path: \\thayerfs\d37581q\Application Data/Xilinx/Vivado\2014.4\vivado.ini
+Vivado layouts directory: \\thayerfs\d37581q\Application Data\Xilinx\Vivado\2014.4\layouts\application
+
+GUI allocated memory:	137 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 354 MB
+
+*/
+
+// TclEventType: START_GUI
+// HColorUtils.generateUniqueColorPalette (num colors: 55) elapsed time: 0.7s
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project O:/engs128/lab4_withCRLoop/lab4.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 44 MB (+43351kb) [00:00:05]
+// [Engine Memory]: 346 MB (+211347kb) [00:00:05]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 380 MB. GUI used memory: 28 MB. Current time: 5/3/15 2:51:01 PM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 48 MB (+4906kb) [00:00:09]
+// [Engine Memory]: 387 MB (+43397kb) [00:00:09]
+// [Engine Memory]: 420 MB (+33914kb) [00:00:10]
+// [Engine Memory]: 430 MB (+10354kb) [00:00:12]
+// [Engine Memory]: 430 MB (+905kb) [00:00:12]
+// [Engine Memory]: 436 MB (+5619kb) [00:00:12]
+// Tcl Message: open_project O:/engs128/lab4_withCRLoop/lab4.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'O:/engs128/lab4' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'. 
+// [GUI Memory]: 51 MB (+3196kb) [00:00:13]
+// [Engine Memory]: 446 MB (+10223kb) [00:00:13]
+// [GUI Memory]: 52 MB (+806kb) [00:00:13]
+// [GUI Memory]: 53 MB (+835kb) [00:00:13]
+// [GUI Memory]: 53 MB (+402kb) [00:00:13]
+// [GUI Memory]: 54 MB (+811kb) [00:00:13]
+// [GUI Memory]: 55 MB (+428kb) [00:00:13]
+// [GUI Memory]: 55 MB (+806kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 56 MB (+875kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 447 MB (+1097kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 447 MB (+561kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 448 MB (+544kb) [00:00:14]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 449 MB (+1024kb) [00:00:14]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 450 MB (+1871kb) [00:00:14]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 56 MB (+228kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 57 MB (+931kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 58 MB (+457kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 58 MB (+385kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 451 MB (+409kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 453 MB (+1785kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 454 MB (+1323kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 456 MB (+1970kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 457 MB (+1851kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 458 MB (+77kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 458 MB (+65kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 458 MB (+12kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 58 MB (+391kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 59 MB (+528kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 60 MB (+1038kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 60 MB (+526kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 61 MB (+607kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 61 MB (+139kb) [00:00:17]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 62 MB (+893kb) [00:00:18]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 63 MB (+598kb) [00:00:18]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 63 MB (+612kb) [00:00:18]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 64 MB (+598kb) [00:00:18]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 64 MB (+479kb) [00:00:19]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 65 MB (+660kb) [00:00:19]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 65 MB (+665kb) [00:00:19]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 67 MB (+1308kb) [00:00:19]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 67 MB (+531kb) [00:00:19]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: lab4; location: O:/engs128/lab4_withCRLoop; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 679.684 ; gain = 106.199 
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 459 MB (+1343kb) [00:00:21]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 68 MB (+620kb) [00:01:36]
+// [GUI Memory]: 69 MB (+1567kb) [00:01:36]
+// [GUI Memory]: 72 MB (+2351kb) [00:01:36]
+// [GUI Memory]: 74 MB (+2376kb) [00:01:37]
+// [Engine Memory]: 473 MB (+14831kb) [00:01:37]
+// [GUI Memory]: 75 MB (+1576kb) [00:01:38]
+// HMemoryUtils.trashcanNow. Engine heap size: 473 MB. GUI used memory: 38 MB. Current time: 5/3/15 2:52:31 PM
+// Elapsed time: 78 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CRloop - Behavioral (CRloop.vhd)]", 3); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CRloop - Behavioral (CRloop.vhd)]", 3, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CRloop - Behavioral (CRloop.vhd)]", 3, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CRloop - Behavioral (CRloop.vhd)]", 3, true); // u:k (I:JPanel, ch:JFrame) - Node
+// [Engine Memory]: 479 MB (+6148kb) [00:01:44]
+selectCodeEditor("CRloop.vhd", 280, 586); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 227, 466); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 76 MB (+426kb) [00:01:52]
+// [GUI Memory]: 78 MB (+2456kb) [00:01:55]
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd)]", 1); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PulseShapingFilter_MatchedFilter - Behavioral (PulseShapingFilter_MatchedFilter.vhd)]", 4, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PulseShapingFilter_MatchedFilter - Behavioral (PulseShapingFilter_MatchedFilter.vhd)]", 4, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PulseShapingFilter_MatchedFilter - Behavioral (PulseShapingFilter_MatchedFilter.vhd)]", 4, true); // u:k (I:JPanel, ch:JFrame) - Node
+// [GUI Memory]: 78 MB (+221kb) [00:02:22]
+// [GUI Memory]: 82 MB (+4129kb) [00:02:25]
+// Elapsed time: 23 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd), Receiver - ModemRx - Behavioral (ModemRx.vhd)]", 3); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd), Receiver - ModemRx - Behavioral (ModemRx.vhd), MF_I - MatchedFilter - Behavioral (MatchedFilter.vhd)]", 5, true); // u:k (I:JPanel, ch:JFrame) - Node
+// [GUI Memory]: 83 MB (+1288kb) [00:02:33]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd), Receiver - ModemRx - Behavioral (ModemRx.vhd), MF_I - MatchedFilter - Behavioral (MatchedFilter.vhd)]", 5, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd), Receiver - ModemRx - Behavioral (ModemRx.vhd), MF_I - MatchedFilter - Behavioral (MatchedFilter.vhd)]", 5, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectCodeEditor("MatchedFilter.vhd", 74, 348); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("MatchedFilter.vhd", 326, 335); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("MatchedFilter.vhd", 84, 199); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 86 seconds
+selectCodeEditor("MatchedFilter.vhd", 76, 283); // bi:J (JPanel:JComponent, ch:JFrame)
+// Replace in Files: addNotify
+// Elapsed time: 22 seconds
+selectComboBox("pa.FindAndReplaceAllDialog_FIND_COMBO_BOX", "mf_out_serialBit", -1); // JComboBox:JComponent (JPanel:JComponent, a:FindAndReplaceDialog)
+selectComboBox("pa.FindAndReplaceAllDialog_REPLACE_COMBO_BOX", "mf_out_val", -1); // JComboBox:JComponent (JPanel:JComponent, a:FindAndReplaceDialog)
+selectButton(PAResourceEtoH.FindAndReplaceAllDialog_FIND, "Find"); // g:a (ButtonPanel:JPanel, a:FindAndReplaceDialog)
+// cm:N (ch:JFrame):  Find in Files : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 486 MB. GUI used memory: 45 MB. Current time: 5/3/15 2:55:35 PM
+// 'e' command handler elapsed time: 20 seconds
+// [Engine Memory]: 486 MB (+7245kb) [00:04:42]
+// [Engine Memory]: 486 MB (+389kb) [00:04:42]
+// [Engine Memory]: 487 MB (+393kb) [00:04:42]
+// HMemoryUtils.trashcanNow. Engine heap size: 487 MB. GUI used memory: 45 MB. Current time: 5/3/15 2:55:36 PM
+dismissDialog("Find in Files"); // cm:N (ch:JFrame)
+// [Engine Memory]: 487 MB (+659kb) [00:04:44]
+selectButton(PAResourceEtoH.FindInFilesView_REPLACE_ALL_OCCURRENCES_IN_ALL_FILES, "Replace All"); // a:JButton (ButtonPanel:JPanel, ch:JFrame)
+// [Engine Memory]: 488 MB (+765kb) [00:04:48]
+// [Engine Memory]: 488 MB (+241kb) [00:04:48]
+// [Engine Memory]: 488 MB (+86kb) [00:04:50]
+// [Engine Memory]: 489 MB (+1163kb) [00:04:50]
+selectCodeEditor("MatchedFilter.vhd", 339, 432); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("MatchedFilter.vhd", 195, 282); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("MatchedFilter.vhd", 258, 281); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 491 MB (+1667kb) [00:04:55]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 500 MB (+9781kb) [00:04:56]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 500 MB. GUI used memory: 46 MB. Current time: 5/3/15 2:55:51 PM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd), Receiver - ModemRx - Behavioral (ModemRx.vhd)]", 3, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd), Receiver - ModemRx - Behavioral (ModemRx.vhd)]", 3, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd), Receiver - ModemRx - Behavioral (ModemRx.vhd)]", 3, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd), Receiver - ModemRx - Behavioral (ModemRx.vhd)]", 3, true); // u:k (I:JPanel, ch:JFrame) - Node
+// [GUI Memory]: 85 MB (+1856kb) [00:05:14]
+selectCodeEditor("ModemRx.vhd", 234, 312); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 86 MB (+647kb) [00:05:26]
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ModemRx.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 501 MB (+950kb) [00:05:29]
+// [Engine Memory]: 514 MB (+13271kb) [00:05:32]
+// [GUI Memory]: 87 MB (+1522kb) [00:05:36]
+// Elapsed time: 22 seconds
+selectCodeEditor("MatchedFilter.vhd", 115, 585); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 10 seconds
+selectCodeEditor("MatchedFilter.vhd", 70, 622); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("MatchedFilter.vhd", 70, 622, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("MatchedFilter.vhd", 70, 622); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("MatchedFilter.vhd", 78, 608); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("MatchedFilter.vhd", 78, 608, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+selectCodeEditor("MatchedFilter.vhd", 394, 341); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("MatchedFilter.vhd", 105, 417); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 91 MB (+3988kb) [00:06:21]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 11 seconds
+selectCodeEditor("MatchedFilter.vhd", 98, 566); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("MatchedFilter.vhd", 109, 400); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("MatchedFilter.vhd", 93, 341); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "MatchedFilter.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 514 MB (+167kb) [00:06:35]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("MatchedFilter.vhd", 233, 565); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 91 MB (+41kb) [00:06:43]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 93 MB (+1681kb) [00:06:44]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MatchedFilter.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CRloop.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MatchedFilter.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("ModemRx.vhd", 126, 484); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 569, 487); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("ModemRx.vhd", 211, 485); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 368, 501); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 517 MB (+2768kb) [00:07:40]
+// [Engine Memory]: 517 MB (+405kb) [00:07:40]
+selectCodeEditor("ModemRx.vhd", 127, 400); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 73, 44); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 162, 399); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 181, 45); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 126, 572); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ModemRx.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 77, 315); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CRloop.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CRloop.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CRloop.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CRloop.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CRloop.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 127, 262); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 43, 314); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 61, 312); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 27, 434); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("ModemRx.vhd", 27, 232); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("ModemRx.vhd", 108, 293); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 26, 247); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 72 seconds
+selectCodeEditor("ModemRx.vhd", 558, 321); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 94 MB (+1054kb) [00:09:44]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 96 MB (+1882kb) [00:09:46]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("ModemRx.vhd", 26, 250); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 38, 457); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 16 seconds
+typeControlKey((HResource) null, "ModemRx.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 171, 507); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 98 MB (+2538kb) [00:10:29]
+// Elapsed time: 16 seconds
+selectCodeEditor("ModemRx.vhd", 38, 318); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 69, 315); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 77, 351); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 20, 350); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 1, 334); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 165, 417); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 55, 332); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 104, 348); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 37 seconds
+selectCodeEditor("ModemRx.vhd", 55, 264); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 161, 365); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 167, 383); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 167, 383, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+selectCodeEditor("ModemRx.vhd", 167, 383); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 77, 401); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("ModemRx.vhd", 137, 403); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 131, 61); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 123, 401); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 50, 417); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 124, 230); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 135, 416); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 71, 434); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 87, 451); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 98 MB (+269kb) [00:12:25]
+// [GUI Memory]: 99 MB (+975kb) [00:12:30]
+// [GUI Memory]: 100 MB (+1082kb) [00:12:34]
+// [GUI Memory]: 101 MB (+987kb) [00:12:38]
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ModemRx.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("MatchedFilter.vhd", 176, 245); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("MatchedFilter.vhd", 1, 111); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "MatchedFilter.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "MatchedFilter.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "MatchedFilter.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "MatchedFilter.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "MatchedFilter.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MatchedFilter.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [GUI Memory]: 103 MB (+2024kb) [00:13:12]
+selectCodeEditor("ModemRx.vhd", 145, 282); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 113, 518); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ModemRx.vhd", 93, 361); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 518 MB (+1310kb) [00:13:23]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 103 MB (+33kb) [00:13:23]
+// [Engine Memory]: 520 MB (+1896kb) [00:13:23]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("ModemRx.vhd", 119, 520); // bi:J (JPanel:JComponent, ch:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 56 MB. Current time: 5/3/15 3:04:22 PM
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd)]", 2, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd)]", 2, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd)]", 2, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectCodeEditor("lab3top.vhd", 98, 487); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("lab3top.vhd", 425, 409); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab3top.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [GUI Memory]: 103 MB (+286kb) [00:13:42]
+selectCodeEditor("ModemRx.vhd", 105, 244); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 42, 265); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 76, 263); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+selectCodeEditor("ModemRx.vhd", 273, 436); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 104 MB (+361kb) [00:14:26]
+// Elapsed time: 15 seconds
+selectCodeEditor("ModemRx.vhd", 98, 93); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 35 seconds
+selectCodeEditor("ModemRx.vhd", 55, 245); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 77, 363); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 155, 382); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 155, 382); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 522 MB (+2514kb) [00:15:25]
+// [Engine Memory]: 531 MB (+9322kb) [00:15:30]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 18 seconds
+selectCodeEditor("ModemRx.vhd", 112, 400); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 104 MB (+656kb) [00:15:40]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+selectCodeEditor("ModemRx.vhd", 166, 452); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 105 MB (+913kb) [00:16:07]
+// Elapsed time: 27 seconds
+selectCodeEditor("ModemRx.vhd", 85, 414); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 86, 517); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 216, 538); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 137, 544); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 194, 562); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("ModemRx.vhd", 116, 282); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 129, 254); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 162, 348); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 164, 284); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("ModemRx.vhd", 166, 486); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 172, 502); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("ModemRx.vhd", 284, 501); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ModemRx.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [GUI Memory]: 106 MB (+1242kb) [00:17:01]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MatchedFilter.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 440, 129); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 12 seconds
+selectCodeEditor("ModemRx.vhd", 76, 381); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 75, 401); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ModemRx.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 768, 437); // bi:J (JPanel:JComponent, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd)]", 1); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd), Receiver - ModemRx - Behavioral (ModemRx.vhd)]", 3); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd), Receiver - ModemRx - Behavioral (ModemRx.vhd), CarriageRecoveryLoop - CRloop - Behavioral (CRloop.vhd)]", 7, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectCodeEditor("CRloop.vhd", 224, 166); // bi:J (JPanel:JComponent, ch:JFrame)
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, (String) null); // k:JideButton (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 533 MB (+1466kb) [00:18:11]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 16, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al:bE (ch:JFrame): Out-of-Context module run(s) is/are Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, al:bE)
+// cm:N (ch:JFrame):  Resetting Runs : addNotify
+dismissDialog("Out-of-Context module run(s) is/are Out-of-date"); // al:bE (ch:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run dds_compiler_0_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 536 MB (+3645kb) [00:18:20]
+// cm:N (ch:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// [Engine Memory]: 537 MB (+1200kb) [00:18:20]
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cm:N (ch:JFrame):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun May 03 15:09:16 2015] Launched dds_compiler_0_synth_1... Run output will be captured here: O:/engs128/lab4_withCRLoop/lab4.runs/dds_compiler_0_synth_1/runme.log [Sun May 03 15:09:16 2015] Launched synth_1... Run output will be captured here: O:/engs128/lab4_withCRLoop/lab4.runs/synth_1/runme.log 
+// 'm' command handler elapsed time: 8 seconds
+// [Engine Memory]: 538 MB (+905kb) [00:18:23]
+dismissDialog("Starting Design Runs"); // cm:N (ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 107 MB (+646kb) [00:18:48]
+// TclEventType: RUN_COMPLETED
+// [Engine Memory]: 551 MB (+13398kb) [00:19:47]
+// HMemoryUtils.trashcanNow. Engine heap size: 582 MB. GUI used memory: 73 MB. Current time: 5/3/15 3:10:42 PM
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 582 MB (+32788kb) [00:19:49]
+// TclEventType: RUN_FAILED
+// Q:al (ch:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 146 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:al)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// [GUI Memory]: 108 MB (+673kb) [00:20:50]
+dismissDialog("Synthesis Failed"); // Q:al (ch:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1031] signed is not declared [O:/engs128/lab3/lab2.srcs/sources_1/imports/new/ModemRx.vhd:135]. ]", 1, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;O:\engs128\lab3\lab2.srcs\sources_1\imports\new\ModemRx.vhd;-;;-;15;-;line;-;135;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 447, 366, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+// [GUI Memory]: 109 MB (+977kb) [00:21:03]
+// [GUI Memory]: 115 MB (+6250kb) [00:21:03]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ModemRx.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 176, 421); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CRloop.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CRloop.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 223, 138); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "ModemRx.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 16, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// cm:N (ch:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cm:N (ch:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs synth_1 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun May 03 15:12:31 2015] Launched synth_1... Run output will be captured here: O:/engs128/lab4_withCRLoop/lab4.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // cm:N (ch:JFrame)
+// TclEventType: RUN_FAILED
+// Q:al (ch:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 55 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:al)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// [GUI Memory]: 115 MB (+56kb) [00:22:34]
+dismissDialog("Synthesis Failed"); // Q:al (ch:JFrame)
+// Elapsed time: 10 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2169] illegal range in expression [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd:157]. ]", 1, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;O:\engs128\lab4_withCRLoop\lab4.srcs\sources_1\imports\Desktop\CRloop.vhd;-;;-;15;-;line;-;157;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 302, 446, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("CRloop.vhd", 272, 400); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 46 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1731] cannot convert type integer to type std_logic_vector [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd:157]. ]", 2, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;O:\engs128\lab4_withCRLoop\lab4.srcs\sources_1\imports\Desktop\CRloop.vhd;-;;-;15;-;line;-;157;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2234] indexed name is not a signed [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd:173]. ]", 3, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;O:\engs128\lab4_withCRLoop\lab4.srcs\sources_1\imports\Desktop\CRloop.vhd;-;;-;15;-;line;-;173;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2234] indexed name is not a signed [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd:173]. ]", 3, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;O:\engs128\lab4_withCRLoop\lab4.srcs\sources_1\imports\Desktop\CRloop.vhd;-;;-;15;-;line;-;173;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+// [GUI Memory]: 120 MB (+5629kb) [00:23:39]
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2234] indexed name is not a signed [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd:173]. ]", 3, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;O:\engs128\lab4_withCRLoop\lab4.srcs\sources_1\imports\Desktop\CRloop.vhd;-;;-;15;-;line;-;173;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2169] illegal range in expression [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd:157]. ]", 1, false); // ae:k (JViewport:JComponent, ch:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2169] illegal range in expression [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd:157]. ]", 1, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;O:\engs128\lab4_withCRLoop\lab4.srcs\sources_1\imports\Desktop\CRloop.vhd;-;;-;15;-;line;-;157;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1731] cannot convert type integer to type std_logic_vector [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd:157]. ]", 2, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;O:\engs128\lab4_withCRLoop\lab4.srcs\sources_1\imports\Desktop\CRloop.vhd;-;;-;15;-;line;-;157;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("CRloop.vhd", 259, 364); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 36 seconds
+selectCodeEditor("CRloop.vhd", 167, 383); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 242, 318); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 50 seconds
+selectCodeEditor("CRloop.vhd", 240, 385); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 121 MB (+580kb) [00:25:54]
+// Elapsed time: 10 seconds
+selectCodeEditor("CRloop.vhd", 81, 161); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("CRloop.vhd", 96, 350); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 93 seconds
+selectCodeEditor("CRloop.vhd", 1226, 255); // bi:J (JPanel:JComponent, ch:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open Project..."); // Z:JMenuItem (JPopupMenu:JComponent, ch:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("O:/engs128/lab4/lab4.xpr");
+// [GUI Memory]: 122 MB (+1626kb) [00:28:07]
+// cm:N (ch:JFrame):  Open Project : addNotify
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, Q:JDialog)
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: open_project O:/engs128/lab4/lab4.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'. 
+// [GUI Memory]: 124 MB (+2058kb) [00:28:15]
+// [Engine Memory]: 583 MB (+512kb) [00:28:15]
+// [Engine Memory]: 597 MB (+14483kb) [00:28:15]
+// [Engine Memory]: 598 MB (+1695kb) [00:28:15]
+// [Engine Memory]: 600 MB (+1597kb) [00:28:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 602 MB (+2543kb) [00:28:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 603 MB (+1208kb) [00:28:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 605 MB (+1785kb) [00:28:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 605 MB (+487kb) [00:28:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 606 MB (+528kb) [00:28:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 606 MB (+253kb) [00:28:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 607 MB (+1122kb) [00:28:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 616 MB (+9453kb) [00:28:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 629 MB (+12922kb) [00:28:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 629 MB (+86kb) [00:28:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 629 MB (+126kb) [00:28:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 629 MB (+131kb) [00:28:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 631 MB (+2220kb) [00:28:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 633 MB (+1732kb) [00:28:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 633 MB (+421kb) [00:28:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 634 MB (+1130kb) [00:28:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 634 MB (+28kb) [00:28:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 634 MB. GUI used memory: 81 MB. Current time: 5/3/15 3:19:12 PM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: lab4(2); location: O:/engs128/lab4; part: xc7a35tcpg236-1
+// 'g' command handler elapsed time: 27 seconds
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 902.742 ; gain = 149.637 
+// Elapsed time: 17 seconds
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 126 MB (+1681kb) [00:28:32]
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 130 MB (+4811kb) [00:28:34]
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, ch:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // W:JMenu (JPopupMenu:JComponent, ch:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // W:JMenu (JPopupMenu:JComponent, ch:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cm (ch:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation -simset lab2_test 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [USF-XSim-103] Finding block fileset files... INFO: [USF-XSim-67] Inspecting fileset 'BlockROM' for 'FILE_TYPE == "Verilog"' files... INFO: [USF-XSim-68] No files found in 'BlockROM' INFO: [USF-XSim-67] Inspecting fileset 'fir_compiler_0' for 'FILE_TYPE == "Verilog"' files... INFO: [USF-XSim-68] No files found in 'fir_compiler_0' INFO: [USF-XSim-67] Inspecting fileset 'dds_compiler_0' for 'FILE_TYPE == "Verilog"' files... INFO: [USF-XSim-68] No files found in 'dds_compiler_0' INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... 
+// Tcl Message: INFO: [USF-XSim-101] Fetching design files from 'lab2_test'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'O:/engs128/lab4/lab4.sim/lab2_test/behav' 
+// Tcl Message: "xvhdl -m64 -prj lab2_tb_vhdl.prj" 
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab3/lab2.srcs/sources_1/ip/fir_compiler_0/axi_utils_v2_0/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0 INFO: [VRFC 10-307] analyzing entity glb_srl_fifo INFO: [VRFC 10-307] analyzing entity glb_ifx_slave INFO: [VRFC 10-307] analyzing entity glb_ifx_master INFO: [VRFC 10-307] analyzing entity axi_slave_2to1 INFO: [VRFC 10-307] analyzing entity axi_slave_3to1 INFO: [VRFC 10-307] analyzing entity axi_slave_4to1 
+// Tcl Message: INFO: [VRFC 10-307] analyzing entity halfband_interpolation INFO: [VRFC 10-307] analyzing entity halfband_decimation INFO: [VRFC 10-307] analyzing entity polyphase_decimation 
+// Tcl Message: INFO: [VRFC 10-307] analyzing entity decimation INFO: [VRFC 10-307] analyzing entity polyphase_interpolation 
+// Tcl Message: INFO: [VRFC 10-307] analyzing entity transpose_single_rate INFO: [VRFC 10-307] analyzing entity transpose_decimation INFO: [VRFC 10-307] analyzing entity transpose_interpolation INFO: [VRFC 10-307] analyzing entity single_rate_hb_hilb_ipol INFO: [VRFC 10-307] analyzing entity fir_compiler_v7_2_viv 
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab4/lab4.srcs/sources_1/ip/dds_compiler_0/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:29 . Memory (MB): peak = 902.742 ; gain = 0.000 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '' file for more information. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:32 . Memory (MB): peak = 902.742 ; gain = 0.000 
+// a:a (ch:JFrame): Critical Messages: addNotify
+// 'c' command handler elapsed time: 32 seconds
+// Elapsed time: 32 seconds
+dismissDialog("Run Simulation"); // d:cm (ch:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+// [GUI Memory]: 131 MB (+433kb) [00:29:17]
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, ch:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 727, 8); // dT:J (JPanel:JComponent, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd)]", 1); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd), Receiver - ModemRx - Behavioral (ModemRx.vhd)]", 3); // u:k (I:JPanel, ch:JFrame)
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd), Receiver - ModemRx - Behavioral (ModemRx.vhd)]", 3, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd), Receiver - ModemRx - Behavioral (ModemRx.vhd)]", 3, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd), Receiver - ModemRx - Behavioral (ModemRx.vhd)]", 3, true); // u:k (I:JPanel, ch:JFrame) - Node
+// Elapsed time: 49 seconds
+selectCodeEditor("ModemRx.vhd", 95, 487); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("ModemRx.vhd", 125, 281); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 52 seconds
+selectCodeEditor("ModemRx.vhd", 267, 295); // bi:J (JPanel:JComponent, ch:JFrame)
+closeMainWindow("lab4(2) - [O:/engs128/lab4/lab4.xpr] - Vivado 2014.4"); // ch:JFrame
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// al:bE (ch:JFrame): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, al:bE)
+// cm:N (ch:JFrame):  Close Project : addNotify
+dismissDialog("Close Project"); // al:bE (ch:JFrame)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 634 MB. GUI used memory: 89 MB. Current time: 5/3/15 3:22:31 PM
+// 'b' command handler elapsed time: 3 seconds
+// Tcl Message: close_project 
+selectCodeEditor("CRloop.vhd", 501, 438); // bi:J (JPanel:JComponent, ch:JFrame)
+dismissDialog("Critical Messages"); // a:a (ch:JFrame)
+dismissDialog("Close Project"); // cm:N (ch:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2169] illegal range in expression [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd:157]. ]", 1, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;O:\engs128\lab4_withCRLoop\lab4.srcs\sources_1\imports\Desktop\CRloop.vhd;-;;-;15;-;line;-;157;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2169] illegal range in expression [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd:157]. ]", 1, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;O:\engs128\lab4_withCRLoop\lab4.srcs\sources_1\imports\Desktop\CRloop.vhd;-;;-;15;-;line;-;157;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 81, 181); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("CRloop.vhd", 346, 364); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 174, 366); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("CRloop.vhd", 660, 314); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 711, 315); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("CRloop.vhd", 145, 432); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 375, 440); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 147, 450); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 380, 447); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-944] 0 definitions of operator * match here [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd:186]. ]", 5, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;O:\engs128\lab4_withCRLoop\lab4.srcs\sources_1\imports\Desktop\CRloop.vhd;-;;-;15;-;line;-;186;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 270, 418); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 237, 415); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 249, 422); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 252, 419); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("CRloop.vhd", 132, 348); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 294, 350); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 138, 366); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 304, 365); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 533, 382); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CRloop.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("MatchedFilter.vhd", 1049, 249); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 20 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "binary_point"); // l:an (c:JComboBox, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MatchedFilter.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("CRloop.vhd", 490, 164); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("CRloop.vhd", 1003, 164); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 784, 224); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 512, 163); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 916, 244); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 135 MB (+5083kb) [00:35:14]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 16, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// cm:N (ch:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cm:N (ch:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs synth_1 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun May 03 15:26:11 2015] Launched synth_1... Run output will be captured here: O:/engs128/lab4_withCRLoop/lab4.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // cm:N (ch:JFrame)
+// TclEventType: RUN_FAILED
+// Q:al (ch:JFrame): Synthesis Failed: addNotify
+// [GUI Memory]: 139 MB (+3596kb) [00:35:36]
+// Elapsed time: 22 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:al)
+// [GUI Memory]: 140 MB (+1222kb) [00:35:41]
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // Q:al (ch:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3493] module 'dds_compiler_0' declared at './.Xil/Vivado-5212-M210-15/realtime/dds_compiler_0_stub.vhdl:5' does not have matching formal port for component port 's_axis_phase_tvalid' [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd:159]. ]", 1, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;O:\engs128\lab4_withCRLoop\lab4.srcs\sources_1\imports\Desktop\CRloop.vhd;-;;-;15;-;line;-;159;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 75, 198); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 31 seconds
+selectCodeEditor("CRloop.vhd", 293, 245); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 35 seconds
+selectCodeEditor("CRloop.vhd", 111, 233); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 294, 275); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 617, 328); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 140 MB (+281kb) [00:37:08]
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 141 MB (+522kb) [00:37:08]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// cm:N (ch:JFrame):  IP Catalog : addNotify
+dismissDialog("IP Catalog"); // cm:N (ch:JFrame)
+// [GUI Memory]: 142 MB (+999kb) [00:37:17]
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "dds com"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ch:JFrame)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "DDS Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:dds_compiler:6.0", 1, "DDS Compiler", 0, false); // P:au (JViewport:JComponent, ch:JFrame)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "DDS Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:dds_compiler:6.0", 1, "DDS Compiler", 0, false); // P:au (JViewport:JComponent, ch:JFrame)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "DDS Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:dds_compiler:6.0", 1); // P:au (JViewport:JComponent, ch:JFrame)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "DDS Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:dds_compiler:6.0", 1, "DDS Compiler", 0, false, false, false, false, false, true); // P:au (JViewport:JComponent, ch:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// cm:N (ch:JFrame):  Customize IP : addNotify
+// [GUI Memory]: 143 MB (+1376kb) [00:37:21]
+// [Engine Memory]: 637 MB (+2662kb) [00:37:21]
+// q:N (ch:JFrame): Customize IP: addNotify
+// [Engine Memory]: 638 MB (+966kb) [00:37:21]
+dismissDialog("Customize IP"); // cm:N (ch:JFrame)
+// [Engine Memory]: 642 MB (+4075kb) [00:37:25]
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Implementation", 1); // cy:g (H:JPanel, q:N)
+// [Engine Memory]: 646 MB (+4218kb) [00:37:30]
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Detailed Implementation", 2); // cy:g (H:JPanel, q:N)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Frequencies", 3); // cy:g (H:JPanel, q:N)
+// Elapsed time: 24 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, "PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE", (HResource) null, "Summary", 4, false, true); // cy:g (H:JPanel, q:N) - Double Click
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Frequencies", 3); // cy:g (H:JPanel, q:N)
+// Elapsed time: 13 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Frequencies", 0); // cy:g (H:JPanel, q:N)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Configuration", 0); // cy:g (H:JPanel, q:N)
+selectComboBox("Configuration Options (PartsPresent)", "SIN COS LUT only", 2); // bq:c (H:JPanel, q:N)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Implementation", 1); // cy:g (H:JPanel, q:N)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Detailed Implementation", 2); // cy:g (H:JPanel, q:N)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // cy:g (H:JPanel, q:N)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Detailed Implementation", 2); // cy:g (H:JPanel, q:N)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Implementation", 1); // cy:g (H:JPanel, q:N)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Configuration", 0); // cy:g (H:JPanel, q:N)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, q:N)
+// TclEventType: CREATE_IP_CORE
+// Tcl Message: create_ip -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_1 
+// cm:N (q:N):  Customize IP : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.PartsPresent {SIN_COS_LUT_only} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Noise_Shaping {None} CONFIG.Phase_Width {16} CONFIG.Output_Width {16} CONFIG.Has_Phase_Out {false} CONFIG.Latency {6} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_ips dds_compiler_1] 
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: generate_target {instantiation_template} [get_files o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_1'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// aA:ac (ch:JFrame): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // cm:N (q:N)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aA:ac)
+// cm:N (ch:JFrame):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_compiler_1'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_compiler_1'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_compiler_1'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_compiler_1'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_compiler_1'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 646 MB (+16kb) [00:38:56]
+// Tcl Message: launch_run -jobs 8 dds_compiler_1_synth_1 
+// Tcl Message: [Sun May 03 15:29:49 2015] Launched dds_compiler_1_synth_1... Run output will be captured here: O:/engs128/lab4_withCRLoop/lab4.runs/dds_compiler_1_synth_1/runme.log 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, Q:JDialog)
+// [Engine Memory]: 647 MB (+1630kb) [00:39:18]
+// [Engine Memory]: 648 MB (+393kb) [00:39:18]
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_1 (dds_compiler_1.xci)]", 13, false); // u:k (I:JPanel, ch:JFrame)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("CRloop.vhd", 176, 176); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("CRloop.vhd", 193, 261); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab3top - Behavioral (lab3top.vhd), Receiver - ModemRx - Behavioral (ModemRx.vhd), CarriageRecoveryLoop - CRloop - Behavioral (CRloop.vhd)]", 7); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 16, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// cm:N (ch:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cm:N (ch:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun May 03 15:31:26 2015] Launched dds_compiler_1_synth_1... Run output will be captured here: O:/engs128/lab4_withCRLoop/lab4.runs/dds_compiler_1_synth_1/runme.log [Sun May 03 15:31:26 2015] Launched synth_1... Run output will be captured here: O:/engs128/lab4_withCRLoop/lab4.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // cm:N (ch:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// [Engine Memory]: 660 MB (+12644kb) [00:41:09]
+// HMemoryUtils.trashcanNow. Engine heap size: 660 MB. GUI used memory: 106 MB. Current time: 5/3/15 3:32:07 PM
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 50 seconds
+selectCodeEditor("CRloop.vhd", 760, 250); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 42 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CRloop.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("MatchedFilter.vhd", 0, 200); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: RUN_COMPLETED
+// Q:al (ch:JFrame): Synthesis Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, Q:al)
+dismissDialog("Synthesis Completed"); // Q:al (ch:JFrame)
+selectCodeEditor("MatchedFilter.vhd", 1, 266); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("MatchedFilter.vhd", 0, 334); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 663 MB (+4050kb) [00:42:36]
+// Elapsed time: 10 seconds
+selectCodeEditor("MatchedFilter.vhd", 267, 285); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Simulation Settings]", 10, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_SETTINGS
+// Project Settings: addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, k:bn)
+dismissDialog("Project Settings"); // k:bn (ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 16, true, false, false, false, true, false); // u:k (I:JPanel, ch:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_SIMULATION_SETS, "Edit Simulation Sets..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_SIMULATION_SETS
+// ac:b (ch:JFrame): Add Sources: addNotify
+selectComboBox(PAResourceQtoS.SrcChooserPanel_ADD_FILES_BELOW_TO_THIS_SIMULATION_SET, "Create Simulation Set...", 12); // bl:a (JPanel:JComponent, ac:b)
+// Elapsed time: 10 seconds
+setText("PAResourceQtoS.SrcChooserPanel_ENTER_SIMULATION_SET_NAME", "lab4_wCRLoop_test"); // BasicOptionPaneUI:JTextField (JPanel:JComponent, R:JDialog)
+selectButton("PAResourceQtoS.SrcChooserPanel_ENTER_SIMULATION_SET_NAME_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, R:JDialog)
+// Elapsed time: 10 seconds
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // a:JButton (H:JPanel, ac:b)
+// I:ac (ac:b): Create Source File: addNotify
+// [GUI Memory]: 144 MB (+1016kb) [00:44:42]
+// [GUI Memory]: 146 MB (+1722kb) [00:44:47]
+// [GUI Memory]: 147 MB (+1044kb) [00:44:52]
+// [GUI Memory]: 148 MB (+929kb) [00:44:57]
+// [GUI Memory]: 149 MB (+1837kb) [00:45:02]
+// [GUI Memory]: 150 MB (+924kb) [00:45:07]
+// [GUI Memory]: 151 MB (+1048kb) [00:45:12]
+// Elapsed time: 167 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "wCRLoop_tb"); // an:JTextField (JPanel:JComponent, I:ac)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:ac)
+dismissDialog("Create Source File"); // I:ac (ac:b)
+// Tcl Message: file mkdir O:/engs128/lab4_withCRLoop/lab4.srcs/sim_1/new 
+// Elapsed time: 81 seconds
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, ac:b)
+// 'ab' command handler elapsed time: 273 seconds
+dismissDialog("Add Sources"); // ac:b (ch:JFrame)
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// cm:N (ch:JFrame):  Add Simulation Sources  : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_fileset -simset lab4_wCRLoop_test 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets lab4_wCRLoop_test] 
+// Tcl Message: file mkdir O:/engs128/lab4_withCRLoop/lab4.srcs/lab4_wCRLoop_test/new 
+// Tcl Message: close [ open O:/engs128/lab4_withCRLoop/lab4.srcs/lab4_wCRLoop_test/new/wCRLoop_tb.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset lab4_wCRLoop_test O:/engs128/lab4_withCRLoop/lab4.srcs/lab4_wCRLoop_test/new/wCRLoop_tb.vhd 
+// L:ac (ch:JFrame): Define Module: addNotify
+dismissDialog("Add Simulation Sources"); // cm:N (ch:JFrame)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, L:ac)
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, R:JDialog)
+// TclEventType: DG_UPDATE_GRAPH
+dismissDialog("Define Module"); // L:ac (ch:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 31 seconds
+selectCodeEditor("MatchedFilter.vhd", 462, 192); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 152 MB (+1173kb) [00:48:11]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 16); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, lab2_test]", 25); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, lab2_test, lab2_tb - behavior (lab2_tb.vhd)]", 26, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, lab2_test, lab2_tb - behavior (lab2_tb.vhd)]", 26, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, lab2_test, lab2_tb - behavior (lab2_tb.vhd)]", 26, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectCodeEditor("lab2_tb.vhd", 198, 272); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "lab2_tb.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "lab2_tb.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "lab2_tb.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "lab2_tb.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "lab2_tb.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "lab2_tb.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, lab4_wCRLoop_test]", 17); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, lab4_wCRLoop_test, Non-module Files]", 18); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, lab4_wCRLoop_test, Non-module Files, wCRLoop_tb.vhd]", 19, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, lab4_wCRLoop_test, Non-module Files, wCRLoop_tb.vhd]", 19, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, lab4_wCRLoop_test, Non-module Files, wCRLoop_tb.vhd]", 19, false); // u:k (I:JPanel, ch:JFrame)
+// [GUI Memory]: 156 MB (+3498kb) [00:48:24]
+selectCodeEditor("wCRLoop_tb.vhd", 252, 261); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "wCRLoop_tb.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("wCRLoop_tb.vhd", 175, 143); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 12 seconds
+selectComboBox("FindAndReplaceDialog:StandardDialog_Replace with:", "wCRLoop_tb", -1); // JComboBox:JComponent (JPanel:JComponent, FindAndReplaceDialog:StandardDialog)
+selectCheckBox((HResource) null, "Match whole word", true); // JCheckBox:JToggleButton (JPanel:JComponent, FindAndReplaceDialog:StandardDialog): TRUE
+selectButton("FindAndReplaceDialog:StandardDialog_Find", "Find"); // JButton:AbstractButton (ButtonPanel:JPanel, FindAndReplaceDialog:StandardDialog)
+selectCodeEditor("wCRLoop_tb.vhd", 406, 458); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("wCRLoop_tb.vhd", 399, 180); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("wCRLoop_tb.vhd", 428, 179); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("wCRLoop_tb.vhd", 437, 191); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("wCRLoop_tb.vhd", 427, 180); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("wCRLoop_tb.vhd", 425, 183); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("wCRLoop_tb.vhd", 425, 178); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("wCRLoop_tb.vhd", 285, 179); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 157 MB (+1112kb) [00:49:37]
+// Elapsed time: 15 seconds
+selectCodeEditor("wCRLoop_tb.vhd", 195, 263); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("wCRLoop_tb.vhd", 487, 348); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Simulation Settings]", 10, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_SETTINGS
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, k:bn)Project Settings: addNotify
+selectComboBox(PAResourceOtoP.ProjectSettingsSimulationPanel_SIMULATION_SET, "lab4_wCRLoop_test", 2); // s:a (JPanel:JComponent, k:bn)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectSettingsSimulationPanel_SELECT_TESTBENCH_TOP_MODULE, (String) null); // q:a (X:ae, k:bn)
+// cm:N (k:bn):  Analyze source files for top modules : addNotify
+// J:ac (k:bn): Select Top Module: addNotify
+selectList(PAResourceQtoS.SelectTopModuleDialog_SELECT_TOP_MODULE, "wCRLoop_tb", 1); // K:a (JViewport:JComponent, J:ac)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, J:ac)
+dismissDialog("Select Top Module"); // J:ac (k:bn)
+selectButton("APPLY", "Apply"); // JButton:AbstractButton (ButtonPanel:JPanel, k:bn)
+// TclEventType: CURRENT_FILESET_SET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+selectButton("PAResourceOtoP.ProjectSettingsSimulationPanel_OK_TO_MAKE_SIMULATION_SET_ACTIVE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, R:JDialog)
+// Tcl Message: current_fileset -simset [ get_filesets lab4_wCRLoop_test ] 
+// Tcl Message: set_property top wCRLoop_tb [get_filesets lab4_wCRLoop_test] 
+// TclEventType: DG_UPDATE_GRAPH
+selectButton("OK", "OK"); // JButton:AbstractButton (ButtonPanel:JPanel, k:bn)
+dismissDialog("Project Settings"); // k:bn (ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cm (ch:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -simset lab4_wCRLoop_test 
+// Tcl Message: INFO: [USF-XSim-103] Finding block fileset files... INFO: [USF-XSim-67] Inspecting fileset 'BlockROM' for 'FILE_TYPE == "Verilog"' files... INFO: [USF-XSim-68] No files found in 'BlockROM' INFO: [USF-XSim-67] Inspecting fileset 'fir_compiler_0' for 'FILE_TYPE == "Verilog"' files... INFO: [USF-XSim-68] No files found in 'fir_compiler_0' INFO: [USF-XSim-67] Inspecting fileset 'dds_compiler_0' for 'FILE_TYPE == "Verilog"' files... INFO: [USF-XSim-68] No files found in 'dds_compiler_0' INFO: [USF-XSim-67] Inspecting fileset 'dds_compiler_1' for 'FILE_TYPE == "Verilog"' files... INFO: [USF-XSim-68] No files found in 'dds_compiler_1' INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... 
+// Tcl Message: INFO: [USF-XSim-101] Fetching design files from 'lab4_wCRLoop_test'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'O:/engs128/lab4_withCRLoop/lab4.sim/lab4_wCRLoop_test/behav' 
+// Tcl Message: "xvhdl -m64 -prj wCRLoop_tb_vhdl.prj" 
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab3/lab2.srcs/sources_1/ip/fir_compiler_0/axi_utils_v2_0/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0 INFO: [VRFC 10-307] analyzing entity glb_srl_fifo INFO: [VRFC 10-307] analyzing entity glb_ifx_slave INFO: [VRFC 10-307] analyzing entity glb_ifx_master INFO: [VRFC 10-307] analyzing entity axi_slave_2to1 INFO: [VRFC 10-307] analyzing entity axi_slave_3to1 INFO: [VRFC 10-307] analyzing entity axi_slave_4to1 
+// Tcl Message: INFO: [VRFC 10-307] analyzing entity halfband_interpolation INFO: [VRFC 10-307] analyzing entity halfband_decimation INFO: [VRFC 10-307] analyzing entity polyphase_decimation 
+// Tcl Message: INFO: [VRFC 10-307] analyzing entity decimation INFO: [VRFC 10-307] analyzing entity polyphase_interpolation 
+// Tcl Message: INFO: [VRFC 10-307] analyzing entity transpose_single_rate INFO: [VRFC 10-307] analyzing entity transpose_decimation INFO: [VRFC 10-307] analyzing entity transpose_interpolation INFO: [VRFC 10-307] analyzing entity single_rate_hb_hilb_ipol INFO: [VRFC 10-307] analyzing entity fir_compiler_v7_2_viv 
+// [GUI Memory]: 159 MB (+2585kb) [00:50:25]
+// Tcl Message: INFO: [VRFC 10-307] analyzing entity op_resize INFO: [VRFC 10-307] analyzing entity delay_line INFO: [VRFC 10-307] analyzing entity cc_compare INFO: [VRFC 10-307] analyzing entity luts INFO: [VRFC 10-307] analyzing entity mult18 INFO: [VRFC 10-307] analyzing entity dsp INFO: [VRFC 10-307] analyzing entity hybrid INFO: [VRFC 10-307] analyzing entity ccm_dist_mem INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem INFO: [VRFC 10-307] analyzing entity ccm_syncmem INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder INFO: [VRFC 10-307] analyzing entity ccm_operation 
+// Tcl Message: INFO: [VRFC 10-307] analyzing entity op_resize INFO: [VRFC 10-307] analyzing entity delay_line INFO: [VRFC 10-307] analyzing entity cc_compare INFO: [VRFC 10-307] analyzing entity luts INFO: [VRFC 10-307] analyzing entity mult18 INFO: [VRFC 10-307] analyzing entity dsp INFO: [VRFC 10-307] analyzing entity hybrid INFO: [VRFC 10-307] analyzing entity ccm_dist_mem INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem INFO: [VRFC 10-307] analyzing entity ccm_syncmem INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder INFO: [VRFC 10-307] analyzing entity ccm_operation INFO: [VRFC 10-307] analyzing entity ccm INFO: [VRFC 10-307] analyzing entity three_input_adder 
+// Tcl Message: INFO: [VRFC 10-307] analyzing entity dither_wrap INFO: [VRFC 10-307] analyzing entity pipe_add INFO: [VRFC 10-307] analyzing entity lut_ram INFO: [VRFC 10-307] analyzing entity lut5_ram INFO: [VRFC 10-307] analyzing entity sin_cos 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:44 . Memory (MB): peak = 905.219 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'O:/engs128/lab4_withCRLoop/lab4.sim/lab4_wCRLoop_test/behav' 
+// Tcl Message: Vivado Simulator 2014.4 Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 3fc4a5d3650a498bba6b448194a25c23 --debug typical --relax -L blk_mem_gen_v8_2 -L xil_defaultlib -L xbip_utils_v3_0 -L axi_utils_v2_0 -L fir_compiler_v7_2 -L xbip_pipe_v3_0 -L xbip_bram18k_v3_0 -L mult_gen_v12_0 -L xbip_dsp48_wrapper_v3_0 -L xbip_dsp48_addsub_v3_0 -L xbip_dsp48_multadd_v3_0 -L dds_compiler_v6_0 -L secureip --snapshot wCRLoop_tb_behav xil_defaultlib.wCRLoop_tb -log elaborate.log  Multi-threading is on. Using 6 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration Starting simulation data flow analysis 
+// Tcl Message: Completed simulation data flow analysis 
+// Tcl Message: Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(1,1,1,1,"NO_RESET","DIR...] Compiling architecture synth of entity fir_compiler_v7_2.calc [\calc("artix7",(1,3,0,0,0,0,0,0,...] 
+// Tcl Message: Compiling architecture synth of entity fir_compiler_v7_2.addsub_mult_add [\addsub_mult_add("artix7",0,0,31...] 
+// Tcl Message: Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,31,1,0,0,fal...] Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,32,1,0,0,fal...] Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(1,0,1,1,"NO_RESET","DIR...] 
+// Tcl Message: Built simulation snapshot wCRLoop_tb_behav 
+// Tcl Message:  ****** Webtalk v2014.4 (64-bit)   **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014   **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014     ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.  source O:/engs128/lab4_withCRLoop/lab4.sim/lab4_wCRLoop_test/behav/xsim.dir/wCRLoop_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [Common 17-186] 'O:/engs128/lab4_withCRLoop/lab4.sim/lab4_wCRLoop_test/behav/xsim.dir/wCRLoop_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun May 03 15:42:30 2015. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2014.4/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Sun May 03 15:42:30 2015... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:45 . Memory (MB): peak = 905.219 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'O:/engs128/lab4_withCRLoop/lab4.sim/lab4_wCRLoop_test/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "wCRLoop_tb_behav -key {Behavioral:lab4_wCRLoop_test:Functional:wCRLoop_tb} -tclbatch {wCRLoop_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2014.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// [Engine Memory]: 668 MB (+4636kb) [00:51:40]
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// [GUI Memory]: 161 MB (+1543kb) [00:51:40]
+// [Engine Memory]: 669 MB (+798kb) [00:51:40]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: source wCRLoop_tb.tcl 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 673 MB (+5066kb) [00:51:42]
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// [Engine Memory]: 674 MB (+28kb) [00:51:42]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'wCRLoop_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:01:36 . Memory (MB): peak = 913.188 ; gain = 7.969 
+// 'c' command handler elapsed time: 96 seconds
+// [GUI Memory]: 162 MB (+1634kb) [00:51:42]
+// [Engine Memory]: 674 MB (+139kb) [00:51:42]
+// Elapsed time: 96 seconds
+dismissDialog("Run Simulation"); // d:cm (ch:JFrame)
+// [Engine Memory]: 674 MB (+368kb) [00:51:43]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 27 seconds
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "uut ; lab3top(Behavioral) ; VHDL Entity", 1); // e:au (JViewport:JComponent, ch:JFrame)
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "Receiver ; ModemRx(Behavioral) ; VHDL Entity", 3); // e:au (JViewport:JComponent, ch:JFrame)
+// [Engine Memory]: 681 MB (+7487kb) [00:52:12]
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "CarriageRecoveryLoop ; CRloop(Behavioral) ; VHDL Entity", 7, "CarriageRecoveryLoop", 0, true); // e:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// [Engine Memory]: 683 MB (+1568kb) [00:52:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 697 MB. GUI used memory: 106 MB. Current time: 5/3/15 3:43:07 PM
+// [Engine Memory]: 697 MB (+14925kb) [00:52:16]
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "PE_strobe ; 0 ; Logic", 9, "PE_strobe", 0, false); // k:au (JViewport:JComponent, ch:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Elapsed time: 12 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "PE_strobe ; 0 ; Logic", 9, "PE_strobe", 0, false); // k:au (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Elapsed time: 13 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "yI[31:0] ; 00000000000000000000000000000000 ; Array", 16, "yI[31:0]", 0, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "yQ[31:0] ; 00000000000000000000000000000000 ; Array", 17, "yQ[31:0]", 0, true, false, true, false, false, false); // k:au (JViewport:JComponent, ch:JFrame) - Control Key - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "yI[31:0] ; 00000000000000000000000000000000 ; Array", 16, "yI[31:0]", 0, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "phase_error[15:0] ; 0000000000000000 ; Array", 10, "phase_error[15:0]", 0, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Elapsed time: 13 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "y_ploop[31:0] ; 00000000000000000000000000000000 ; Array", 15, "y_ploop[31:0]", 0, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Elapsed time: 20 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "ph_accum[31:0] ; 00000000000000000000000000000000 ; Array", 12, "ph_accum[31:0]", 0, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "CRcos[15:0] ; 0111111111111110 ; Array", 21, "CRcos[15:0]", 0, true, false, true, false, false, false); // k:au (JViewport:JComponent, ch:JFrame) - Control Key - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "CRsin[15:0] ; 0000000000000000 ; Array", 22, "CRsin[15:0]", 0, true, false, true, false, false, false); // k:au (JViewport:JComponent, ch:JFrame) - Control Key - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "ph_accum[31:0] ; 00000000000000000000000000000000 ; Array", 12, "ph_accum[31:0]", 0, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 12 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, ch:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // W:JMenu (JPopupMenu:JComponent, ch:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // W:JMenu (JPopupMenu:JComponent, ch:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_WAVEFORM_OPEN_CONFIGURATION, "Open Waveform Configuration..."); // Z:JMenuItem (JPopupMenu:JComponent, ch:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, ch:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_OPEN_CONFIGURATION
+setFileChooser("O:/engs128/lab4/lab2_tb_behav.wcfg");
+// 'b' command handler elapsed time: 8 seconds
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: open_wave_config {O:/engs128/lab4/lab2_tb_behav.wcfg} 
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1*", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab2_tb_behav.wcfg", 6); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// Elapsed time: 11 seconds
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "lab2_tb_behav.wcfg"); // u:aG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "Transmitter ; ModemTx(Behavioral) ; VHDL Entity", 2); // e:au (JViewport:JComponent, ch:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "PSF_I ; PulseShaper(Behavioral) ; VHDL Entity", 6, "PSF_I", 0, true); // e:au (JViewport:JComponent, ch:JFrame) - Node
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "Transmitter ; ModemTx(Behavioral) ; VHDL Entity", 2, "Transmitter", 0, true); // e:au (JViewport:JComponent, ch:JFrame) - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "iSample[15:0] ; UUUUUUUUUUUUUUUU ; Array", 16, "iSample[15:0]", 0, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "qSample[15:0] ; UUUUUUUUUUUUUUUU ; Array", 17, "qSample[15:0]", 0, true, false, true, false, false, false); // k:au (JViewport:JComponent, ch:JFrame) - Control Key - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "iSample[15:0] ; UUUUUUUUUUUUUUUU ; Array", 16, "iSample[15:0]", 0, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "QPSK_Modulator ; Modulator(Behavioral) ; VHDL Entity", 8, "QPSK_Modulator", 0, true); // e:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "QPSK_Demodulator ; Demodulator(Behavioral) ; VHDL Entity", 10, "QPSK_Demodulator", 0, false); // e:au (JViewport:JComponent, ch:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "demod_out_iSample[15:0] ; 0000000000000000 ; Array", 3, "demod_out_iSample[15:0]", 0, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE

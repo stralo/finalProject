@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2014.4 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="2" Path="O:/engs128/lab5/lab5.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="3fc4a5d3650a498bba6b448194a25c23"/>
+    <Option Name="Part" Val="xc7a35tcpg236-1"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="TargetLanguage" Val="VHDL"/>
+    <Option Name="BoardPart" Val=""/>
+    <Option Name="SourceMgmtMode" Val="DisplayOnly"/>
+    <Option Name="ActiveSimSet" Val="lab5_test"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="//thayerfs.thayer.dartmouth.edu/d37581q/Desktop/rrcos8-brom.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="//thayerfs/d37581q/Desktop/rrcos8-fir-ip.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/sources_1/new/PulseShaper.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/sources_1/imports/new/IQDeserializer.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab2/lab2.srcs/sources_1/imports/new/IQDeserializer.vhd"/>
+          <Attr Name="ImportTime" Val="1429069567"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/sources_1/imports/new/CharToIQ.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab2/lab2.srcs/sources_1/new/CharToIQ.vhd"/>
+          <Attr Name="ImportTime" Val="1429068918"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/sources_1/imports/new/CharBufferModule.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab2/lab2.srcs/sources_1/imports/new/CharBufferModule.vhd"/>
+          <Attr Name="ImportTime" Val="1429068933"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/sources_1/imports/new/BufferController.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab2/lab2.srcs/sources_1/imports/new/BufferController.vhd"/>
+          <Attr Name="ImportTime" Val="1429069004"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/sources_1/imports/new/BufferAddrCounter.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab2/lab2.srcs/sources_1/imports/new/BufferAddrCounter.vhd"/>
+          <Attr Name="ImportTime" Val="1428626937"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/sources_1/imports/new/FifoBuffer.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab2/lab2.srcs/sources_1/imports/new/FifoBuffer.vhd"/>
+          <Attr Name="ImportTime" Val="1428625020"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/sources_1/imports/new/BufControllerEOLListener.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab2/lab2.srcs/sources_1/imports/new/BufControllerEOLListener.vhd"/>
+          <Attr Name="ImportTime" Val="1428474915"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/sources_1/imports/new/IQSerializer.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab2/lab2.srcs/sources_1/imports/new/IQSerializer.vhd"/>
+          <Attr Name="ImportTime" Val="1429070183"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/sources_1/imports/new/NullReadListener.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab2/lab2.srcs/sources_1/imports/new/NullReadListener.vhd"/>
+          <Attr Name="ImportTime" Val="1429069034"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/sources_1/imports/Lab1/mux7seg.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab2/lab2.srcs/sources_1/imports/Lab1/mux7seg.vhd"/>
+          <Attr Name="ImportTime" Val="1428077147"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/sources_1/imports/Lab1/SerialRx.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab2/lab2.srcs/sources_1/imports/Lab1/SerialRx.vhd"/>
+          <Attr Name="ImportTime" Val="1428021366"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/sources_1/imports/Lab1/SerialTx.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab2/lab2.srcs/sources_1/imports/Lab1/SerialTx.vhd"/>
+          <Attr Name="ImportTime" Val="1428226074"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../lab4_withCRLoop/lab4.srcs/sources_1/new/Demodulator.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="//thayerfs/d37581q/Desktop/CRloop.vhd"/>
+          <Attr Name="ImportTime" Val="1430637045"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../lab4_withCRLoop/lab4.srcs/sources_1/new/MatchedFilter.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/ModemTx.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/ModemRx.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/DAC.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/ADC.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/ADC.vhd"/>
+          <Attr Name="ImportTime" Val="1431215944"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Modulator.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/lab3top.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="lab3top"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/constrs_1/imports/Lab1/Basys3_Master.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab1/lab1.srcs/constrs_1/imports/Lab1/Basys3_Master.xdc"/>
+          <Attr Name="ImportTime" Val="1428084417"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TargetConstrsFile" Val="$PPRDIR/../lab3/lab2.srcs/constrs_1/imports/Lab1/Basys3_Master.xdc"/>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="lab2top"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="SimMode" Val="post-implementation"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="Serializer_test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/Serializer_test">
+      <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/Serializer_test/new/Serializer_tb.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="Serializer_tb"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="SimMode" Val="post-implementation"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="Transmitter_test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/Transmitter_test">
+      <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/Transmitter_test/new/Transmitter_tb.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/Transmitter_tb_behav.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="Transmitter_tb"/>
+        <Option Name="SimMode" Val="post-implementation"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/Transmitter_tb_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/Transmitter_tb_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/Transmitter_tb_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/Transmitter_tb_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/Transmitter_tb_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/Transmitter_tb_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/Transmitter_tb_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/Transmitter_tb_behav.wcfg"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="Receiver_test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/Receiver_test">
+      <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/Receiver_test/new/Receiver_tb.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="lab2_test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/lab2_test">
+      <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/lab2_test/new/lab2_tb.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/lab2_tb_behav.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="lab2_tb"/>
+        <Option Name="SimMode" Val="post-implementation"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/lab2_tb_behav.wcfg"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="BlockROM" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BlockROM">
+      <File Path="$PPRDIR/../lab3/lab2.srcs/sources_1/ip/BlockROM/BlockROM.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="BlockROM"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="MatchFilter_test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/MatchFilter_test">
+      <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/MatchFilter_test/new/MatchFilter_tb.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/MatchFilter_tb_behav.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="MatchFilter_tb"/>
+        <Option Name="SimMode" Val="post-implementation"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/MatchFilter_tb_behav.wcfg"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="fir_compiler_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fir_compiler_0">
+      <File Path="$PPRDIR/../lab3/lab2.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="fir_compiler_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="MatchFilter_test2" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/MatchFilter_test2">
+      <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/MatchFilter_test2/new/MatchFilter_tb2.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/MatchedFilter_tb2_behav.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="MatchFilter_tb2"/>
+        <Option Name="SimMode" Val="post-implementation"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/MatchedFilter_tb2_behav.wcfg"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="FIRCompiler_test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/FIRCompiler_test">
+      <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/FIRCompiler_test/imports/demo_tb/tb_fir_compiler_0.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab3/lab2.srcs/sources_1/ip/fir_compiler_0/demo_tb/tb_fir_compiler_0.vhd"/>
+          <Attr Name="ImportTime" Val="1429779017"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/FIRCompiler_test/new/MyFIR_tb.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="MyFIR_tb"/>
+        <Option Name="SimMode" Val="post-implementation"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="PSF_MF_test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/PSF_MF_test">
+      <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/PSF_MF_test/new/psf_mf_tb.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/psf_mf_tb_behav.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="psf_mf_tb"/>
+        <Option Name="SimMode" Val="post-implementation"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/psf_mf_tb_behav.wcfg"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="PulseShaper_test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/PulseShaper_test">
+      <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/PulseShaper_test/new/PulseShaper_tb.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="PulseShaper_tb"/>
+        <Option Name="SimMode" Val="post-implementation"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="MatchedFilter_BitOut_test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/MatchedFilter_BitOut_test">
+      <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../lab3/lab2.srcs/MatchedFilter_BitOut_test/new/MatchedFilter_OutBit_tb.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="MatchedFilter_OutBit_tb"/>
+        <Option Name="SimMode" Val="post-implementation"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="dds_compiler_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dds_compiler_0">
+      <File Path="$PPRDIR/../lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="dds_compiler_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="Modulator_test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/Modulator_test">
+      <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../lab4_withCRLoop/lab4.srcs/Modulator_test/imports/demo_tb/tb_dds_compiler_0.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_0/demo_tb/tb_dds_compiler_0.vhd"/>
+          <Attr Name="ImportTime" Val="1430122011"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="tb_dds_compiler_0"/>
+        <Option Name="SimMode" Val="post-implementation"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="dds_compiler_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dds_compiler_1">
+      <File Path="$PPRDIR/../lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="dds_compiler_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="lab4_wCRLoop_test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/lab4_wCRLoop_test">
+      <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../lab4_withCRLoop/lab4.srcs/lab4_wCRLoop_test/new/wCRLoop_tb.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/wCRLoop_tb_behav.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="wCRLoop_tb"/>
+        <Option Name="SimMode" Val="post-implementation"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/wCRLoop_tb_behav.wcfg"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="MMCM" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MMCM">
+      <File Path="$PSRCDIR/sources_1/ip/MMCM/MMCM.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="MMCM"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DACInterface_test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/DACInterface_test">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/DACInterface_test/new/DACInterface_tb.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="DACInterface_tb"/>
+        <Option Name="SimMode" Val="post-implementation"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DACInterface_test2" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/DACInterface_test2">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/DACInterface_test2/new/DACInterface_tb2.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="DACInterface_tb2"/>
+        <Option Name="SimMode" Val="post-implementation"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="lab5_test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/lab5_test">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/lab5_test/new/lab5_tb.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="lab5_tb"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="QuestaSim/ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="IES">
+      <Option Name="Description" Val="Incisive Enterprise Simulator (IES)"/>
+    </Simulator>
+    <Simulator Name="VCS">
+      <Option Name="Description" Val="Verilog Compiler Simulator (VCS)"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="9">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="BlockROM_synth_1" Type="Ft3:Synth" SrcSet="BlockROM" Part="xc7a35tcpg236-1" ConstrsSet="BlockROM" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/BlockROM_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="fir_compiler_0_synth_1" Type="Ft3:Synth" SrcSet="fir_compiler_0" Part="xc7a35tcpg236-1" ConstrsSet="fir_compiler_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/fir_compiler_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="dds_compiler_0_synth_1" Type="Ft3:Synth" SrcSet="dds_compiler_0" Part="xc7a35tcpg236-1" ConstrsSet="dds_compiler_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/dds_compiler_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="dds_compiler_1_synth_1" Type="Ft3:Synth" SrcSet="dds_compiler_1" Part="xc7a35tcpg236-1" ConstrsSet="dds_compiler_1" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/dds_compiler_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="MMCM_synth_1" Type="Ft3:Synth" SrcSet="MMCM" Part="xc7a35tcpg236-1" ConstrsSet="MMCM" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/MMCM_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="BlockROM_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="BlockROM" Description="Vivado Implementation Defaults" SynthRun="BlockROM_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+    <Run Id="fir_compiler_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="fir_compiler_0" Description="Vivado Implementation Defaults" SynthRun="fir_compiler_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+    <Run Id="dds_compiler_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="dds_compiler_0" Description="Vivado Implementation Defaults" SynthRun="dds_compiler_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+    <Run Id="dds_compiler_1_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="dds_compiler_1" Description="Vivado Implementation Defaults" SynthRun="dds_compiler_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+    <Run Id="MMCM_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="MMCM" Description="Vivado Implementation Defaults" SynthRun="MMCM_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+  </Runs>
+  <HWSession Dir="hw_1" File="hw.xml"/>
+</Project>

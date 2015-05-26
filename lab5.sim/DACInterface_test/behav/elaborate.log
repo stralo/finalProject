@@ -1,0 +1,16 @@
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 3fc4a5d3650a498bba6b448194a25c23 --debug typical --relax -L blk_mem_gen_v8_2 -L xil_defaultlib -L xbip_utils_v3_0 -L axi_utils_v2_0 -L fir_compiler_v7_2 -L xbip_pipe_v3_0 -L xbip_bram18k_v3_0 -L mult_gen_v12_0 -L xbip_dsp48_wrapper_v3_0 -L xbip_dsp48_addsub_v3_0 -L xbip_dsp48_multadd_v3_0 -L dds_compiler_v6_0 -L secureip --snapshot DACInterface_tb_behav xil_defaultlib.DACInterface_tb -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.DAC [\DAC(16)\]
+Compiling architecture behavior of entity xil_defaultlib.dacinterface_tb
+Built simulation snapshot DACInterface_tb_behav

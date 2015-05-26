@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="wCRLoop_tb_behav1.wdb" id="1">
+         <top_modules>
+            <top_module name="wCRLoop_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wvobject db_ref_id="1" fp_name="/wCRLoop_tb/RsRx" type="logic">
+      <obj_property name="ElementShortName">RsRx</obj_property>
+      <obj_property name="ObjectShortName">RsRx</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/wCRLoop_tb/uut/Transmitter/CharacterToIQ/Serializer/ser_in_char" type="array">
+      <obj_property name="ElementShortName">ser_in_char[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ser_in_char[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/wCRLoop_tb/uut/Receiver/IQToChar/deser_out_txStart" type="logic">
+      <obj_property name="ElementShortName">deser_out_txStart</obj_property>
+      <obj_property name="ObjectShortName">deser_out_txStart</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/wCRLoop_tb/uut/Receiver/IQToChar/deser_out_txData" type="array">
+      <obj_property name="ElementShortName">deser_out_txData[7:0]</obj_property>
+      <obj_property name="ObjectShortName">deser_out_txData[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/wCRLoop_tb/uut/Receiver/CarriageRecoveryLoop/phase_error" type="array">
+      <obj_property name="ElementShortName">phase_error[15:0]</obj_property>
+      <obj_property name="ObjectShortName">phase_error[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">50</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/wCRLoop_tb/uut/Transmitter/iSample" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">iSample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">iSample[15:0]</obj_property>
+      <obj_property name="label">ps_out_I</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">50</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/wCRLoop_tb/uut/Receiver/mf_out_iPulse" type="array">
+      <obj_property name="ElementShortName">mf_out_iPulse[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mf_out_iPulse[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/wCRLoop_tb/uut/Receiver/CarriageRecoveryLoop/yI_out" type="array">
+      <obj_property name="ElementShortName">yI_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">yI_out[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/wCRLoop_tb/uut/Transmitter/qSample" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">qSample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">qSample[15:0]</obj_property>
+      <obj_property name="label">ps_out_Q</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/wCRLoop_tb/uut/Receiver/mf_out_qPulse" type="array">
+      <obj_property name="ElementShortName">mf_out_qPulse[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mf_out_qPulse[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/wCRLoop_tb/uut/Receiver/CarriageRecoveryLoop/yQ" type="array">
+      <obj_property name="ElementShortName">yQ[31:0]</obj_property>
+      <obj_property name="ObjectShortName">yQ[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/wCRLoop_tb/uut/Receiver/CarriageRecoveryLoop/PE_strobe" type="logic">
+      <obj_property name="ElementShortName">PE_strobe</obj_property>
+      <obj_property name="ObjectShortName">PE_strobe</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/wCRLoop_tb/uut/Receiver/CarriageRecoveryLoop/yQ_out" type="array">
+      <obj_property name="ElementShortName">yQ_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">yQ_out[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+</wave_config>

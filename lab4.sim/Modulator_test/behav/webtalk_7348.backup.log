@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat May 02 23:16:27 2015
+# Process ID: 480
+# Log file: O:/engs128/lab4/lab4.sim/Modulator_test/behav/webtalk.log
+# Journal file: O:/engs128/lab4/lab4.sim/Modulator_test/behav\webtalk.jou
+#-----------------------------------------------------------
+source O:/engs128/lab4/lab4.sim/Modulator_test/behav/xsim.dir/tb_dds_compiler_0_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'O:/engs128/lab4/lab4.sim/Modulator_test/behav/xsim.dir/tb_dds_compiler_0_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat May 02 23:16:31 2015. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2014.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sat May 02 23:16:31 2015...

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Transmitter_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Transmitter_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject db_ref_id="1" fp_name="/Transmitter_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Transmitter_tb/uut/modemTx_in_symbolClk" type="logic">
+      <obj_property name="ElementShortName">modemTx_in_symbolClk</obj_property>
+      <obj_property name="ObjectShortName">modemTx_in_symbolClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Transmitter_tb/serialI" type="logic">
+      <obj_property name="ElementShortName">serialI</obj_property>
+      <obj_property name="ObjectShortName">serialI</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Transmitter_tb/serialQ" type="logic">
+      <obj_property name="ElementShortName">serialQ</obj_property>
+      <obj_property name="ObjectShortName">serialQ</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Transmitter_tb/uut/Receiver/rx_data" type="array">
+      <obj_property name="ElementShortName">rx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_data[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Transmitter_tb/uut/CharacterToIQ/CharBuffer/Controller/current_state" type="other">
+      <obj_property name="ElementShortName">current_state</obj_property>
+      <obj_property name="ObjectShortName">current_state</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Transmitter_tb/uut/CharacterToIQ/CharBuffer/RAM/buffer_array" type="array">
+      <obj_property name="ElementShortName">buffer_array[7:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_array[7:0][7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Transmitter_tb/uut/CharacterToIQ/Serializer/ser_in_char" type="array">
+      <obj_property name="ElementShortName">ser_in_char[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ser_in_char[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Transmitter_tb/uut/CharacterToIQ/Serializer/ser_in_char" type="array">
+      <obj_property name="ElementShortName">ser_in_char[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ser_in_char[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Transmitter_tb/uut/CharacterToIQ/Serializer/numSymbolsSent" type="array">
+      <obj_property name="ElementShortName">numSymbolsSent[1:0]</obj_property>
+      <obj_property name="ObjectShortName">numSymbolsSent[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Transmitter_tb/uut/CharacterToIQ/Serializer/current_state" type="other">
+      <obj_property name="ElementShortName">current_state</obj_property>
+      <obj_property name="ObjectShortName">current_state</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Transmitter_tb/uut/CharacterToIQ/Serializer/canSendMoreSymbols" type="logic">
+      <obj_property name="ElementShortName">canSendMoreSymbols</obj_property>
+      <obj_property name="ObjectShortName">canSendMoreSymbols</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Transmitter_tb/uut/CharacterToIQ/Serializer/serIQ" type="array">
+      <obj_property name="ElementShortName">serIQ[1:0]</obj_property>
+      <obj_property name="ObjectShortName">serIQ[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Transmitter_tb/uut/CharacterToIQ/Serializer/encodedIQ" type="array">
+      <obj_property name="ElementShortName">encodedIQ[1:0]</obj_property>
+      <obj_property name="ObjectShortName">encodedIQ[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Transmitter_tb/uut/CharacterToIQ/Serializer/diff_encode_out" type="array">
+      <obj_property name="ElementShortName">diff_encode_out[1:0]</obj_property>
+      <obj_property name="ObjectShortName">diff_encode_out[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Transmitter_tb/uut/CharacterToIQ/Serializer/diff_encode_in" type="array">
+      <obj_property name="ElementShortName">diff_encode_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">diff_encode_in[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Transmitter_tb/uut/CharacterToIQ/Serializer/diff_encode_reset" type="logic">
+      <obj_property name="ElementShortName">diff_encode_reset</obj_property>
+      <obj_property name="ObjectShortName">diff_encode_reset</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="DACInterface_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="DACInterface_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="16" />
+   <wvobject db_ref_id="1" fp_name="/DACInterface_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/DACInterface_tb/spiClk" type="logic">
+      <obj_property name="ElementShortName">spiClk</obj_property>
+      <obj_property name="ObjectShortName">spiClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/DACInterface_tb/uut/dac_out_pmodSerialClk" type="logic">
+      <obj_property name="ElementShortName">dac_out_pmodSerialClk</obj_property>
+      <obj_property name="ObjectShortName">dac_out_pmodSerialClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/DACInterface_tb/dacBusy" type="logic">
+      <obj_property name="ElementShortName">dacBusy</obj_property>
+      <obj_property name="ObjectShortName">dacBusy</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/DACInterface_tb/dacStart" type="logic">
+      <obj_property name="ElementShortName">dacStart</obj_property>
+      <obj_property name="ObjectShortName">dacStart</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/DACInterface_tb/dacWord" type="array">
+      <obj_property name="ElementShortName">dacWord[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dacWord[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/DACInterface_tb/DDS_sin" type="array">
+      <obj_property name="ElementShortName">DDS_sin[11:0]</obj_property>
+      <obj_property name="ObjectShortName">DDS_sin[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/DACInterface_tb/DDS_cos" type="array">
+      <obj_property name="ElementShortName">DDS_cos[11:0]</obj_property>
+      <obj_property name="ObjectShortName">DDS_cos[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/DACInterface_tb/uut/dacInterface_out_busy" type="logic">
+      <obj_property name="ElementShortName">dacInterface_out_busy</obj_property>
+      <obj_property name="ObjectShortName">dacInterface_out_busy</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/DACInterface_tb/uut/dac_out_pmodSync" type="logic">
+      <obj_property name="ElementShortName">dac_out_pmodSync</obj_property>
+      <obj_property name="ObjectShortName">dac_out_pmodSync</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/DACInterface_tb/uut/dac_out_pmodSerialData" type="logic">
+      <obj_property name="ElementShortName">dac_out_pmodSerialData</obj_property>
+      <obj_property name="ObjectShortName">dac_out_pmodSerialData</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/DACInterface_tb/uut/tempBuffer" type="array">
+      <obj_property name="ElementShortName">tempBuffer[15:0]</obj_property>
+      <obj_property name="ObjectShortName">tempBuffer[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/DACInterface_tb/uut/shiftCount" type="array">
+      <obj_property name="ElementShortName">shiftCount[3:0]</obj_property>
+      <obj_property name="ObjectShortName">shiftCount[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/DACInterface_tb/uut/shiftCounterEn" type="logic">
+      <obj_property name="ElementShortName">shiftCounterEn</obj_property>
+      <obj_property name="ObjectShortName">shiftCounterEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/DACInterface_tb/uut/parallelLoadEn" type="logic">
+      <obj_property name="ElementShortName">parallelLoadEn</obj_property>
+      <obj_property name="ObjectShortName">parallelLoadEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/DACInterface_tb/uut/currentState" type="other">
+      <obj_property name="ElementShortName">currentState</obj_property>
+      <obj_property name="ObjectShortName">currentState</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="lab2_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="lab2_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="23" />
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/RsRx" type="logic">
+      <obj_property name="ElementShortName">RsRx</obj_property>
+      <obj_property name="ObjectShortName">RsRx</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/RsTx" type="logic">
+      <obj_property name="ElementShortName">RsTx</obj_property>
+      <obj_property name="ObjectShortName">RsTx</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Transmitter/rxData" type="array">
+      <obj_property name="ElementShortName">rxData[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rxData[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Transmitter/CharacterToIQ/Serializer/ser_in_char" type="array">
+      <obj_property name="ElementShortName">ser_in_char[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ser_in_char[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Receiver/IQToChar/shiftRegister" type="array">
+      <obj_property name="ElementShortName">shiftRegister[7:0]</obj_property>
+      <obj_property name="ObjectShortName">shiftRegister[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Receiver/IQToChar/decodedSymbol" type="array">
+      <obj_property name="ElementShortName">decodedSymbol[1:0]</obj_property>
+      <obj_property name="ObjectShortName">decodedSymbol[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Receiver/IQToChar/deser_out_txStart" type="logic">
+      <obj_property name="ElementShortName">deser_out_txStart</obj_property>
+      <obj_property name="ObjectShortName">deser_out_txStart</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Receiver/Transmitter/tx_data" type="array">
+      <obj_property name="ElementShortName">tx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Receiver/QPSK_Demodulator/waveCount" type="other">
+      <obj_property name="ElementShortName">waveCount</obj_property>
+      <obj_property name="ObjectShortName">waveCount</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Transmitter/PSF_I/ps_out_sampleAvailable" type="logic">
+      <obj_property name="ElementShortName">ps_out_sampleAvailable</obj_property>
+      <obj_property name="ObjectShortName">ps_out_sampleAvailable</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Transmitter/PSF_I/ps_out_sample" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">ps_out_sample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ps_out_sample[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="label">ps_out_I[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Receiver/QPSK_Demodulator/demod_out_iSample" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">demod_out_iSample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">demod_out_iSample[15:0]</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="label">demod_out_I[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Receiver/MF_I/yOut" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">yOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">yOut[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="label">MF_out_I[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Receiver/MF_I/mf_in_symbolClk" type="logic">
+      <obj_property name="ElementShortName">mf_in_symbolClk</obj_property>
+      <obj_property name="ObjectShortName">mf_in_symbolClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Transmitter/PSF_Q/ps_out_sample" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">ps_out_sample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ps_out_sample[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="label">ps_out_Q[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Receiver/QPSK_Demodulator/demod_out_qSample" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">demod_out_qSample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">demod_out_qSample[15:0]</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="label">demod_out_Q[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Receiver/MF_Q/yOut" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">yOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">yOut[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="label">mf_out_Q[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Transmitter/QPSK_Modulator/qpskSignal" type="array">
+      <obj_property name="ElementShortName">qpskSignal[29:0]</obj_property>
+      <obj_property name="ObjectShortName">qpskSignal[29:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/symbolClk" type="logic">
+      <obj_property name="ElementShortName">symbolClk</obj_property>
+      <obj_property name="ObjectShortName">symbolClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Receiver/MF_I/mf_out_serialBit" type="logic">
+      <obj_property name="ElementShortName">mf_out_serialBit</obj_property>
+      <obj_property name="ObjectShortName">mf_out_serialBit</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Receiver/QPSK_Demodulator/waveCount" type="other">
+      <obj_property name="ElementShortName">waveCount</obj_property>
+      <obj_property name="ObjectShortName">waveCount</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab2_tb/uut/Transmitter/PSF_I/sampleAvailable" type="logic">
+      <obj_property name="ElementShortName">sampleAvailable</obj_property>
+      <obj_property name="ObjectShortName">sampleAvailable</obj_property>
+   </wvobject>
+</wave_config>

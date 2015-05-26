@@ -1,0 +1,5 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/sources_1/imports/new/IQSerializer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity IQSerializer
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/Serializer_test/new/Serializer_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Serializer_tb

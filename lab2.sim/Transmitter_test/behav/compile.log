@@ -1,0 +1,32 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/sources_1/imports/new/NullReadListener.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NullReadListener
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/sources_1/imports/new/FifoBuffer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FifoBuffer
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/sources_1/imports/new/BufferController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BufferController
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/sources_1/imports/new/BufferAddrCounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BufferAddrCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/sources_1/imports/new/BufControllerEOLListener.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BufControllerEOLListener
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/sources_1/imports/new/CharBufferModule.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CharBufferModule
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/sources_1/imports/Lab1/SerialTx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SerialTx
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/sources_1/imports/Lab1/SerialRx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SerialRx
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/sources_1/imports/Lab1/mux7seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux7seg
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/sources_1/imports/new/IQDeserializer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity IQDeserializer
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/sources_1/new/CharToIQ.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CharToIQ
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/sources_1/new/ModemTx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ModemTx
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/sources_1/new/ModemRx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ModemRx
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/sources_1/new/lab2top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2top
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/sources_1/imports/new/IQSerializer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity IQSerializer
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab2/lab2.srcs/Transmitter_test/new/Transmitter_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Transmitter_tb

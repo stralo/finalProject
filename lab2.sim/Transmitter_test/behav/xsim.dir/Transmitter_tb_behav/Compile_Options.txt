@@ -1,0 +1,1 @@
+-wto "3fc4a5d3650a498bba6b448194a25c23" --debug "typical" --relax -L "xil_defaultlib" -L "secureip" --snapshot "Transmitter_tb_behav" "xil_defaultlib.Transmitter_tb" -log "elaborate.log" 

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="psf_mf_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="psf_mf_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/dataAvailable" type="logic">
+      <obj_property name="ElementShortName">dataAvailable</obj_property>
+      <obj_property name="ObjectShortName">dataAvailable</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/data" type="array">
+      <obj_property name="ElementShortName">data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/psfOutputSample" type="array">
+      <obj_property name="ElementShortName">psfOutputSample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">psfOutputSample[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/uut/PSF/ps_in_data" type="array">
+      <obj_property name="ElementShortName">ps_in_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ps_in_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/uut/PSF/ps_out_readyForData" type="logic">
+      <obj_property name="ElementShortName">ps_out_readyForData</obj_property>
+      <obj_property name="ObjectShortName">ps_out_readyForData</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/uut/PSF/ps_out_sampleAvailable" type="logic">
+      <obj_property name="ElementShortName">ps_out_sampleAvailable</obj_property>
+      <obj_property name="ObjectShortName">ps_out_sampleAvailable</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/uut/PSF/ps_out_sample" type="array">
+      <obj_property name="ElementShortName">ps_out_sample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ps_out_sample[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/uut/MF/binaryPoint31" type="array">
+      <obj_property name="ElementShortName">binaryPoint31[15:0]</obj_property>
+      <obj_property name="ObjectShortName">binaryPoint31[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/uut/PSF/sampleAvailable" type="logic">
+      <obj_property name="ElementShortName">sampleAvailable</obj_property>
+      <obj_property name="ObjectShortName">sampleAvailable</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/uut/PSF/rawSample" type="array">
+      <obj_property name="ElementShortName">rawSample[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rawSample[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/uut/MF/mf_in_sample" type="array">
+      <obj_property name="ElementShortName">mf_in_sample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mf_in_sample[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/uut/MF/mf_in_sampleClk" type="logic">
+      <obj_property name="ElementShortName">mf_in_sampleClk</obj_property>
+      <obj_property name="ObjectShortName">mf_in_sampleClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/uut/MF/accum" type="array">
+      <obj_property name="ElementShortName">accum[49:0]</obj_property>
+      <obj_property name="ObjectShortName">accum[49:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/uut/MF/yOut" type="array">
+      <obj_property name="ElementShortName">yOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">yOut[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_FIXED</obj_property>
+      <obj_property name="AnalogYRangeMin">206356</obj_property>
+      <obj_property name="AnalogYRRangeMax">244002</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/uut/MF/curr_state" type="other">
+      <obj_property name="ElementShortName">curr_state</obj_property>
+      <obj_property name="ObjectShortName">curr_state</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/mfBit" type="logic">
+      <obj_property name="ElementShortName">mfBit</obj_property>
+      <obj_property name="ObjectShortName">mfBit</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/uut/MF/mf_out_symbolClk" type="logic">
+      <obj_property name="ElementShortName">mf_out_symbolClk</obj_property>
+      <obj_property name="ObjectShortName">mf_out_symbolClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/uut/MF/mf_out_serialBit" type="logic">
+      <obj_property name="ElementShortName">mf_out_serialBit</obj_property>
+      <obj_property name="ObjectShortName">mf_out_serialBit</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/uut/MF/symbolClk" type="logic">
+      <obj_property name="ElementShortName">symbolClk</obj_property>
+      <obj_property name="ObjectShortName">symbolClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/psf_mf_tb/uut/MF/binaryPoint32" type="array">
+      <obj_property name="ElementShortName">binaryPoint32[15:0]</obj_property>
+      <obj_property name="ObjectShortName">binaryPoint32[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+</wave_config>

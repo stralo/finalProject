@@ -1,0 +1,4 @@
+Running: xsim.dir/MatchFilter_tb2_behav/xsimk.exe -simmode gui -wdb MatchFilter_tb2_behav.wdb -simrunnum 0 -socket 58410
+Design successfully loaded
+Design Loading Memory Usage: 18672 KB (Peak: 18672 KB)
+Design Loading CPU Usage: 280 ms

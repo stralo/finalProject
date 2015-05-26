@@ -1,0 +1,7 @@
+Running: xsim.dir/psf_mf_tb_behav/xsimk.exe -simmode gui -wdb psf_mf_tb_behav.wdb -simrunnum 0 -socket 56495
+Design successfully loaded
+Design Loading Memory Usage: 19756 KB (Peak: 19756 KB)
+Design Loading CPU Usage: 217 ms
+Simulation completed
+Simulation Memory Usage: 24056 KB (Peak: 24056 KB)
+Simulation CPU Usage: 1849921 ms

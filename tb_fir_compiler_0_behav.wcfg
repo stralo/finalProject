@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_fir_compiler_0_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_fir_compiler_0" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject db_ref_id="1" fp_name="/tb_fir_compiler_0/aclk" type="logic">
+      <obj_property name="ElementShortName">aclk</obj_property>
+      <obj_property name="ObjectShortName">aclk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_fir_compiler_0/s_axis_data_tready" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_fir_compiler_0/s_axis_data_tdata" type="array">
+      <obj_property name="ElementShortName">s_axis_data_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_fir_compiler_0/s_axis_data_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_fir_compiler_0/m_axis_data_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_fir_compiler_0/m_axis_data_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">29</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_fir_compiler_0/s_axis_data_tdata_data" type="array">
+      <obj_property name="ElementShortName">s_axis_data_tdata_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tdata_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_fir_compiler_0/m_axis_data_tdata_data" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata_data[29:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_data[29:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

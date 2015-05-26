@@ -1,0 +1,68 @@
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/v2014.4/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 3fc4a5d3650a498bba6b448194a25c23 --debug typical --relax -L blk_mem_gen_v8_2 -L xil_defaultlib -L xbip_dsp48_wrapper_v3_0 -L xbip_utils_v3_0 -L xbip_pipe_v3_0 -L xbip_dsp48_macro_v3_0 -L axi_utils_v2_0 -L fir_compiler_v7_2 -L secureip --snapshot MyFIR_tb_behav xil_defaultlib.MyFIR_tb -log elaborate.log 
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0.xbip_utils_v3_0_pkg
+Compiling package fir_compiler_v7_2.fir_compiler_v7_2_viv_comp
+Compiling package ieee.std_logic_textio
+Compiling package fir_compiler_v7_2.globals_pkg
+Compiling package fir_compiler_v7_2.components
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,1,3,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(1,"artix7",0,1,3,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(3,"artix7",0,1,3,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.sp_mem [\sp_mem("artix7",(0,1,false,-214...]
+Compiling architecture synth of entity fir_compiler_v7_2.filt_mem [\filt_mem("artix7",((data,0,(0,1...]
+Compiling architecture synth of entity fir_compiler_v7_2.sp_mem [\sp_mem("artix7",(2,1,true,0,17,...]
+Compiling architecture synth of entity fir_compiler_v7_2.filt_mem [\filt_mem("artix7",((coef,0,(2,1...]
+Compiling architecture synth of entity fir_compiler_v7_2.cntrl_delay [\cntrl_delay(0,3,true,12,0,wrap_...]
+Compiling architecture synth of entity fir_compiler_v7_2.cntrl_delay [\cntrl_delay(0,3,true,0,0,wrap_b...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(2,"artix7",0,16,1,0,0,fal...]
+Compiling architecture synth of entity fir_compiler_v7_2.buff [\buff("artix7",2,0,false,true,fa...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,7,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,1,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,48,0,0,0,fal...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,2,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,16,1,0,0,fal...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,17,1,0,0,fal...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(1,1,1,1,"NO_RESET","DIR...]
+Compiling architecture synth of entity fir_compiler_v7_2.calc [\calc("artix7",(1,3,0,0,0,0,0,0,...]
+Compiling architecture synth of entity fir_compiler_v7_2.addsub_mult_add [\addsub_mult_add("artix7",0,0,31...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,31,1,0,0,fal...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,32,1,0,0,fal...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(1,0,1,1,"NO_RESET","DIR...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,18,1,0,0,fal...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,30,1,0,0,fal...]
+Compiling architecture synth of entity fir_compiler_v7_2.calc [\calc("artix7",(0,2,0,0,0,0,0,0,...]
+Compiling architecture synth of entity fir_compiler_v7_2.add_accum [\add_accum("artix7",31,32,31,(tr...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(7,"artix7",0,1,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(2,"artix7",0,1,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(1,"artix7",0,3,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(1,"artix7",0,16,1,0,0,fal...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,3,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(1,"artix7",0,7,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,6,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,1,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(5,"artix7",0,1,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(4,"artix7",0,1,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.dpr_mem [\dpr_mem("artix7",(2,1,false,0,1...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(1,"artix7",0,1,0,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.polyphase_interpolation [\polyphase_interpolation("artix7...]
+Compiling architecture synth of entity fir_compiler_v7_2.fir_compiler_v7_2_viv [\fir_compiler_v7_2_viv("artix7",...]
+Compiling architecture xilinx of entity fir_compiler_v7_2.fir_compiler_v7_2 [\fir_compiler_v7_2("artix7","./"...]
+Compiling architecture fir_compiler_0_arch of entity xil_defaultlib.fir_compiler_0 [fir_compiler_0_default]
+Compiling architecture tb of entity xil_defaultlib.myfir_tb
+Built simulation snapshot MyFIR_tb_behav

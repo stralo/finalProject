@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="MatchedFilter_OutBit_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="MatchedFilter_OutBit_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject db_ref_id="1" fp_name="/MatchedFilter_OutBit_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchedFilter_OutBit_tb/inSample" type="array">
+      <obj_property name="ElementShortName">inSample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">inSample[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchedFilter_OutBit_tb/sampleClk" type="logic">
+      <obj_property name="ElementShortName">sampleClk</obj_property>
+      <obj_property name="ObjectShortName">sampleClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchedFilter_OutBit_tb/outBit" type="array">
+      <obj_property name="ElementShortName">outBit[15:0]</obj_property>
+      <obj_property name="ObjectShortName">outBit[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchedFilter_OutBit_tb/bitVal" type="logic">
+      <obj_property name="ElementShortName">bitVal</obj_property>
+      <obj_property name="ObjectShortName">bitVal</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchedFilter_OutBit_tb/uut/symbolClk" type="logic">
+      <obj_property name="ElementShortName">symbolClk</obj_property>
+      <obj_property name="ObjectShortName">symbolClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchedFilter_OutBit_tb/tx_trig_cnt" type="array">
+      <obj_property name="ElementShortName">tx_trig_cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_trig_cnt[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchedFilter_OutBit_tb/unitSampleSent" type="logic">
+      <obj_property name="ElementShortName">unitSampleSent</obj_property>
+      <obj_property name="ObjectShortName">unitSampleSent</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchedFilter_OutBit_tb/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchedFilter_OutBit_tb/bit_time" type="other">
+      <obj_property name="ElementShortName">bit_time</obj_property>
+      <obj_property name="ObjectShortName">bit_time</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchedFilter_OutBit_tb/CLOCK_FREQUENCY" type="other">
+      <obj_property name="ElementShortName">CLOCK_FREQUENCY</obj_property>
+      <obj_property name="ObjectShortName">CLOCK_FREQUENCY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchedFilter_OutBit_tb/SAMPLE_RATE" type="other">
+      <obj_property name="ElementShortName">SAMPLE_RATE</obj_property>
+      <obj_property name="ObjectShortName">SAMPLE_RATE</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchedFilter_OutBit_tb/RATE" type="other">
+      <obj_property name="ElementShortName">RATE</obj_property>
+      <obj_property name="ObjectShortName">RATE</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchedFilter_OutBit_tb/TICK_CTR_WIDTH" type="other">
+      <obj_property name="ElementShortName">TICK_CTR_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">TICK_CTR_WIDTH</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchedFilter_OutBit_tb/uut/yOut" type="array">
+      <obj_property name="ElementShortName">yOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">yOut[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_FIXED</obj_property>
+      <obj_property name="AnalogYRangeMin">19521.1</obj_property>
+      <obj_property name="AnalogYRRangeMax">52287.6</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchedFilter_OutBit_tb/uut/accum" type="array">
+      <obj_property name="ElementShortName">accum[49:0]</obj_property>
+      <obj_property name="ObjectShortName">accum[49:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">31</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/MatchedFilter_OutBit_tb/uut/yOut" type="array">
+      <obj_property name="ElementShortName">yOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">yOut[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_FIXED</obj_property>
+      <obj_property name="AnalogYRangeMin">12014</obj_property>
+      <obj_property name="AnalogYRRangeMax">24690</obj_property>
+   </wvobject>
+</wave_config>

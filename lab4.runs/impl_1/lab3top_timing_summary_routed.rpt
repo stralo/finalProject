@@ -1,0 +1,1359 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date              : Mon May 04 01:37:16 2015
+| Host              : M210-09 running 64-bit Service Pack 1  (build 7601)
+| Command           : report_timing_summary -warn_on_violation -max_paths 10 -file lab3top_timing_summary_routed.rpt -rpx lab3top_timing_summary_routed.rpx
+| Design            : lab3top
+| Device            : 7a35t-cpg236
+| Speed File        : -1  PRODUCTION 1.14 2014-09-11
+| Temperature Grade : C
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking unexpandable_clocks
+13. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 8 register/latch pins with no clock driven by root clock pin: Receiver/IQToChar/current_state_reg[0]/C (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: Receiver/IQToChar/current_state_reg[1]/C (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: Receiver/MF_I/curr_state_reg[0]/C (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: Receiver/MF_I/curr_state_reg[1]/C (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: Receiver/MF_I/curr_state_reg[2]/C (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: Receiver/MF_I/numMultiplications_reg[7]/C (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: Receiver/MF_Q/curr_state_reg[0]/C (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: Receiver/MF_Q/curr_state_reg[1]/C (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: Receiver/MF_Q/curr_state_reg[2]/C (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: Receiver/MF_Q/numMultiplications_reg[7]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: Transmitter/CharacterToIQ/Serializer/current_state_reg[0]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: Transmitter/CharacterToIQ/Serializer/current_state_reg[1]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: Transmitter/CharacterToIQ/Serializer/current_state_reg[2]/C (HIGH)
+
+ There are 179 register/latch pins with no clock driven by root clock pin: Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: symbolClk_reg/C (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 238 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There is 1 input port with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 12 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking unexpandable_clocks
+--------------------------------
+ There are 0 unexpandable clock pairs.
+
+
+13. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      3.100        0.000                      0                 3962        0.041        0.000                      0                 3962        3.750        0.000                       0                  1410  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)       Period(ns)      Frequency(MHz)
+-----        ------------       ----------      --------------
+sys_clk_pin  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin         3.100        0.000                      0                 3962        0.041        0.000                      0                 3962        3.750        0.000                       0                  1410  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :            0  Failing Endpoints,  Worst Slack        3.100ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.041ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.750ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             3.100ns  (required time - arrival time)
+  Source:                 Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Receiver/CarriageRecoveryLoop/ph_accum_reg/CEP
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        6.309ns  (logic 0.642ns (10.176%)  route 5.667ns (89.824%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.870ns = ( 14.870 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.089ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.568     5.089    Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/aclk
+    SLICE_X54Y11                                                      r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y11         FDRE (Prop_fdre_C_Q)         0.518     5.607 r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/Q
+                         net (fo=181, routed)         1.255     6.862    Transmitter/PSF_I/ps_out_sampleAvailable
+    SLICE_X54Y11         LUT2 (Prop_lut2_I0_O)        0.124     6.986 r  Transmitter/PSF_I/shiftRegister_reg[128][0]_srl32_i_1/O
+                         net (fo=334, routed)         4.412    11.398    Receiver/CarriageRecoveryLoop/modemRx_in_sampleClk
+    DSP48_X0Y11          DSP48E1                                      r  Receiver/CarriageRecoveryLoop/ph_accum_reg/CEP
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.529    14.870    Receiver/CarriageRecoveryLoop/clk_IBUF_BUFG
+    DSP48_X0Y11                                                       r  Receiver/CarriageRecoveryLoop/ph_accum_reg/CLK
+                         clock pessimism              0.188    15.058    
+                         clock uncertainty           -0.035    15.022    
+    DSP48_X0Y11          DSP48E1 (Setup_dsp48e1_CLK_CEP)
+                                                     -0.524    14.498    Receiver/CarriageRecoveryLoop/ph_accum_reg
+  -------------------------------------------------------------------
+                         required time                         14.498    
+                         arrival time                         -11.398    
+  -------------------------------------------------------------------
+                         slack                                  3.100    
+
+Slack (MET) :             3.322ns  (required time - arrival time)
+  Source:                 Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Receiver/MF_Q/shiftRegister_reg[128][6]_srl32/CE
+                            (rising edge-triggered cell SRLC32E clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        6.016ns  (logic 0.642ns (10.672%)  route 5.374ns (89.328%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        -0.110ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.791ns = ( 14.791 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.089ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.568     5.089    Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/aclk
+    SLICE_X54Y11                                                      r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y11         FDRE (Prop_fdre_C_Q)         0.518     5.607 r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/Q
+                         net (fo=181, routed)         1.255     6.862    Transmitter/PSF_I/ps_out_sampleAvailable
+    SLICE_X54Y11         LUT2 (Prop_lut2_I0_O)        0.124     6.986 r  Transmitter/PSF_I/shiftRegister_reg[128][0]_srl32_i_1/O
+                         net (fo=334, routed)         4.119    11.105    Receiver/MF_Q/modemRx_in_sampleClk
+    SLICE_X14Y5          SRLC32E                                      r  Receiver/MF_Q/shiftRegister_reg[128][6]_srl32/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.450    14.791    Receiver/MF_Q/clk_IBUF_BUFG
+    SLICE_X14Y5                                                       r  Receiver/MF_Q/shiftRegister_reg[128][6]_srl32/CLK
+                         clock pessimism              0.188    14.979    
+                         clock uncertainty           -0.035    14.944    
+    SLICE_X14Y5          SRLC32E (Setup_srlc32e_CLK_CE)
+                                                     -0.517    14.427    Receiver/MF_Q/shiftRegister_reg[128][6]_srl32
+  -------------------------------------------------------------------
+                         required time                         14.427    
+                         arrival time                         -11.105    
+  -------------------------------------------------------------------
+                         slack                                  3.322    
+
+Slack (MET) :             3.322ns  (required time - arrival time)
+  Source:                 Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Receiver/MF_Q/shiftRegister_reg[128][6]_srl32__0/CE
+                            (rising edge-triggered cell SRLC32E clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        6.016ns  (logic 0.642ns (10.672%)  route 5.374ns (89.328%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        -0.110ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.791ns = ( 14.791 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.089ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.568     5.089    Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/aclk
+    SLICE_X54Y11                                                      r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y11         FDRE (Prop_fdre_C_Q)         0.518     5.607 r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/Q
+                         net (fo=181, routed)         1.255     6.862    Transmitter/PSF_I/ps_out_sampleAvailable
+    SLICE_X54Y11         LUT2 (Prop_lut2_I0_O)        0.124     6.986 r  Transmitter/PSF_I/shiftRegister_reg[128][0]_srl32_i_1/O
+                         net (fo=334, routed)         4.119    11.105    Receiver/MF_Q/modemRx_in_sampleClk
+    SLICE_X14Y5          SRLC32E                                      r  Receiver/MF_Q/shiftRegister_reg[128][6]_srl32__0/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.450    14.791    Receiver/MF_Q/clk_IBUF_BUFG
+    SLICE_X14Y5                                                       r  Receiver/MF_Q/shiftRegister_reg[128][6]_srl32__0/CLK
+                         clock pessimism              0.188    14.979    
+                         clock uncertainty           -0.035    14.944    
+    SLICE_X14Y5          SRLC32E (Setup_srlc32e_CLK_CE)
+                                                     -0.517    14.427    Receiver/MF_Q/shiftRegister_reg[128][6]_srl32__0
+  -------------------------------------------------------------------
+                         required time                         14.427    
+                         arrival time                         -11.105    
+  -------------------------------------------------------------------
+                         slack                                  3.322    
+
+Slack (MET) :             3.322ns  (required time - arrival time)
+  Source:                 Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Receiver/MF_Q/shiftRegister_reg[128][6]_srl32__1/CE
+                            (rising edge-triggered cell SRLC32E clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        6.016ns  (logic 0.642ns (10.672%)  route 5.374ns (89.328%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        -0.110ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.791ns = ( 14.791 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.089ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.568     5.089    Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/aclk
+    SLICE_X54Y11                                                      r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y11         FDRE (Prop_fdre_C_Q)         0.518     5.607 r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/Q
+                         net (fo=181, routed)         1.255     6.862    Transmitter/PSF_I/ps_out_sampleAvailable
+    SLICE_X54Y11         LUT2 (Prop_lut2_I0_O)        0.124     6.986 r  Transmitter/PSF_I/shiftRegister_reg[128][0]_srl32_i_1/O
+                         net (fo=334, routed)         4.119    11.105    Receiver/MF_Q/modemRx_in_sampleClk
+    SLICE_X14Y5          SRLC32E                                      r  Receiver/MF_Q/shiftRegister_reg[128][6]_srl32__1/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.450    14.791    Receiver/MF_Q/clk_IBUF_BUFG
+    SLICE_X14Y5                                                       r  Receiver/MF_Q/shiftRegister_reg[128][6]_srl32__1/CLK
+                         clock pessimism              0.188    14.979    
+                         clock uncertainty           -0.035    14.944    
+    SLICE_X14Y5          SRLC32E (Setup_srlc32e_CLK_CE)
+                                                     -0.517    14.427    Receiver/MF_Q/shiftRegister_reg[128][6]_srl32__1
+  -------------------------------------------------------------------
+                         required time                         14.427    
+                         arrival time                         -11.105    
+  -------------------------------------------------------------------
+                         slack                                  3.322    
+
+Slack (MET) :             3.322ns  (required time - arrival time)
+  Source:                 Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Receiver/MF_Q/shiftRegister_reg[128][6]_srl32__2/CE
+                            (rising edge-triggered cell SRLC32E clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        6.016ns  (logic 0.642ns (10.672%)  route 5.374ns (89.328%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        -0.110ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.791ns = ( 14.791 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.089ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.568     5.089    Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/aclk
+    SLICE_X54Y11                                                      r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y11         FDRE (Prop_fdre_C_Q)         0.518     5.607 r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/Q
+                         net (fo=181, routed)         1.255     6.862    Transmitter/PSF_I/ps_out_sampleAvailable
+    SLICE_X54Y11         LUT2 (Prop_lut2_I0_O)        0.124     6.986 r  Transmitter/PSF_I/shiftRegister_reg[128][0]_srl32_i_1/O
+                         net (fo=334, routed)         4.119    11.105    Receiver/MF_Q/modemRx_in_sampleClk
+    SLICE_X14Y5          SRLC32E                                      r  Receiver/MF_Q/shiftRegister_reg[128][6]_srl32__2/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.450    14.791    Receiver/MF_Q/clk_IBUF_BUFG
+    SLICE_X14Y5                                                       r  Receiver/MF_Q/shiftRegister_reg[128][6]_srl32__2/CLK
+                         clock pessimism              0.188    14.979    
+                         clock uncertainty           -0.035    14.944    
+    SLICE_X14Y5          SRLC32E (Setup_srlc32e_CLK_CE)
+                                                     -0.517    14.427    Receiver/MF_Q/shiftRegister_reg[128][6]_srl32__2
+  -------------------------------------------------------------------
+                         required time                         14.427    
+                         arrival time                         -11.105    
+  -------------------------------------------------------------------
+                         slack                                  3.322    
+
+Slack (MET) :             3.363ns  (required time - arrival time)
+  Source:                 Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Receiver/CarriageRecoveryLoop/ph_accum0/RSTA
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        6.060ns  (logic 0.766ns (12.639%)  route 5.294ns (87.361%))
+  Logic Levels:           2  (LUT2=1 LUT5=1)
+  Clock Path Skew:        -0.034ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.867ns = ( 14.867 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.089ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.568     5.089    Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/aclk
+    SLICE_X54Y11                                                      r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y11         FDRE (Prop_fdre_C_Q)         0.518     5.607 r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/Q
+                         net (fo=181, routed)         1.255     6.862    Transmitter/PSF_I/ps_out_sampleAvailable
+    SLICE_X54Y11         LUT2 (Prop_lut2_I0_O)        0.124     6.986 r  Transmitter/PSF_I/shiftRegister_reg[128][0]_srl32_i_1/O
+                         net (fo=334, routed)         2.920     9.907    Receiver/CarriageRecoveryLoop/modemRx_in_sampleClk
+    SLICE_X14Y13         LUT5 (Prop_lut5_I4_O)        0.124    10.031 r  Receiver/CarriageRecoveryLoop/x2_ploop_reg_i_1/O
+                         net (fo=2, routed)           1.119    11.150    Receiver/CarriageRecoveryLoop/n_0_x2_ploop_reg_i_1
+    DSP48_X0Y10          DSP48E1                                      r  Receiver/CarriageRecoveryLoop/ph_accum0/RSTA
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.526    14.867    Receiver/CarriageRecoveryLoop/clk_IBUF_BUFG
+    DSP48_X0Y10                                                       r  Receiver/CarriageRecoveryLoop/ph_accum0/CLK
+                         clock pessimism              0.188    15.055    
+                         clock uncertainty           -0.035    15.019    
+    DSP48_X0Y10          DSP48E1 (Setup_dsp48e1_CLK_RSTA)
+                                                     -0.507    14.512    Receiver/CarriageRecoveryLoop/ph_accum0
+  -------------------------------------------------------------------
+                         required time                         14.512    
+                         arrival time                         -11.150    
+  -------------------------------------------------------------------
+                         slack                                  3.363    
+
+Slack (MET) :             3.397ns  (required time - arrival time)
+  Source:                 Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Receiver/CarriageRecoveryLoop/x2_ploop_reg/RSTA
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        6.026ns  (logic 0.766ns (12.712%)  route 5.260ns (87.288%))
+  Logic Levels:           2  (LUT2=1 LUT5=1)
+  Clock Path Skew:        -0.034ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.867ns = ( 14.867 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.089ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.568     5.089    Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/aclk
+    SLICE_X54Y11                                                      r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y11         FDRE (Prop_fdre_C_Q)         0.518     5.607 r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/Q
+                         net (fo=181, routed)         1.255     6.862    Transmitter/PSF_I/ps_out_sampleAvailable
+    SLICE_X54Y11         LUT2 (Prop_lut2_I0_O)        0.124     6.986 r  Transmitter/PSF_I/shiftRegister_reg[128][0]_srl32_i_1/O
+                         net (fo=334, routed)         2.920     9.907    Receiver/CarriageRecoveryLoop/modemRx_in_sampleClk
+    SLICE_X14Y13         LUT5 (Prop_lut5_I4_O)        0.124    10.031 r  Receiver/CarriageRecoveryLoop/x2_ploop_reg_i_1/O
+                         net (fo=2, routed)           1.085    11.115    Receiver/CarriageRecoveryLoop/n_0_x2_ploop_reg_i_1
+    DSP48_X0Y9           DSP48E1                                      r  Receiver/CarriageRecoveryLoop/x2_ploop_reg/RSTA
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.526    14.867    Receiver/CarriageRecoveryLoop/clk_IBUF_BUFG
+    DSP48_X0Y9                                                        r  Receiver/CarriageRecoveryLoop/x2_ploop_reg/CLK
+                         clock pessimism              0.188    15.055    
+                         clock uncertainty           -0.035    15.019    
+    DSP48_X0Y9           DSP48E1 (Setup_dsp48e1_CLK_RSTA)
+                                                     -0.507    14.512    Receiver/CarriageRecoveryLoop/x2_ploop_reg
+  -------------------------------------------------------------------
+                         required time                         14.512    
+                         arrival time                         -11.115    
+  -------------------------------------------------------------------
+                         slack                                  3.397    
+
+Slack (MET) :             3.412ns  (required time - arrival time)
+  Source:                 Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Receiver/MF_Q/shiftRegister_reg[128][11]_srl32/CE
+                            (rising edge-triggered cell SRLC32E clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.927ns  (logic 0.642ns (10.832%)  route 5.285ns (89.168%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        -0.109ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.792ns = ( 14.792 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.089ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.568     5.089    Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/aclk
+    SLICE_X54Y11                                                      r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y11         FDRE (Prop_fdre_C_Q)         0.518     5.607 r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/Q
+                         net (fo=181, routed)         1.255     6.862    Transmitter/PSF_I/ps_out_sampleAvailable
+    SLICE_X54Y11         LUT2 (Prop_lut2_I0_O)        0.124     6.986 r  Transmitter/PSF_I/shiftRegister_reg[128][0]_srl32_i_1/O
+                         net (fo=334, routed)         4.030    11.016    Receiver/MF_Q/modemRx_in_sampleClk
+    SLICE_X10Y5          SRLC32E                                      r  Receiver/MF_Q/shiftRegister_reg[128][11]_srl32/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.451    14.792    Receiver/MF_Q/clk_IBUF_BUFG
+    SLICE_X10Y5                                                       r  Receiver/MF_Q/shiftRegister_reg[128][11]_srl32/CLK
+                         clock pessimism              0.188    14.980    
+                         clock uncertainty           -0.035    14.945    
+    SLICE_X10Y5          SRLC32E (Setup_srlc32e_CLK_CE)
+                                                     -0.517    14.428    Receiver/MF_Q/shiftRegister_reg[128][11]_srl32
+  -------------------------------------------------------------------
+                         required time                         14.428    
+                         arrival time                         -11.016    
+  -------------------------------------------------------------------
+                         slack                                  3.412    
+
+Slack (MET) :             3.412ns  (required time - arrival time)
+  Source:                 Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Receiver/MF_Q/shiftRegister_reg[128][11]_srl32__0/CE
+                            (rising edge-triggered cell SRLC32E clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.927ns  (logic 0.642ns (10.832%)  route 5.285ns (89.168%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        -0.109ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.792ns = ( 14.792 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.089ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.568     5.089    Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/aclk
+    SLICE_X54Y11                                                      r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y11         FDRE (Prop_fdre_C_Q)         0.518     5.607 r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/Q
+                         net (fo=181, routed)         1.255     6.862    Transmitter/PSF_I/ps_out_sampleAvailable
+    SLICE_X54Y11         LUT2 (Prop_lut2_I0_O)        0.124     6.986 r  Transmitter/PSF_I/shiftRegister_reg[128][0]_srl32_i_1/O
+                         net (fo=334, routed)         4.030    11.016    Receiver/MF_Q/modemRx_in_sampleClk
+    SLICE_X10Y5          SRLC32E                                      r  Receiver/MF_Q/shiftRegister_reg[128][11]_srl32__0/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.451    14.792    Receiver/MF_Q/clk_IBUF_BUFG
+    SLICE_X10Y5                                                       r  Receiver/MF_Q/shiftRegister_reg[128][11]_srl32__0/CLK
+                         clock pessimism              0.188    14.980    
+                         clock uncertainty           -0.035    14.945    
+    SLICE_X10Y5          SRLC32E (Setup_srlc32e_CLK_CE)
+                                                     -0.517    14.428    Receiver/MF_Q/shiftRegister_reg[128][11]_srl32__0
+  -------------------------------------------------------------------
+                         required time                         14.428    
+                         arrival time                         -11.016    
+  -------------------------------------------------------------------
+                         slack                                  3.412    
+
+Slack (MET) :             3.412ns  (required time - arrival time)
+  Source:                 Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Receiver/MF_Q/shiftRegister_reg[128][11]_srl32__1/CE
+                            (rising edge-triggered cell SRLC32E clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.927ns  (logic 0.642ns (10.832%)  route 5.285ns (89.168%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        -0.109ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.792ns = ( 14.792 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.089ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.568     5.089    Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/aclk
+    SLICE_X54Y11                                                      r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y11         FDRE (Prop_fdre_C_Q)         0.518     5.607 r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg/Q
+                         net (fo=181, routed)         1.255     6.862    Transmitter/PSF_I/ps_out_sampleAvailable
+    SLICE_X54Y11         LUT2 (Prop_lut2_I0_O)        0.124     6.986 r  Transmitter/PSF_I/shiftRegister_reg[128][0]_srl32_i_1/O
+                         net (fo=334, routed)         4.030    11.016    Receiver/MF_Q/modemRx_in_sampleClk
+    SLICE_X10Y5          SRLC32E                                      r  Receiver/MF_Q/shiftRegister_reg[128][11]_srl32__1/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        1.451    14.792    Receiver/MF_Q/clk_IBUF_BUFG
+    SLICE_X10Y5                                                       r  Receiver/MF_Q/shiftRegister_reg[128][11]_srl32__1/CLK
+                         clock pessimism              0.188    14.980    
+                         clock uncertainty           -0.035    14.945    
+    SLICE_X10Y5          SRLC32E (Setup_srlc32e_CLK_CE)
+                                                     -0.517    14.428    Receiver/MF_Q/shiftRegister_reg[128][11]_srl32__1
+  -------------------------------------------------------------------
+                         required time                         14.428    
+                         arrival time                         -11.016    
+  -------------------------------------------------------------------
+                         slack                                  3.412    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.041ns  (arrival time - required time)
+  Source:                 Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_srl16.gen_mem.mem_reg[7][15]_srl8/D
+                            (rising edge-triggered cell SRL16E clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.258ns  (logic 0.141ns (54.686%)  route 0.117ns (45.314%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.034ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.949ns
+    Source Clock Delay      (SCD):    1.437ns
+    Clock Pessimism Removal (CPR):    0.478ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.554     1.437    Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_data_in/aclk
+    SLICE_X55Y26                                                      r  Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y26         FDRE (Prop_fdre_C_Q)         0.141     1.578 r  Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[15]/Q
+                         net (fo=1, routed)           0.117     1.695    Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/DATA_IN[15]
+    SLICE_X56Y26         SRL16E                                       r  Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_srl16.gen_mem.mem_reg[7][15]_srl8/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.822     1.949    Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/CLK
+    SLICE_X56Y26                                                      r  Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_srl16.gen_mem.mem_reg[7][15]_srl8/CLK
+                         clock pessimism             -0.478     1.471    
+    SLICE_X56Y26         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.183     1.654    Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_srl16.gen_mem.mem_reg[7][15]_srl8
+  -------------------------------------------------------------------
+                         required time                         -1.654    
+                         arrival time                           1.695    
+  -------------------------------------------------------------------
+                         slack                                  0.041    
+
+Slack (MET) :             0.056ns  (arrival time - required time)
+  Source:                 Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][7]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_srl16.gen_mem.mem_reg[7][7]_srl8/D
+                            (rising edge-triggered cell SRL16E clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.273ns  (logic 0.141ns (51.655%)  route 0.132ns (48.345%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.034ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.949ns
+    Source Clock Delay      (SCD):    1.437ns
+    Clock Pessimism Removal (CPR):    0.478ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.554     1.437    Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/aclk
+    SLICE_X53Y26                                                      r  Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X53Y26         FDRE (Prop_fdre_C_Q)         0.141     1.578 r  Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][7]/Q
+                         net (fo=1, routed)           0.132     1.710    Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/DATA_IN[7]
+    SLICE_X54Y26         SRL16E                                       r  Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_srl16.gen_mem.mem_reg[7][7]_srl8/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.822     1.949    Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/CLK
+    SLICE_X54Y26                                                      r  Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_srl16.gen_mem.mem_reg[7][7]_srl8/CLK
+                         clock pessimism             -0.478     1.471    
+    SLICE_X54Y26         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.183     1.654    Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_srl16.gen_mem.mem_reg[7][7]_srl8
+  -------------------------------------------------------------------
+                         required time                         -1.654    
+                         arrival time                           1.710    
+  -------------------------------------------------------------------
+                         slack                                  0.056    
+
+Slack (MET) :             0.078ns  (arrival time - required time)
+  Source:                 Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.first_phase_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_first_phase_dly/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]_srl4/D
+                            (rising edge-triggered cell SRL16E clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.208ns  (logic 0.141ns (67.788%)  route 0.067ns (32.212%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.953ns
+    Source Clock Delay      (SCD):    1.440ns
+    Clock Pessimism Removal (CPR):    0.500ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.557     1.440    Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/aclk
+    SLICE_X51Y29                                                      r  Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.first_phase_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y29         FDRE (Prop_fdre_C_Q)         0.141     1.581 r  Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.first_phase_reg/Q
+                         net (fo=2, routed)           0.067     1.648    Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_first_phase_dly/first_phase
+    SLICE_X50Y29         SRL16E                                       r  Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_first_phase_dly/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]_srl4/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.826     1.953    Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_first_phase_dly/aclk
+    SLICE_X50Y29                                                      r  Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_first_phase_dly/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]_srl4/CLK
+                         clock pessimism             -0.500     1.453    
+    SLICE_X50Y29         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.117     1.570    Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_first_phase_dly/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]_srl4
+  -------------------------------------------------------------------
+                         required time                         -1.570    
+                         arrival time                           1.648    
+  -------------------------------------------------------------------
+                         slack                                  0.078    
+
+Slack (MET) :             0.083ns  (arrival time - required time)
+  Source:                 Receiver/QPSK_Demodulator/rawQ_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Receiver/MF_Q/shiftRegister_reg[128][4]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.524ns  (logic 0.141ns (26.921%)  route 0.383ns (73.079%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.258ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.954ns
+    Source Clock Delay      (SCD):    1.447ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.564     1.447    Receiver/QPSK_Demodulator/clk_IBUF_BUFG
+    SLICE_X44Y5                                                       r  Receiver/QPSK_Demodulator/rawQ_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y5          FDRE (Prop_fdre_C_Q)         0.141     1.588 r  Receiver/QPSK_Demodulator/rawQ_reg[4]/Q
+                         net (fo=1, routed)           0.383     1.971    Receiver/MF_Q/in[4]
+    SLICE_X30Y13         SRLC32E                                      r  Receiver/MF_Q/shiftRegister_reg[128][4]_srl32/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.827     1.954    Receiver/MF_Q/clk_IBUF_BUFG
+    SLICE_X30Y13                                                      r  Receiver/MF_Q/shiftRegister_reg[128][4]_srl32/CLK
+                         clock pessimism             -0.249     1.705    
+    SLICE_X30Y13         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.183     1.888    Receiver/MF_Q/shiftRegister_reg[128][4]_srl32
+  -------------------------------------------------------------------
+                         required time                         -1.888    
+                         arrival time                           1.971    
+  -------------------------------------------------------------------
+                         slack                                  0.083    
+
+Slack (MET) :             0.084ns  (arrival time - required time)
+  Source:                 Receiver/QPSK_Demodulator/rawQ_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Receiver/MF_Q/shiftRegister_reg[128][8]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.524ns  (logic 0.141ns (26.896%)  route 0.383ns (73.104%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.257ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.951ns
+    Source Clock Delay      (SCD):    1.445ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.562     1.445    Receiver/QPSK_Demodulator/clk_IBUF_BUFG
+    SLICE_X43Y8                                                       r  Receiver/QPSK_Demodulator/rawQ_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y8          FDRE (Prop_fdre_C_Q)         0.141     1.586 r  Receiver/QPSK_Demodulator/rawQ_reg[8]/Q
+                         net (fo=1, routed)           0.383     1.969    Receiver/MF_Q/in[8]
+    SLICE_X30Y17         SRLC32E                                      r  Receiver/MF_Q/shiftRegister_reg[128][8]_srl32/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.824     1.951    Receiver/MF_Q/clk_IBUF_BUFG
+    SLICE_X30Y17                                                      r  Receiver/MF_Q/shiftRegister_reg[128][8]_srl32/CLK
+                         clock pessimism             -0.249     1.702    
+    SLICE_X30Y17         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.183     1.885    Receiver/MF_Q/shiftRegister_reg[128][8]_srl32
+  -------------------------------------------------------------------
+                         required time                         -1.885    
+                         arrival time                           1.969    
+  -------------------------------------------------------------------
+                         slack                                  0.084    
+
+Slack (MET) :             0.085ns  (arrival time - required time)
+  Source:                 Receiver/IQToChar/symb_dec_out_reg[0]_inv/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Receiver/IQToChar/shiftRegister_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.411ns  (logic 0.141ns (34.277%)  route 0.270ns (65.723%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.260ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.947ns
+    Source Clock Delay      (SCD):    1.438ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.555     1.438    Receiver/IQToChar/clk_IBUF_BUFG
+    SLICE_X31Y19                                                      r  Receiver/IQToChar/symb_dec_out_reg[0]_inv/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X31Y19         FDRE (Prop_fdre_C_Q)         0.141     1.579 r  Receiver/IQToChar/symb_dec_out_reg[0]_inv/Q
+                         net (fo=1, routed)           0.270     1.849    Receiver/IQToChar/p_1_out[1]
+    SLICE_X36Y21         FDRE                                         r  Receiver/IQToChar/shiftRegister_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.820     1.947    Receiver/IQToChar/clk_IBUF_BUFG
+    SLICE_X36Y21                                                      r  Receiver/IQToChar/shiftRegister_reg[1]/C
+                         clock pessimism             -0.249     1.698    
+    SLICE_X36Y21         FDRE (Hold_fdre_C_D)         0.066     1.764    Receiver/IQToChar/shiftRegister_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.764    
+                         arrival time                           1.849    
+  -------------------------------------------------------------------
+                         slack                                  0.085    
+
+Slack (MET) :             0.087ns  (arrival time - required time)
+  Source:                 Receiver/QPSK_Demodulator/rawI_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Receiver/MF_I/shiftRegister_reg[128][6]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.305ns  (logic 0.141ns (46.283%)  route 0.164ns (53.717%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.035ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.959ns
+    Source Clock Delay      (SCD):    1.446ns
+    Clock Pessimism Removal (CPR):    0.478ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.563     1.446    Receiver/QPSK_Demodulator/clk_IBUF_BUFG
+    SLICE_X43Y5                                                       r  Receiver/QPSK_Demodulator/rawI_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y5          FDRE (Prop_fdre_C_Q)         0.141     1.587 r  Receiver/QPSK_Demodulator/rawI_reg[6]/Q
+                         net (fo=1, routed)           0.164     1.751    Receiver/MF_I/in[6]
+    SLICE_X38Y6          SRLC32E                                      r  Receiver/MF_I/shiftRegister_reg[128][6]_srl32/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.832     1.959    Receiver/MF_I/clk_IBUF_BUFG
+    SLICE_X38Y6                                                       r  Receiver/MF_I/shiftRegister_reg[128][6]_srl32/CLK
+                         clock pessimism             -0.478     1.481    
+    SLICE_X38Y6          SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.183     1.664    Receiver/MF_I/shiftRegister_reg[128][6]_srl32
+  -------------------------------------------------------------------
+                         required time                         -1.664    
+                         arrival time                           1.751    
+  -------------------------------------------------------------------
+                         slack                                  0.087    
+
+Slack (MET) :             0.089ns  (arrival time - required time)
+  Source:                 Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_srl16.gen_mem.mem_reg[7][15]_srl8/D
+                            (rising edge-triggered cell SRL16E clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.285ns  (logic 0.141ns (49.450%)  route 0.144ns (50.550%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.957ns
+    Source Clock Delay      (SCD):    1.444ns
+    Clock Pessimism Removal (CPR):    0.500ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.561     1.444    Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_data_in/aclk
+    SLICE_X55Y16                                                      r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y16         FDRE (Prop_fdre_C_Q)         0.141     1.585 r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[15]/Q
+                         net (fo=1, routed)           0.144     1.729    Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/DATA_IN[15]
+    SLICE_X54Y16         SRL16E                                       r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_srl16.gen_mem.mem_reg[7][15]_srl8/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.830     1.957    Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/CLK
+    SLICE_X54Y16                                                      r  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_srl16.gen_mem.mem_reg[7][15]_srl8/CLK
+                         clock pessimism             -0.500     1.457    
+    SLICE_X54Y16         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.183     1.640    Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_srl16.gen_mem.mem_reg[7][15]_srl8
+  -------------------------------------------------------------------
+                         required time                         -1.640    
+                         arrival time                           1.729    
+  -------------------------------------------------------------------
+                         slack                                  0.089    
+
+Slack (MET) :             0.093ns  (arrival time - required time)
+  Source:                 Receiver/CarriageRecoveryLoop/SinCosLUT/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_rom_addr_stage1.sin_addr_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Receiver/CarriageRecoveryLoop/SinCosLUT/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_2/ADDRARDADDR[13]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.332ns  (logic 0.164ns (49.389%)  route 0.168ns (50.611%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.056ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.994ns
+    Source Clock Delay      (SCD):    1.439ns
+    Clock Pessimism Removal (CPR):    0.498ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.556     1.439    Receiver/CarriageRecoveryLoop/SinCosLUT/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/aclk
+    SLICE_X8Y27                                                       r  Receiver/CarriageRecoveryLoop/SinCosLUT/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_rom_addr_stage1.sin_addr_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y27          FDRE (Prop_fdre_C_Q)         0.164     1.603 r  Receiver/CarriageRecoveryLoop/SinCosLUT/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_rom_addr_stage1.sin_addr_reg[12]/Q
+                         net (fo=8, routed)           0.168     1.771    Receiver/CarriageRecoveryLoop/SinCosLUT/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/sin_addr[12]
+    RAMB36_X0Y5          RAMB36E1                                     r  Receiver/CarriageRecoveryLoop/SinCosLUT/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_2/ADDRARDADDR[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.866     1.994    Receiver/CarriageRecoveryLoop/SinCosLUT/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/aclk
+    RAMB36_X0Y5                                                       r  Receiver/CarriageRecoveryLoop/SinCosLUT/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_2/CLKARDCLK
+                         clock pessimism             -0.498     1.496    
+    RAMB36_X0Y5          RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[13])
+                                                      0.183     1.679    Receiver/CarriageRecoveryLoop/SinCosLUT/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_2
+  -------------------------------------------------------------------
+                         required time                         -1.679    
+                         arrival time                           1.771    
+  -------------------------------------------------------------------
+                         slack                                  0.093    
+
+Slack (MET) :             0.098ns  (arrival time - required time)
+  Source:                 Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_srl16.gen_mem.mem_reg[7][7]_srl8/D
+                            (rising edge-triggered cell SRL16E clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.241ns  (logic 0.128ns (53.025%)  route 0.113ns (46.975%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.948ns
+    Source Clock Delay      (SCD):    1.436ns
+    Clock Pessimism Removal (CPR):    0.499ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.553     1.436    Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_data_in/aclk
+    SLICE_X55Y25                                                      r  Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y25         FDRE (Prop_fdre_C_Q)         0.128     1.564 r  Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[7]/Q
+                         net (fo=1, routed)           0.113     1.678    Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/DATA_IN[7]
+    SLICE_X54Y25         SRL16E                                       r  Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_srl16.gen_mem.mem_reg[7][7]_srl8/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1411, routed)        0.821     1.948    Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/CLK
+    SLICE_X54Y25                                                      r  Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_srl16.gen_mem.mem_reg[7][7]_srl8/CLK
+                         clock pessimism             -0.499     1.449    
+    SLICE_X54Y25         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.130     1.579    Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_srl16.gen_mem.mem_reg[7][7]_srl8
+  -------------------------------------------------------------------
+                         required time                         -1.579    
+                         arrival time                           1.678    
+  -------------------------------------------------------------------
+                         slack                                  0.098    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform:           { 0 5 }
+Period:             10.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required  Actual  Slack  Location      Pin                                                                                                                                                               
+Min Period        n/a     DSP48E1/CLK         n/a            3.884     10.000  6.116  DSP48_X0Y9    Receiver/CarriageRecoveryLoop/x2_ploop_reg/CLK                                                                                                                    
+Min Period        n/a     DSP48E1/CLK         n/a            3.884     10.000  6.116  DSP48_X0Y5    Receiver/CarriageRecoveryLoop/yI_reg/CLK                                                                                                                          
+Min Period        n/a     DSP48E1/CLK         n/a            3.884     10.000  6.116  DSP48_X0Y7    Receiver/CarriageRecoveryLoop/yQ_reg/CLK                                                                                                                          
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576     10.000  7.424  RAMB36_X0Y3   Receiver/CarriageRecoveryLoop/SinCosLUT/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_0/CLKARDCLK  
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576     10.000  7.424  RAMB36_X0Y3   Receiver/CarriageRecoveryLoop/SinCosLUT/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_0/CLKBWRCLK  
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576     10.000  7.424  RAMB36_X0Y4   Receiver/CarriageRecoveryLoop/SinCosLUT/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_1/CLKARDCLK  
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576     10.000  7.424  RAMB36_X0Y4   Receiver/CarriageRecoveryLoop/SinCosLUT/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_1/CLKBWRCLK  
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576     10.000  7.424  RAMB36_X0Y5   Receiver/CarriageRecoveryLoop/SinCosLUT/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_2/CLKARDCLK  
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576     10.000  7.424  RAMB36_X0Y5   Receiver/CarriageRecoveryLoop/SinCosLUT/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_2/CLKBWRCLK  
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576     10.000  7.424  RAMB36_X0Y8   Receiver/CarriageRecoveryLoop/SinCosLUT/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_3/CLKARDCLK  
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_14_14/DP/CLK                 
+Low Pulse Width   Fast    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_14_14/DP/CLK                 
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_14_14/SP/CLK                 
+Low Pulse Width   Fast    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_14_14/SP/CLK                 
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_15_15/DP/CLK                 
+Low Pulse Width   Fast    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_15_15/DP/CLK                 
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_15_15/SP/CLK                 
+Low Pulse Width   Fast    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_15_15/SP/CLK                 
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_16_16/DP/CLK                 
+Low Pulse Width   Fast    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_16_16/DP/CLK                 
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_14_14/DP/CLK                 
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_14_14/SP/CLK                 
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_15_15/DP/CLK                 
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_15_15/SP/CLK                 
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_16_16/DP/CLK                 
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_16_16/SP/CLK                 
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_17_17/DP/CLK                 
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X50Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_17_17/SP/CLK                 
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X52Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_26_26/DP/CLK                 
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250     5.000   3.750  SLICE_X52Y12  Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.i_buffer/gen_dram.ram_reg_0_31_26_26/SP/CLK                 
+
+
+

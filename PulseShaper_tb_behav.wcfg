@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="PulseShaper_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="PulseShaper_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="20" />
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/dataAvailable" type="logic">
+      <obj_property name="ElementShortName">dataAvailable</obj_property>
+      <obj_property name="ObjectShortName">dataAvailable</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/inData" type="array">
+      <obj_property name="ElementShortName">inData[15:0]</obj_property>
+      <obj_property name="ObjectShortName">inData[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/sample" type="array">
+      <obj_property name="ElementShortName">sample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sample[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/sampleClk" type="logic">
+      <obj_property name="ElementShortName">sampleClk</obj_property>
+      <obj_property name="ObjectShortName">sampleClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/readyforData" type="logic">
+      <obj_property name="ElementShortName">readyforData</obj_property>
+      <obj_property name="ObjectShortName">readyforData</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/symbolClk" type="logic">
+      <obj_property name="ElementShortName">symbolClk</obj_property>
+      <obj_property name="ObjectShortName">symbolClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/bit_time" type="other">
+      <obj_property name="ElementShortName">bit_time</obj_property>
+      <obj_property name="ObjectShortName">bit_time</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/CLOCK_FREQUENCY" type="other">
+      <obj_property name="ElementShortName">CLOCK_FREQUENCY</obj_property>
+      <obj_property name="ObjectShortName">CLOCK_FREQUENCY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/SYMBOL_RATE" type="other">
+      <obj_property name="ElementShortName">SYMBOL_RATE</obj_property>
+      <obj_property name="ObjectShortName">SYMBOL_RATE</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/RATE" type="other">
+      <obj_property name="ElementShortName">RATE</obj_property>
+      <obj_property name="ObjectShortName">RATE</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/TICK_CTR_WIDTH" type="other">
+      <obj_property name="ElementShortName">TICK_CTR_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">TICK_CTR_WIDTH</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/uut/PulseFilter/s_axis_data_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/uut/PulseFilter/s_axis_data_tready" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/uut/PulseFilter/s_axis_data_tdata" type="array">
+      <obj_property name="ElementShortName">s_axis_data_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tdata[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/uut/PulseFilter/m_axis_data_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/uut/PulseFilter/m_axis_data_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/uut/rawSample" type="array">
+      <obj_property name="ElementShortName">rawSample[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rawSample[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">29</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PulseShaper_tb/uut/ps_out_sample" type="array">
+      <obj_property name="ElementShortName">ps_out_sample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ps_out_sample[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

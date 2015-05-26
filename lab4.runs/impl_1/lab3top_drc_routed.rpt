@@ -1,0 +1,216 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date         : Mon May 04 01:37:14 2015
+| Host         : M210-09 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_drc
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+           Max violations: <unlimited>
+         Violations found: 32
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP Receiver/CarriageRecoveryLoop/ph_accum0 input B is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP Receiver/CarriageRecoveryLoop/x2_ploop_reg input B is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP Transmitter/QPSK_Modulator/qpskSignal1 input A B is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP Transmitter/QPSK_Modulator/qpskSignal_reg input A B C is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+Output pipelining  
+DSP Receiver/CarriageRecoveryLoop/ph_accum0 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#2 Warning
+Output pipelining  
+DSP Receiver/CarriageRecoveryLoop/ph_accum_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#3 Warning
+Output pipelining  
+DSP Receiver/CarriageRecoveryLoop/x2_ploop_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#4 Warning
+Output pipelining  
+DSP Receiver/CarriageRecoveryLoop/yI1 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#5 Warning
+Output pipelining  
+DSP Receiver/CarriageRecoveryLoop/yI_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#6 Warning
+Output pipelining  
+DSP Receiver/CarriageRecoveryLoop/yQ2 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#7 Warning
+Output pipelining  
+DSP Receiver/CarriageRecoveryLoop/yQ_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#8 Warning
+Output pipelining  
+DSP Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#9 Warning
+Output pipelining  
+DSP Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#10 Warning
+Output pipelining  
+DSP Transmitter/QPSK_Modulator/qpskSignal1 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#11 Warning
+Output pipelining  
+DSP Transmitter/QPSK_Modulator/qpskSignal_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net Receiver/IQToChar/in2 is a gated clock net sourced by a combinational pin Receiver/IQToChar/deser_out_txData_reg[7]_i_1/O, cell Receiver/IQToChar/deser_out_txData_reg[7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net Receiver/MF_I/n_0_romRdAddr_reg[7]_i_2 is a gated clock net sourced by a combinational pin Receiver/MF_I/romRdAddr_reg[7]_i_2/O, cell Receiver/MF_I/romRdAddr_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net Receiver/MF_Q/n_0_romRdAddr_reg[7]_i_2__0 is a gated clock net sourced by a combinational pin Receiver/MF_Q/romRdAddr_reg[7]_i_2__0/O, cell Receiver/MF_Q/romRdAddr_reg[7]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net Transmitter/CharacterToIQ/Serializer/n_0_serI_reg_i_2 is a gated clock net sourced by a combinational pin Transmitter/CharacterToIQ/Serializer/serI_reg_i_2/O, cell Transmitter/CharacterToIQ/Serializer/serI_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Receiver/IQToChar/deser_out_txData_reg[7]_i_1 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    Receiver/IQToChar/deser_out_txData_reg[0] {LDCE}
+    Receiver/IQToChar/deser_out_txData_reg[1] {LDCE}
+    Receiver/IQToChar/deser_out_txData_reg[2] {LDCE}
+    Receiver/IQToChar/deser_out_txData_reg[3] {LDCE}
+    Receiver/IQToChar/deser_out_txData_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Receiver/MF_I/romRdAddr_reg[7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    Receiver/MF_I/romRdAddr_reg[0] {LDCE}
+    Receiver/MF_I/romRdAddr_reg[1] {LDCE}
+    Receiver/MF_I/romRdAddr_reg[2] {LDCE}
+    Receiver/MF_I/romRdAddr_reg[3] {LDCE}
+    Receiver/MF_I/romRdAddr_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Receiver/MF_Q/romRdAddr_reg[7]_i_2__0 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    Receiver/MF_Q/romRdAddr_reg[0] {LDCE}
+    Receiver/MF_Q/romRdAddr_reg[1] {LDCE}
+    Receiver/MF_Q/romRdAddr_reg[2] {LDCE}
+    Receiver/MF_Q/romRdAddr_reg[3] {LDCE}
+    Receiver/MF_Q/romRdAddr_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#4 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Transmitter/CharacterToIQ/Serializer/serI_reg_i_2 is driving clock pin of 2 cells. This could lead to large hold time violations. First few involved cells are:
+    Transmitter/CharacterToIQ/Serializer/serI_reg {LDCE}
+    Transmitter/CharacterToIQ/Serializer/serQ_reg {LDCE}
+
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#2 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#1 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#2 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+REQP-28#1 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-28#2 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#1 Advisory
+enum_MREG_0_connects_CEM_GND  
+Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#2 Advisory
+enum_MREG_0_connects_CEM_GND  
+Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+
