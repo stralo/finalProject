@@ -25,8 +25,7 @@ entity ModemRx is
         modemRx_out_serialForDebugDAC: out std_logic; 
         modemRx_out_serialClkForDebugDAC: out std_logic;
         modemRx_in_rawQPSKSignal : in std_logic_vector(11 downto 0);
-        modemRx_in_mode : in std_logic;
-        modemRx_out_iPulse : out std_logic
+        modemRx_in_mode : in std_logic
     );
 end ModemRx;
 

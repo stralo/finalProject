@@ -82,7 +82,7 @@ begin
             shiftCounter <= shiftCounter + '1';
         elsif (enParalelLoad = '1') then
            shiftCounter <= "0000";
-           convertedValue <= temp1(15 downto 0);
+           convertedValue <= temp1;
         end if;
     end if;
 end process;

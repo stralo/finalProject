@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
-| Date         : Tue May 19 16:40:28 2015
-| Host         : MECHA-2 running 64-bit Service Pack 1  (build 7601)
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:24:04 MST 2014
+| Date         : Tue May 26 00:40:13 2015
+| Host         : VLAB-004 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_drc
 ------------------------------------------------------------------------------------
 
@@ -20,7 +20,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
            Max violations: <unlimited>
-         Violations found: 40
+         Violations found: 38
 
 2. REPORT DETAILS
 -----------------
@@ -159,11 +159,6 @@ Related violations: <none>
 
 PDRC-153#4 Warning
 Gated clock check  
-Net Transmitter/CharacterToIQ/Serializer/n_0_serI_reg_i_2 is a gated clock net sourced by a combinational pin Transmitter/CharacterToIQ/Serializer/serI_reg_i_2/O, cell Transmitter/CharacterToIQ/Serializer/serI_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#5 Warning
-Gated clock check  
 Net Transmitter/PSF_I/modemRx_in_sampleClk is a gated clock net sourced by a combinational pin Transmitter/PSF_I/modemRx_in_sampleClk_BUFG_inst_i_1/O, cell Transmitter/PSF_I/modemRx_in_sampleClk_BUFG_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
@@ -201,14 +196,6 @@ A LUT Receiver/MF_Q/romRdAddr_reg[7]_i_2__0 is driving clock pin of 8 cells. Thi
 Related violations: <none>
 
 PLHOLDVIO-2#4 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT Transmitter/CharacterToIQ/Serializer/serI_reg_i_2 is driving clock pin of 2 cells. This could lead to large hold time violations. First few involved cells are:
-    Transmitter/CharacterToIQ/Serializer/serI_reg {LDCE}
-    Transmitter/CharacterToIQ/Serializer/serQ_reg {LDCE}
-
-Related violations: <none>
-
-PLHOLDVIO-2#5 Warning
 Non-Optimal connections which could lead to hold violations  
 A LUT Transmitter/PSF_I/modemRx_in_sampleClk_BUFG_inst_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
     Receiver/startCurrentState_reg {FDRE}

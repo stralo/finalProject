@@ -33,7 +33,6 @@ Port (
 );
 end COMPONENT;
     -- INTER COMPONENT SIGNALS
-    constant BINARY_POINT_IDX : integer := 28; 
     signal dataReady : std_logic := '0';
     signal dds_data : std_logic_vector(31 downto 0) := (others=>'0');
     signal dds_cosine: std_logic_vector(13 downto 0) := (others => '0');

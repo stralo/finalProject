@@ -30,10 +30,8 @@ entity lab3top is
            serialForDebugDAC : out std_logic; 
            serialClkForDebugDAC: out std_logic ;
            
-           modeSwitch : in std_logic ;
+           modeSwitch : in std_logic
            
-           crLoopOutIPulse : out std_logic;
-           symbolClkOut : out std_logic
     );
 end lab3top;
 
@@ -73,8 +71,7 @@ COMPONENT ModemRx is
         modemRx_out_serialForDebugDAC: out std_logic; 
         modemRx_out_serialClkForDebugDAC: out std_logic;
         modemRx_in_rawQPSKSignal : in std_logic_vector(11 downto 0);
-        modemRx_in_mode : in std_logic;
-        modemRx_out_iPulse : out std_logic
+        modemRx_in_mode : in std_logic
      
     );
 end COMPONENT;
@@ -156,11 +153,9 @@ Port Map(
     modemRx_out_serialClkForDebugDAC => serialClkForDebugDAC,
     
     modemRx_in_rawQPSKSignal => rawQPSKSignal,
-    modemRx_in_mode => modeSwitch,
-    modemRx_out_iPulse => crLoopOutIPulse
+    modemRx_in_mode => modeSwitch
 );
 
-symbolClkOut <= symbolClk;
 
 
 SymbolClkGenerator:

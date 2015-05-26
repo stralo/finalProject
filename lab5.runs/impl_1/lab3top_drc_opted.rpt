@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
-| Date         : Tue May 19 16:39:30 2015
-| Host         : MECHA-2 running 64-bit Service Pack 1  (build 7601)
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:24:04 MST 2014
+| Date         : Tue May 26 00:38:44 2015
+| Host         : VLAB-004 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_drc
 ------------------------------------------------------------------------------------
 
@@ -20,7 +20,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
            Max violations: <unlimited>
-         Violations found: 35
+         Violations found: 34
 
 2. REPORT DETAILS
 -----------------
@@ -176,14 +176,6 @@ A LUT Receiver/MF_Q/romRdAddr_reg[7]_i_2__0 is driving clock pin of 8 cells. Thi
 Related violations: <none>
 
 PLHOLDVIO-2#4 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT Transmitter/CharacterToIQ/Serializer/serI_reg_i_2 is driving clock pin of 2 cells. This could lead to large hold time violations. First few involved cells are:
-    Transmitter/CharacterToIQ/Serializer/serI_reg {LDCE}
-    Transmitter/CharacterToIQ/Serializer/serQ_reg {LDCE}
-
-Related violations: <none>
-
-PLHOLDVIO-2#5 Warning
 Non-Optimal connections which could lead to hold violations  
 A LUT Transmitter/PSF_I/modemRx_in_sampleClk_BUFG_inst_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
     Receiver/startCurrentState_reg {FDRE}
