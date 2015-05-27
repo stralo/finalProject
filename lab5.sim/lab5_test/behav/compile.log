@@ -261,6 +261,44 @@ INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab5/lab5.srcs/sources_1/ip/
 INFO: [VRFC 10-307] analyzing entity fir_compiler_1
 INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab5/lab5.srcs/sources_1/ip/fir_compiler_1/demo_tb/tb_fir_compiler_1.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity tb_fir_compiler_1
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab5/lab5.srcs/sources_1/ip/fifo_generator_0/fifo_generator_v12_0/hdl/fifo_generator_v12_0_vh_rfs.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v12_0_bhv_as
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v12_0_bhv_ss
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v12_0_bhv_preload0
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v12_0_conv
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v12_0_axic_reg_slice
+INFO: [VRFC 10-307] analyzing entity fifo_generator_vhdl_beh
+INFO: [VRFC 10-307] analyzing entity input_blk
+INFO: [VRFC 10-307] analyzing entity output_blk
+INFO: [VRFC 10-307] analyzing entity shft_wrapper
+INFO: [VRFC 10-307] analyzing entity shft_ram
+INFO: [VRFC 10-307] analyzing entity wr_pf_as
+INFO: [VRFC 10-307] analyzing entity wr_pf_ss
+INFO: [VRFC 10-307] analyzing entity rd_pe_as
+INFO: [VRFC 10-307] analyzing entity rd_pe_ss
+INFO: [VRFC 10-307] analyzing entity synchronizer_ff
+INFO: [VRFC 10-307] analyzing entity delay
+INFO: [VRFC 10-307] analyzing entity bin_cntr
+INFO: [VRFC 10-307] analyzing entity clk_x_pntrs_builtin
+INFO: [VRFC 10-307] analyzing entity logic_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth
+INFO: [VRFC 10-307] analyzing entity builtin_top
+INFO: [VRFC 10-307] analyzing entity reset_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_low_latency
+INFO: [VRFC 10-307] analyzing entity builtin_top_v6
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v12_0_builtin
+INFO: [VRFC 10-307] analyzing entity bram_sync_reg
+INFO: [VRFC 10-307] analyzing entity bram_fifo_rstlogic
+INFO: [VRFC 10-307] analyzing entity reset_blk_ramfifo
+INFO: [VRFC 10-307] analyzing entity axi_reg_slice
+INFO: [VRFC 10-307] analyzing entity fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v12_0_synth
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v12_0
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab5/lab5.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fifo_generator_0
 INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab3/lab2.srcs/sources_1/new/PulseShaper.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity PulseShaper
 INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab3/lab2.srcs/sources_1/imports/new/IQDeserializer.vhd" into library xil_defaultlib
@@ -269,18 +307,8 @@ INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab3/lab2.srcs/sources_1/imp
 INFO: [VRFC 10-307] analyzing entity CharToIQ
 INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab3/lab2.srcs/sources_1/imports/new/CharBufferModule.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity CharBufferModule
-INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab3/lab2.srcs/sources_1/imports/new/BufferController.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity BufferController
-INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab3/lab2.srcs/sources_1/imports/new/BufferAddrCounter.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity BufferAddrCounter
-INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab3/lab2.srcs/sources_1/imports/new/FifoBuffer.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity FifoBuffer
-INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab3/lab2.srcs/sources_1/imports/new/BufControllerEOLListener.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity BufControllerEOLListener
 INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab3/lab2.srcs/sources_1/imports/new/IQSerializer.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity IQSerializer
-INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab3/lab2.srcs/sources_1/imports/new/NullReadListener.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity NullReadListener
 INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab3/lab2.srcs/sources_1/imports/Lab1/mux7seg.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mux7seg
 INFO: [VRFC 10-163] Analyzing VHDL file "O:/engs128/lab3/lab2.srcs/sources_1/imports/Lab1/SerialRx.vhd" into library xil_defaultlib

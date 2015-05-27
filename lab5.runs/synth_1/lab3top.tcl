@@ -3,7 +3,9 @@
 # 
 
 set_param gui.test TreeTableDev
+set_param xicom.use_bs_reader 1
 debug::add_scope template.lib 1
+set_msg_config -id {Common-41} -limit 4294967295
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
@@ -30,17 +32,14 @@ add_files -quiet O:/engs128/lab5/lab5.runs/MMCM_synth_1/MMCM.dcp
 set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/MMCM_synth_1/MMCM.dcp]
 add_files -quiet O:/engs128/lab5/lab5.runs/fir_compiler_1_synth_1/fir_compiler_1.dcp
 set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/fir_compiler_1_synth_1/fir_compiler_1.dcp]
+add_files -quiet O:/engs128/lab5/lab5.runs/fifo_generator_0_synth_1/fifo_generator_0.dcp
+set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/fifo_generator_0_synth_1/fifo_generator_0.dcp]
 read_vhdl -library xil_defaultlib {
   O:/engs128/lab3/lab2.srcs/sources_1/new/PulseShaper.vhd
   O:/engs128/lab3/lab2.srcs/sources_1/imports/new/IQDeserializer.vhd
   O:/engs128/lab3/lab2.srcs/sources_1/imports/new/CharToIQ.vhd
   O:/engs128/lab3/lab2.srcs/sources_1/imports/new/CharBufferModule.vhd
-  O:/engs128/lab3/lab2.srcs/sources_1/imports/new/BufferController.vhd
-  O:/engs128/lab3/lab2.srcs/sources_1/imports/new/BufferAddrCounter.vhd
-  O:/engs128/lab3/lab2.srcs/sources_1/imports/new/FifoBuffer.vhd
-  O:/engs128/lab3/lab2.srcs/sources_1/imports/new/BufControllerEOLListener.vhd
   O:/engs128/lab3/lab2.srcs/sources_1/imports/new/IQSerializer.vhd
-  O:/engs128/lab3/lab2.srcs/sources_1/imports/new/NullReadListener.vhd
   O:/engs128/lab3/lab2.srcs/sources_1/imports/Lab1/mux7seg.vhd
   O:/engs128/lab3/lab2.srcs/sources_1/imports/Lab1/SerialRx.vhd
   O:/engs128/lab3/lab2.srcs/sources_1/imports/Lab1/SerialTx.vhd

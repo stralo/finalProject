@@ -1,6 +1,6 @@
 Vivado Simulator 2014.4
 Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/v2014.4/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 3fc4a5d3650a498bba6b448194a25c23 --debug typical --relax -L blk_mem_gen_v8_2 -L xil_defaultlib -L xbip_utils_v3_0 -L axi_utils_v2_0 -L fir_compiler_v7_2 -L xbip_pipe_v3_0 -L xbip_bram18k_v3_0 -L mult_gen_v12_0 -L xbip_dsp48_wrapper_v3_0 -L xbip_dsp48_addsub_v3_0 -L xbip_dsp48_multadd_v3_0 -L dds_compiler_v6_0 -L secureip --snapshot lab5_tb_behav xil_defaultlib.lab5_tb -log elaborate.log 
+Running: C:/Xilinx/v2014.4/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 3fc4a5d3650a498bba6b448194a25c23 --debug typical --relax -L blk_mem_gen_v8_2 -L xil_defaultlib -L xbip_utils_v3_0 -L axi_utils_v2_0 -L fir_compiler_v7_2 -L xbip_pipe_v3_0 -L xbip_bram18k_v3_0 -L mult_gen_v12_0 -L xbip_dsp48_wrapper_v3_0 -L xbip_dsp48_addsub_v3_0 -L xbip_dsp48_multadd_v3_0 -L dds_compiler_v6_0 -L fifo_generator_v12_0 -L secureip --snapshot lab5_tb_behav xil_defaultlib.lab5_tb -log elaborate.log 
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
@@ -10,6 +10,10 @@ Compiling package std.standard
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling package ieee.math_real
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
 Compiling package std.textio
 Compiling package xbip_utils_v3_0.xbip_utils_v3_0_pkg
 Compiling package fir_compiler_v7_2.fir_compiler_v7_2_viv_comp
@@ -17,7 +21,6 @@ Compiling package ieee.std_logic_textio
 Compiling package fir_compiler_v7_2.globals_pkg
 Compiling package fir_compiler_v7_2.components
 Compiling package unisim.vcomponents
-Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_signed
 Compiling package ieee.vital_timing
 Compiling package ieee.vital_primitives
@@ -30,17 +33,15 @@ Compiling package xbip_pipe_v3_0.xbip_pipe_v3_0_viv_comp
 Compiling package axi_utils_v2_0.axi_utils_v2_0_pkg
 Compiling package axi_utils_v2_0.global_util_pkg
 Compiling package axi_utils_v2_0.axi_utils_comps
-Compiling package ieee.std_logic_unsigned
 Compiling package dds_compiler_v6_0.pkg_betas
 Compiling package dds_compiler_v6_0.pkg_alphas
 Compiling architecture behavioral of entity xil_defaultlib.SerialRx [serialrx_default]
 Compiling architecture behavioral of entity xil_defaultlib.mux7seg [mux7seg_default]
-Compiling architecture behavioral of entity xil_defaultlib.BufferController [buffercontroller_default]
-Compiling architecture behavioral of entity xil_defaultlib.BufferAddrCounter [\BufferAddrCounter(8,2,'0')\]
-Compiling architecture behavioral of entity xil_defaultlib.BufferAddrCounter [\BufferAddrCounter(8,2,'1')\]
-Compiling architecture behavioral of entity xil_defaultlib.BufControllerEOLListener [bufcontrollereollistener_default]
-Compiling architecture behavioral of entity xil_defaultlib.FifoBuffer [\FifoBuffer(8,2)\]
-Compiling architecture behavioral of entity xil_defaultlib.NullReadListener [nullreadlistener_default]
+Compiling architecture behavioral of entity fifo_generator_v12_0.fifo_generator_v12_0_bhv_ss [\fifo_generator_v12_0_bhv_ss("ar...]
+Compiling architecture behavioral of entity fifo_generator_v12_0.fifo_generator_v12_0_conv [\fifo_generator_v12_0_conv(1,0,4...]
+Compiling architecture behavioral of entity fifo_generator_v12_0.fifo_generator_vhdl_beh [\fifo_generator_vhdl_beh(1,0,4,"...]
+Compiling architecture xilinx of entity fifo_generator_v12_0.fifo_generator_v12_0 [\fifo_generator_v12_0(1,0,4,"Bla...]
+Compiling architecture fifo_generator_0_arch of entity xil_defaultlib.fifo_generator_0 [fifo_generator_0_default]
 Compiling architecture behavioral of entity xil_defaultlib.CharBufferModule [charbuffermodule_default]
 Compiling architecture behavioral of entity xil_defaultlib.IQSerializer [\IQSerializer(8)\]
 Compiling architecture behavioral of entity xil_defaultlib.CharToIQ [\CharToIQ(7,0)\]
