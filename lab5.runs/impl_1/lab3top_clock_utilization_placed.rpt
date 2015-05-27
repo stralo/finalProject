@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:24:04 MST 2014
-| Date         : Tue May 26 00:39:01 2015
-| Host         : VLAB-004 running 64-bit Service Pack 1  (build 7601)
+| Date         : Tue May 26 19:36:08 2015
+| Host         : VLAB-002 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_clock_utilization -file lab3top_clock_utilization_placed.rpt
 | Design       : lab3top
 | Device       : xc7a35t
@@ -49,9 +49,9 @@ Table of Contents
 | Index | BUFG Cell                      | Net Name                             | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
 +-------+--------------------------------+--------------------------------------+------+-------+-------+---------------+-----------+
 |     1 | SPIClkGenerator/U0/clkf_buf    | SPIClkGenerator/U0/clkfbout_buf_MMCM |    1 |     1 |    no |         1.636 |     0.082 |
-|     2 | SPIClkGenerator/U0/clkout2_buf | SPIClkGenerator/U0/clk_out2          |   77 |    29 |    no |         2.783 |     1.221 |
-|     3 | modemRx_in_sampleClk_BUFG_inst | modemRx_in_sampleClk_BUFG            |  325 |    93 |    no |         1.758 |     0.285 |
-|     4 | SPIClkGenerator/U0/clkout1_buf | SPIClkGenerator/U0/clk_out1          | 1412 |   395 |    no |         1.789 |     0.281 |
+|     2 | SPIClkGenerator/U0/clkout2_buf | SPIClkGenerator/U0/clk_out2          |   77 |    27 |    no |         2.783 |     1.220 |
+|     3 | modemRx_in_sampleClk_BUFG_inst | modemRx_in_sampleClk_BUFG            |  325 |    93 |    no |         1.748 |     0.271 |
+|     4 | SPIClkGenerator/U0/clkout1_buf | SPIClkGenerator/U0/clk_out1          | 1420 |   384 |    no |         1.788 |     0.273 |
 +-------+--------------------------------+--------------------------------------+------+-------+-------+---------------+-----------+
 
 
@@ -83,11 +83,9 @@ Table of Contents
 +-------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
 | Index | Local Clk Src                                                                                                                                 | Net Name                                                                                                        | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
 +-------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
-|     1 | Receiver/MF_I/romRdAddr_reg[7]_i_2                                                                                                            | Receiver/MF_I/n_0_romRdAddr_reg[7]_i_2                                                                          |    8 |     3 |    no |         0.595 |     0.181 |
-|     2 | Receiver/MF_Q/romRdAddr_reg[7]_i_2__0                                                                                                         | Receiver/MF_Q/n_0_romRdAddr_reg[7]_i_2__0                                                                       |    8 |     3 |    no |         1.022 |     0.178 |
-|     3 | Receiver/IQToChar/deser_out_txData_reg[7]_i_1                                                                                                 | Receiver/IQToChar/in2                                                                                           |   11 |     5 |    no |         0.898 |     0.299 |
-|     4 | Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg | Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid |   17 |     5 |    no |         0.953 |     0.329 |
-|     5 | Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg | Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid |  183 |    48 |    no |         1.298 |     0.640 |
+|     1 | Receiver/MF_I/romRdAddr_reg[7]_i_2__0                                                                                                         | Receiver/MF_I/n_0_romRdAddr_reg[7]_i_2__0                                                                       |    8 |     2 |    no |         0.739 |     0.191 |
+|     2 | Receiver/MF_Q/romRdAddr_reg[7]_i_2                                                                                                            | Receiver/MF_Q/n_0_romRdAddr_reg[7]_i_2                                                                          |    8 |     2 |    no |         0.869 |     0.107 |
+|     3 | Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg | Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid |  178 |    49 |    no |         2.490 |     1.921 |
 +-------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
 
 
@@ -99,9 +97,9 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  285 |  9600 |  101 |  1600 |    1 |    20 |    6 |    10 |    8 |    20 |
-| X1Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  983 | 12000 |  309 |  1800 |    2 |    40 |    0 |    20 |    7 |    20 |
-| X0Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    1 |  9600 |    0 |  1600 |    1 |    20 |    1 |    10 |    0 |    20 |
+| X0Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  396 |  9600 |  261 |  1600 |    2 |    20 |    4 |    10 |    9 |    20 |
+| X1Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  840 | 12000 |  149 |  1800 |    2 |    40 |    3 |    20 |    6 |    20 |
+| X0Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    1 |  9600 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    1 | 12000 |    0 |  1800 |    0 |    40 |    0 |    20 |    0 |    20 |
 | X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 14400 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y2              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |  7600 |    0 |  1200 |    0 |    10 |    0 |     5 |    0 |    20 |
@@ -115,9 +113,9 @@ Table of Contents
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |        Clock Net Name       |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   1 |     0 |        6 | modemRx_in_sampleClk_BUFG   |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   8 |     0 |        0 | SPIClkGenerator/U0/clk_out2 |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |        14 |       0 |       0 | 260 |   101 |        8 | SPIClkGenerator/U0/clk_out1 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   2 |     0 |        6 | modemRx_in_sampleClk_BUFG   |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  52 |     0 |        0 | SPIClkGenerator/U0/clk_out2 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |        12 |       0 |       0 | 326 |   261 |        9 | SPIClkGenerator/U0/clk_out1 |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------+
 
 
@@ -128,8 +126,8 @@ Table of Contents
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |            Clock Net Name            |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------+
 | BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |   0 |     0 |        0 | SPIClkGenerator/U0/clkfbout_buf_MMCM |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  66 |     0 |        0 | SPIClkGenerator/U0/clk_out2          |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         2 |       0 |       0 | 719 |   306 |        6 | SPIClkGenerator/U0/clk_out1          |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  22 |     0 |        0 | SPIClkGenerator/U0/clk_out2          |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         8 |       0 |       0 | 660 |   146 |        6 | SPIClkGenerator/U0/clk_out1          |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------+
 
 
@@ -139,7 +137,7 @@ Table of Contents
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |        Clock Net Name       |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         4 |       0 |       0 |   1 |     0 |        0 | SPIClkGenerator/U0/clk_out1 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   1 |     0 |        0 | SPIClkGenerator/U0/clk_out1 |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------+
 
 
@@ -180,25 +178,18 @@ set_property LOC IOB_X0Y22 [get_cells serialClkForDebugDAC_OBUF_inst]
 # Location of clock ports
 set_property LOC IOB_X1Y26 [get_ports clk]
 
-# Clock net "Receiver/IQToChar/in2" driven by instance "Receiver/IQToChar/deser_out_txData_reg[7]_i_1" located at site "SLICE_X33Y34"
+# Clock net "Receiver/MF_I/n_0_romRdAddr_reg[7]_i_2__0" driven by instance "Receiver/MF_I/romRdAddr_reg[7]_i_2__0" located at site "SLICE_X9Y18"
 #startgroup
-create_pblock CLKAG_Receiver/IQToChar/in2
-add_cells_to_pblock [get_pblocks  CLKAG_Receiver/IQToChar/in2] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Receiver/IQToChar/in2"}]]]
-resize_pblock [get_pblocks CLKAG_Receiver/IQToChar/in2] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+create_pblock CLKAG_Receiver/MF_I/n_0_romRdAddr_reg[7]_i_2__0
+add_cells_to_pblock [get_pblocks  CLKAG_Receiver/MF_I/n_0_romRdAddr_reg[7]_i_2__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Receiver/MF_I/n_0_romRdAddr_reg[7]_i_2__0"}]]]
+resize_pblock [get_pblocks CLKAG_Receiver/MF_I/n_0_romRdAddr_reg[7]_i_2__0] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
 #endgroup
 
-# Clock net "Receiver/MF_I/n_0_romRdAddr_reg[7]_i_2" driven by instance "Receiver/MF_I/romRdAddr_reg[7]_i_2" located at site "SLICE_X29Y17"
+# Clock net "Receiver/MF_Q/n_0_romRdAddr_reg[7]_i_2" driven by instance "Receiver/MF_Q/romRdAddr_reg[7]_i_2" located at site "SLICE_X9Y19"
 #startgroup
-create_pblock CLKAG_Receiver/MF_I/n_0_romRdAddr_reg[7]_i_2
-add_cells_to_pblock [get_pblocks  CLKAG_Receiver/MF_I/n_0_romRdAddr_reg[7]_i_2] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Receiver/MF_I/n_0_romRdAddr_reg[7]_i_2"}]]]
-resize_pblock [get_pblocks CLKAG_Receiver/MF_I/n_0_romRdAddr_reg[7]_i_2] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
-#endgroup
-
-# Clock net "Receiver/MF_Q/n_0_romRdAddr_reg[7]_i_2__0" driven by instance "Receiver/MF_Q/romRdAddr_reg[7]_i_2__0" located at site "SLICE_X47Y30"
-#startgroup
-create_pblock CLKAG_Receiver/MF_Q/n_0_romRdAddr_reg[7]_i_2__0
-add_cells_to_pblock [get_pblocks  CLKAG_Receiver/MF_Q/n_0_romRdAddr_reg[7]_i_2__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Receiver/MF_Q/n_0_romRdAddr_reg[7]_i_2__0"}]]]
-resize_pblock [get_pblocks CLKAG_Receiver/MF_Q/n_0_romRdAddr_reg[7]_i_2__0] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+create_pblock CLKAG_Receiver/MF_Q/n_0_romRdAddr_reg[7]_i_2
+add_cells_to_pblock [get_pblocks  CLKAG_Receiver/MF_Q/n_0_romRdAddr_reg[7]_i_2] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Receiver/MF_Q/n_0_romRdAddr_reg[7]_i_2"}]]]
+resize_pblock [get_pblocks CLKAG_Receiver/MF_Q/n_0_romRdAddr_reg[7]_i_2] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
 #endgroup
 
 # Clock net "SPIClkGenerator/U0/clk_out1" driven by instance "SPIClkGenerator/U0/clkout1_buf" located at site "BUFGCTRL_X0Y1"
@@ -215,18 +206,11 @@ add_cells_to_pblock [get_pblocks  CLKAG_SPIClkGenerator/U0/clk_out2] [get_cells 
 resize_pblock [get_pblocks CLKAG_SPIClkGenerator/U0/clk_out2] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
 #endgroup
 
-# Clock net "Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid" driven by instance "Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg" located at site "SLICE_X47Y22"
+# Clock net "Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid" driven by instance "Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg" located at site "SLICE_X53Y29"
 #startgroup
 create_pblock CLKAG_Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid
 add_cells_to_pblock [get_pblocks  CLKAG_Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid"}]]]
 resize_pblock [get_pblocks CLKAG_Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
-#endgroup
-
-# Clock net "Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid" driven by instance "Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg" located at site "SLICE_X49Y25"
-#startgroup
-create_pblock CLKAG_Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid
-add_cells_to_pblock [get_pblocks  CLKAG_Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid"}]]]
-resize_pblock [get_pblocks CLKAG_Transmitter/PSF_Q/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
 #endgroup
 
 # Clock net "modemRx_in_sampleClk_BUFG" driven by instance "modemRx_in_sampleClk_BUFG_inst" located at site "BUFGCTRL_X0Y2"

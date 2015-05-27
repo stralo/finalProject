@@ -2,14 +2,15 @@
 # Vivado v2014.4 (64-bit)
 # SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
 # IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
-# Start of session at: Tue May 26 00:34:34 2015
-# Process ID: 5468
+# Start of session at: Tue May 26 19:32:14 2015
+# Process ID: 6016
 # Log file: O:/engs128/lab5/lab5.runs/synth_1/lab3top.vds
 # Journal file: O:/engs128/lab5/lab5.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source lab3top.tcl
 # set_param gui.test TreeTableDev
 # debug::add_scope template.lib 1
+# set_msg_config -id {Common-41} -limit 4294967295
 # set_msg_config -id {HDL 9-1061} -limit 100000
 # set_msg_config -id {HDL 9-1654} -limit 100000
 # create_project -in_memory -part xc7a35tcpg236-1
@@ -65,11 +66,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:30 . Memory (MB): peak = 239.313 ; gain = 80.512
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:34 . Memory (MB): peak = 239.359 ; gain = 80.297
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'lab3top' [O:/engs128/lab5/lab5.srcs/sources_1/new/lab3top.vhd:38]
-INFO: [Synth 8-3491] module 'MMCM' declared at 'O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-5468-VLAB-004/realtime/MMCM_stub.vhdl:5' bound to instance 'SPIClkGenerator' of component 'MMCM' [O:/engs128/lab5/lab5.srcs/sources_1/new/lab3top.vhd:114]
-INFO: [Synth 8-638] synthesizing module 'MMCM' [O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-5468-VLAB-004/realtime/MMCM_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'MMCM' declared at 'O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-6016-VLAB-002/realtime/MMCM_stub.vhdl:5' bound to instance 'SPIClkGenerator' of component 'MMCM' [O:/engs128/lab5/lab5.srcs/sources_1/new/lab3top.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'MMCM' [O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-6016-VLAB-002/realtime/MMCM_stub.vhdl:14]
 INFO: [Synth 8-3491] module 'ModemTx' declared at 'O:/engs128/lab5/lab5.srcs/sources_1/new/ModemTx.vhd:12' bound to instance 'Transmitter' of component 'ModemTx' [O:/engs128/lab5/lab5.srcs/sources_1/new/lab3top.vhd:121]
 INFO: [Synth 8-638] synthesizing module 'ModemTx' [O:/engs128/lab5/lab5.srcs/sources_1/new/ModemTx.vhd:30]
 INFO: [Synth 8-3491] module 'SerialRx' declared at 'O:/engs128/lab3/lab2.srcs/sources_1/imports/Lab1/SerialRx.vhd:25' bound to instance 'Receiver' of component 'SerialRx' [O:/engs128/lab5/lab5.srcs/sources_1/new/ModemTx.vhd:115]
@@ -129,14 +130,14 @@ INFO: [Synth 8-256] done synthesizing module 'IQSerializer__parameterized0' (9#1
 INFO: [Synth 8-256] done synthesizing module 'CharToIQ__parameterized0' (10#1) [O:/engs128/lab3/lab2.srcs/sources_1/imports/new/CharToIQ.vhd:26]
 INFO: [Synth 8-3491] module 'PulseShaper' declared at 'O:/engs128/lab3/lab2.srcs/sources_1/new/PulseShaper.vhd:15' bound to instance 'PSF_I' of component 'PulseShaper' [O:/engs128/lab5/lab5.srcs/sources_1/new/ModemTx.vhd:156]
 INFO: [Synth 8-638] synthesizing module 'PulseShaper' [O:/engs128/lab3/lab2.srcs/sources_1/new/PulseShaper.vhd:26]
-INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-5468-VLAB-004/realtime/fir_compiler_0_stub.vhdl:5' bound to instance 'PulseFilter' of component 'fir_compiler_0' [O:/engs128/lab3/lab2.srcs/sources_1/new/PulseShaper.vhd:41]
-INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-5468-VLAB-004/realtime/fir_compiler_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-6016-VLAB-002/realtime/fir_compiler_0_stub.vhdl:5' bound to instance 'PulseFilter' of component 'fir_compiler_0' [O:/engs128/lab3/lab2.srcs/sources_1/new/PulseShaper.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-6016-VLAB-002/realtime/fir_compiler_0_stub.vhdl:17]
 INFO: [Synth 8-256] done synthesizing module 'PulseShaper' (11#1) [O:/engs128/lab3/lab2.srcs/sources_1/new/PulseShaper.vhd:26]
 INFO: [Synth 8-3491] module 'PulseShaper' declared at 'O:/engs128/lab3/lab2.srcs/sources_1/new/PulseShaper.vhd:15' bound to instance 'PSF_Q' of component 'PulseShaper' [O:/engs128/lab5/lab5.srcs/sources_1/new/ModemTx.vhd:167]
 INFO: [Synth 8-3491] module 'Modulator' declared at 'O:/engs128/lab5/lab5.srcs/sources_1/new/Modulator.vhd:16' bound to instance 'QPSK_Modulator' of component 'Modulator' [O:/engs128/lab5/lab5.srcs/sources_1/new/ModemTx.vhd:179]
 INFO: [Synth 8-638] synthesizing module 'Modulator' [O:/engs128/lab5/lab5.srcs/sources_1/new/Modulator.vhd:26]
-INFO: [Synth 8-3491] module 'dds_compiler_0' declared at 'O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-5468-VLAB-004/realtime/dds_compiler_0_stub.vhdl:5' bound to instance 'DDSModulator' of component 'dds_compiler_0' [O:/engs128/lab5/lab5.srcs/sources_1/new/Modulator.vhd:45]
-INFO: [Synth 8-638] synthesizing module 'dds_compiler_0' [O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-5468-VLAB-004/realtime/dds_compiler_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'dds_compiler_0' declared at 'O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-6016-VLAB-002/realtime/dds_compiler_0_stub.vhdl:5' bound to instance 'DDSModulator' of component 'dds_compiler_0' [O:/engs128/lab5/lab5.srcs/sources_1/new/Modulator.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'dds_compiler_0' [O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-6016-VLAB-002/realtime/dds_compiler_0_stub.vhdl:14]
 INFO: [Synth 8-256] done synthesizing module 'Modulator' (12#1) [O:/engs128/lab5/lab5.srcs/sources_1/new/Modulator.vhd:26]
 	Parameter WORD_SIZE bound to: 16 - type: integer 
 INFO: [Synth 8-3491] module 'DAC' declared at 'O:/engs128/lab5/lab5.srcs/sources_1/new/DAC.vhd:12' bound to instance 'DACInterface' of component 'DAC' [O:/engs128/lab5/lab5.srcs/sources_1/new/ModemTx.vhd:193]
@@ -158,22 +159,22 @@ INFO: [Synth 8-638] synthesizing module 'Demodulator' [O:/engs128/lab4_withCRLoo
 INFO: [Synth 8-256] done synthesizing module 'Demodulator' (16#1) [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/new/Demodulator.vhd:22]
 INFO: [Synth 8-3491] module 'MatchedFilter' declared at 'O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/new/MatchedFilter.vhd:15' bound to instance 'MF_I' of component 'MatchedFilter' [O:/engs128/lab5/lab5.srcs/sources_1/new/ModemRx.vhd:205]
 INFO: [Synth 8-638] synthesizing module 'MatchedFilter' [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/new/MatchedFilter.vhd:26]
-INFO: [Synth 8-3491] module 'BlockROM' declared at 'O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-5468-VLAB-004/realtime/BlockROM_stub.vhdl:5' bound to instance 'ROM' of component 'BlockROM' [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/new/MatchedFilter.vhd:194]
-INFO: [Synth 8-638] synthesizing module 'BlockROM' [O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-5468-VLAB-004/realtime/BlockROM_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'BlockROM' declared at 'O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-6016-VLAB-002/realtime/BlockROM_stub.vhdl:5' bound to instance 'ROM' of component 'BlockROM' [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/new/MatchedFilter.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'BlockROM' [O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-6016-VLAB-002/realtime/BlockROM_stub.vhdl:14]
 INFO: [Synth 8-256] done synthesizing module 'MatchedFilter' (17#1) [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/new/MatchedFilter.vhd:26]
 INFO: [Synth 8-3491] module 'MatchedFilter' declared at 'O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/new/MatchedFilter.vhd:15' bound to instance 'MF_Q' of component 'MatchedFilter' [O:/engs128/lab5/lab5.srcs/sources_1/new/ModemRx.vhd:215]
 	Parameter WIDTH bound to: 16 - type: integer 
 INFO: [Synth 8-3491] module 'CRloop' declared at 'O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd:30' bound to instance 'CarriageRecoveryLoop' of component 'CRloop' [O:/engs128/lab5/lab5.srcs/sources_1/new/ModemRx.vhd:226]
 INFO: [Synth 8-638] synthesizing module 'CRloop__parameterized0' [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd:42]
 	Parameter WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'dds_compiler_1' declared at 'O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-5468-VLAB-004/realtime/dds_compiler_1_stub.vhdl:5' bound to instance 'SinCosLUT' of component 'dds_compiler_1' [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd:159]
-INFO: [Synth 8-638] synthesizing module 'dds_compiler_1' [O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-5468-VLAB-004/realtime/dds_compiler_1_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'dds_compiler_1' declared at 'O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-6016-VLAB-002/realtime/dds_compiler_1_stub.vhdl:5' bound to instance 'SinCosLUT' of component 'dds_compiler_1' [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'dds_compiler_1' [O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-6016-VLAB-002/realtime/dds_compiler_1_stub.vhdl:16]
 INFO: [Synth 8-256] done synthesizing module 'CRloop__parameterized0' (18#1) [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd:42]
 	Parameter DATA_NUM_BITS bound to: 8 - type: integer 
 INFO: [Synth 8-3491] module 'IQDeserializer' declared at 'O:/engs128/lab3/lab2.srcs/sources_1/imports/new/IQDeserializer.vhd:14' bound to instance 'IQToChar' of component 'IQDeserializer' [O:/engs128/lab5/lab5.srcs/sources_1/new/ModemRx.vhd:240]
 INFO: [Synth 8-638] synthesizing module 'IQDeserializer__parameterized0' [O:/engs128/lab3/lab2.srcs/sources_1/imports/new/IQDeserializer.vhd:27]
 	Parameter DATA_NUM_BITS bound to: 8 - type: integer 
-INFO: [Synth 8-226] default block is never used [O:/engs128/lab3/lab2.srcs/sources_1/imports/new/IQDeserializer.vhd:140]
+INFO: [Synth 8-226] default block is never used [O:/engs128/lab3/lab2.srcs/sources_1/imports/new/IQDeserializer.vhd:150]
 INFO: [Synth 8-256] done synthesizing module 'IQDeserializer__parameterized0' (19#1) [O:/engs128/lab3/lab2.srcs/sources_1/imports/new/IQDeserializer.vhd:27]
 INFO: [Synth 8-3491] module 'SerialTx' declared at 'O:/engs128/lab3/lab2.srcs/sources_1/imports/Lab1/SerialTx.vhd:24' bound to instance 'Transmitter' of component 'SerialTx' [O:/engs128/lab5/lab5.srcs/sources_1/new/ModemRx.vhd:254]
 INFO: [Synth 8-638] synthesizing module 'SerialTx' [O:/engs128/lab3/lab2.srcs/sources_1/imports/Lab1/SerialTx.vhd:32]
@@ -181,7 +182,7 @@ INFO: [Synth 8-256] done synthesizing module 'SerialTx' (20#1) [O:/engs128/lab3/
 INFO: [Synth 8-256] done synthesizing module 'ModemRx' (21#1) [O:/engs128/lab5/lab5.srcs/sources_1/new/ModemRx.vhd:32]
 INFO: [Synth 8-256] done synthesizing module 'lab3top' (22#1) [O:/engs128/lab5/lab5.srcs/sources_1/new/lab3top.vhd:38]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 275.305 ; gain = 116.504
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:42 . Memory (MB): peak = 275.555 ; gain = 116.492
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -191,7 +192,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 275.305 ; gain = 116.504
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:43 . Memory (MB): peak = 275.555 ; gain = 116.492
 ---------------------------------------------------------------------------------
 Loading clock regions from C:/Xilinx/v2014.4/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
 Loading clock buffers from C:/Xilinx/v2014.4/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
@@ -204,8 +205,8 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-5468-VLAB-004/dcp_5/MMCM_in_context.xdc] for cell 'SPIClkGenerator'
-Finished Parsing XDC File [O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-5468-VLAB-004/dcp_5/MMCM_in_context.xdc] for cell 'SPIClkGenerator'
+Parsing XDC File [O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-6016-VLAB-002/dcp_5/MMCM_in_context.xdc] for cell 'SPIClkGenerator'
+Finished Parsing XDC File [O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-6016-VLAB-002/dcp_5/MMCM_in_context.xdc] for cell 'SPIClkGenerator'
 Parsing XDC File [O:/engs128/lab3/lab2.srcs/constrs_1/imports/Lab1/Basys3_Master.xdc]
 Finished Parsing XDC File [O:/engs128/lab3/lab2.srcs/constrs_1/imports/Lab1/Basys3_Master.xdc]
 Completed Processing XDC Constraints
@@ -213,23 +214,23 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.391 . Memory (MB): peak = 586.422 ; gain = 0.262
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.406 . Memory (MB): peak = 586.535 ; gain = 0.195
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:01:16 . Memory (MB): peak = 586.422 ; gain = 427.621
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:01:13 . Memory (MB): peak = 586.535 ; gain = 427.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:01:16 . Memory (MB): peak = 586.422 ; gain = 427.621
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:01:13 . Memory (MB): peak = 586.535 ; gain = 427.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-5468-VLAB-004/dcp_5/MMCM_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  O:/engs128/lab5/lab5.runs/synth_1/.Xil/Vivado-6016-VLAB-002/dcp_5/MMCM_in_context.xdc, line 4).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:01:17 . Memory (MB): peak = 586.422 ; gain = 427.621
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:01:14 . Memory (MB): peak = 586.535 ; gain = 427.473
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'SerialRx'
 ROM "rx_sample" won't be mapped to RAM because it is too sparse.
@@ -283,12 +284,10 @@ ROM "tx_load" won't be mapped to Block RAM because address size (3) smaller than
 ROM "tx_done_tick" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
 ROM "symbolClk" won't be mapped to RAM because it is too sparse.
 INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'SerialRx'
-WARNING: [Synth 8-327] inferring latch for variable 'ps_out_sample_reg' [O:/engs128/lab3/lab2.srcs/sources_1/new/PulseShaper.vhd:53]
 WARNING: [Synth 8-327] inferring latch for variable 'romRdAddr_reg' [O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/new/MatchedFilter.vhd:102]
-WARNING: [Synth 8-327] inferring latch for variable 'deser_out_txData_reg' [O:/engs128/lab3/lab2.srcs/sources_1/imports/new/IQDeserializer.vhd:90]
 INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'SerialTx'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:01:21 . Memory (MB): peak = 586.422 ; gain = 427.621
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:01:17 . Memory (MB): peak = 586.535 ; gain = 427.473
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -311,21 +310,19 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
 	               29 Bit    Registers := 1     
-	               16 Bit    Registers := 18    
-	               13 Bit    Registers := 2     
-	               12 Bit    Registers := 1     
+	               16 Bit    Registers := 20    
+	               12 Bit    Registers := 3     
 	               10 Bit    Registers := 4     
-	                8 Bit    Registers := 13    
+	                8 Bit    Registers := 14    
 	                4 Bit    Registers := 7     
 	                3 Bit    Registers := 11    
-	                2 Bit    Registers := 8     
-	                1 Bit    Registers := 12    
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 11    
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 6     
 	   2 Input     14 Bit        Muxes := 2     
-	   2 Input     13 Bit        Muxes := 2     
-	   4 Input     13 Bit        Muxes := 2     
-	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 4     
+	   4 Input     12 Bit        Muxes := 2     
 	   2 Input     10 Bit        Muxes := 3     
 	   2 Input      8 Bit        Muxes := 2     
 	  16 Input      7 Bit        Muxes := 1     
@@ -333,13 +330,13 @@ Detailed RTL Component Info :
 	   6 Input      3 Bit        Muxes := 2     
 	   2 Input      3 Bit        Muxes := 5     
 	   8 Input      3 Bit        Muxes := 7     
-	   4 Input      2 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 7     
 	   2 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 75    
+	   2 Input      1 Bit        Muxes := 73    
 	   5 Input      1 Bit        Muxes := 5     
 	   8 Input      1 Bit        Muxes := 23    
 	   6 Input      1 Bit        Muxes := 9     
-	   4 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 11    
 	   7 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -449,6 +446,8 @@ Module CharToIQ__parameterized0
 Detailed RTL Component Info : 
 Module PulseShaper 
 Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
 Module Modulator 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -495,11 +494,11 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     13 Bit        Muxes := 2     
-	   4 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	   4 Input     12 Bit        Muxes := 2     
 	   2 Input      3 Bit        Muxes := 1     
 Module MatchedFilter 
 Detailed RTL Component Info : 
@@ -529,7 +528,7 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	                8 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
 	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
@@ -555,10 +554,12 @@ Detailed RTL Component Info :
 Module ModemRx 
 Detailed RTL Component Info : 
 +---Registers : 
-	                1 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -571,7 +572,7 @@ BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:44 ; elapsed = 00:01:22 . Memory (MB): peak = 586.422 ; gain = 427.621
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:45 ; elapsed = 00:01:18 . Memory (MB): peak = 586.535 ; gain = 427.473
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -594,9 +595,11 @@ ROM "Receiver/IQToChar/next_state" won't be mapped to RAM because it is too spar
 ROM "Receiver/IQToChar/next_state" won't be mapped to RAM because it is too sparse.
 ROM "Receiver/Transmitter/br_tick" won't be mapped to RAM because it is too sparse.
 ROM "symbolClk" won't be mapped to RAM because it is too sparse.
-DSP Report: Generating DSP Transmitter/QPSK_Modulator/qpskSignal1, operation Mode is: A*B.
+DSP Report: Generating DSP Transmitter/QPSK_Modulator/qpskSignal1, operation Mode is: A2*B.
+DSP Report: register Transmitter/PSF_Q/ps_out_sample_reg is absorbed into DSP Transmitter/QPSK_Modulator/qpskSignal1.
 DSP Report: operator Transmitter/QPSK_Modulator/qpskSignal1 is absorbed into DSP Transmitter/QPSK_Modulator/qpskSignal1.
-DSP Report: Generating DSP Transmitter/QPSK_Modulator/qpskSignal_reg, operation Mode is: (-C+A*B+1-1)'.
+DSP Report: Generating DSP Transmitter/QPSK_Modulator/qpskSignal_reg, operation Mode is: (-C+A2*B+1-1)'.
+DSP Report: register Transmitter/PSF_I/ps_out_sample_reg is absorbed into DSP Transmitter/QPSK_Modulator/qpskSignal_reg.
 DSP Report: register Transmitter/QPSK_Modulator/qpskSignal_reg is absorbed into DSP Transmitter/QPSK_Modulator/qpskSignal_reg.
 DSP Report: operator Transmitter/QPSK_Modulator/qpskSignal0 is absorbed into DSP Transmitter/QPSK_Modulator/qpskSignal_reg.
 DSP Report: operator Transmitter/QPSK_Modulator/qpskSignal1 is absorbed into DSP Transmitter/QPSK_Modulator/qpskSignal_reg.
@@ -649,9 +652,9 @@ DSP Report: Generating DSP Receiver/CarriageRecoveryLoop/ph_accum_reg, operation
 DSP Report: register Receiver/CarriageRecoveryLoop/ph_accum_reg is absorbed into DSP Receiver/CarriageRecoveryLoop/ph_accum_reg.
 DSP Report: operator Receiver/CarriageRecoveryLoop/ph_accum0_dspDelayedAccum is absorbed into DSP Receiver/CarriageRecoveryLoop/ph_accum_reg.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:26 . Memory (MB): peak = 586.422 ; gain = 427.621
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:21 . Memory (MB): peak = 586.535 ; gain = 427.473
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:48 ; elapsed = 00:01:26 . Memory (MB): peak = 586.422 ; gain = 427.621
+Finished Parallel Reinference  : Time (s): cpu = 00:00:48 ; elapsed = 00:01:21 . Memory (MB): peak = 586.535 ; gain = 427.473
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -665,8 +668,8 @@ Report RTL Partitions:
  Sort Area is null Receiver/CarriageRecoveryLoop/yI1_7 : 0 1 : 2096 4065 : Used 1 time 0
  Sort Area is null Receiver/MF_I/accum_reg_6 : 0 0 : 2174 2174 : Used 1 time 0
  Sort Area is null Receiver/MF_Q/accum_reg_4 : 0 0 : 2174 2174 : Used 1 time 0
- Sort Area is null Transmitter/QPSK_Modulator/qpskSignal_reg_2 : 0 0 : 1889 1889 : Used 1 time 0
- Sort Area is null Transmitter/QPSK_Modulator/qpskSignal1_0 : 0 0 : 1659 1659 : Used 1 time 0
+ Sort Area is null Transmitter/QPSK_Modulator/qpskSignal_reg_2 : 0 0 : 1905 1905 : Used 1 time 0
+ Sort Area is null Transmitter/QPSK_Modulator/qpskSignal1_0 : 0 0 : 1675 1675 : Used 1 time 0
  Sort Area is null Receiver/CarriageRecoveryLoop/x2_ploop_reg_c : 0 0 : 323 878 : Used 1 time 0
  Sort Area is null Receiver/CarriageRecoveryLoop/x2_ploop_reg_c : 0 1 : 428 878 : Used 1 time 0
 ---------------------------------------------------------------------------------
@@ -677,8 +680,8 @@ DSP:
 +--------------+----------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name   | DSP Mapping          | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +--------------+----------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Modulator     | A*B                  | No           | 16     | 14     | 48     | 25     | 30     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|Modulator     | (-C+A*B+1-1)'        | No           | 16     | 14     | 29     | 25     | 29     | 0    | 0    | 0    | 1    | 1     | 0    | 1    | 
+|lab3top       | A2*B                 | No           | 16     | 14     | 48     | 25     | 30     | 1    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|lab3top       | (-C+A2*B+1-1)'       | No           | 16     | 14     | 29     | 25     | 29     | 1    | 0    | 0    | 1    | 1     | 0    | 1    | 
 |MatchedFilter | (P+(A2*B2)')'        | No           | 16     | 16     | 41     | 25     | 41     | 1    | 1    | 1    | 1    | 1     | 1    | 1    | 
 |CRloop        | A2*B2                | No           | 16     | 16     | 48     | 25     | 32     | 1    | 1    | 1    | 1    | 1     | 0    | 0    | 
 |MatchedFilter | (P+(A2*B2)')'        | No           | 16     | 16     | 41     | 25     | 41     | 1    | 1    | 1    | 1    | 1     | 1    | 1    | 
@@ -699,26 +702,24 @@ WARNING: [Synth 8-3332] Sequential element (\Transmitter/Receiver/rx_reg_reg[0] 
 WARNING: [Synth 8-3332] Sequential element (\Receiver/ADCInFace/temp1_reg[14] ) is unused and will be removed from module lab3top.
 WARNING: [Synth 8-3332] Sequential element (\Receiver/ADCInFace/temp1_reg[13] ) is unused and will be removed from module lab3top.
 WARNING: [Synth 8-3332] Sequential element (\Receiver/ADCInFace/temp1_reg[12] ) is unused and will be removed from module lab3top.
-WARNING: [Synth 8-3332] Sequential element (\Receiver/QPSK_Demodulator/rawI_reg[11] ) is unused and will be removed from module lab3top.
-WARNING: [Synth 8-3332] Sequential element (\Receiver/QPSK_Demodulator/rawQ_reg[11] ) is unused and will be removed from module lab3top.
 WARNING: [Synth 8-3332] Sequential element (\Receiver/Transmitter/tx_reg_reg[9] ) is unused and will be removed from module lab3top.
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:30 . Memory (MB): peak = 586.422 ; gain = 427.621
+Finished Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:25 . Memory (MB): peak = 586.535 ; gain = 427.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:30 . Memory (MB): peak = 586.422 ; gain = 427.621
+Finished Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:25 . Memory (MB): peak = 586.535 ; gain = 427.473
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:51 ; elapsed = 00:01:30 . Memory (MB): peak = 586.422 ; gain = 427.621
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:51 ; elapsed = 00:01:25 . Memory (MB): peak = 586.535 ; gain = 427.473
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:51 ; elapsed = 00:01:30 . Memory (MB): peak = 586.422 ; gain = 427.621
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:51 ; elapsed = 00:01:25 . Memory (MB): peak = 586.535 ; gain = 427.473
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -727,10 +728,10 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:35 ; elapsed = 00:02:17 . Memory (MB): peak = 620.383 ; gain = 461.582
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:35 ; elapsed = 00:02:12 . Memory (MB): peak = 619.477 ; gain = 460.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:02:20 . Memory (MB): peak = 632.402 ; gain = 473.602
+Finished Timing Optimization : Time (s): cpu = 00:01:37 ; elapsed = 00:02:14 . Memory (MB): peak = 631.480 ; gain = 472.418
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -741,8 +742,9 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\Receiver/QPSK_Demodulator/waveCount_reg[2] ) is unused and will be removed from module lab3top.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:41 ; elapsed = 00:02:23 . Memory (MB): peak = 647.039 ; gain = 488.238
+Finished Technology Mapping : Time (s): cpu = 00:01:38 ; elapsed = 00:02:15 . Memory (MB): peak = 645.527 ; gain = 486.465
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -768,7 +770,7 @@ INFO: [Synth 8-5365] Flop Receiver/IQToChar/symb_dec_out_reg[0] is being inverte
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:42 ; elapsed = 00:02:25 . Memory (MB): peak = 647.039 ; gain = 488.238
+Finished IO Insertion : Time (s): cpu = 00:01:39 ; elapsed = 00:02:16 . Memory (MB): peak = 645.527 ; gain = 486.465
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -781,7 +783,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:42 ; elapsed = 00:02:25 . Memory (MB): peak = 647.039 ; gain = 488.238
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:39 ; elapsed = 00:02:16 . Memory (MB): peak = 645.527 ; gain = 486.465
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -793,7 +795,7 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:43 ; elapsed = 00:02:25 . Memory (MB): peak = 647.039 ; gain = 488.238
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:02:16 . Memory (MB): peak = 645.527 ; gain = 486.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
@@ -845,18 +847,18 @@ Report Cell Usage:
 |15    |DSP48E1_5              |     1|
 |16    |DSP48E1_6              |     1|
 |17    |DSP48E1_7              |     1|
-|18    |LUT1                   |   111|
-|19    |LUT2                   |   115|
-|20    |LUT3                   |   122|
-|21    |LUT4                   |    67|
-|22    |LUT5                   |    62|
-|23    |LUT6                   |   113|
+|18    |LUT1                   |   112|
+|19    |LUT2                   |   118|
+|20    |LUT3                   |   124|
+|21    |LUT4                   |    51|
+|22    |LUT5                   |    76|
+|23    |LUT6                   |   101|
 |24    |MUXF7                  |   136|
 |25    |MUXF8                  |    64|
 |26    |SRLC32E                |   256|
-|27    |FDRE                   |   424|
+|27    |FDRE                   |   432|
 |28    |FDSE                   |    10|
-|29    |LD                     |    56|
+|29    |LD                     |    16|
 |30    |IBUF                   |     3|
 |31    |OBUF                   |    20|
 +------+-----------------------+------+
@@ -865,53 +867,53 @@ Report Instance Areas:
 +------+-------------------------+----------------------------------+------+
 |      |Instance                 |Module                            |Cells |
 +------+-------------------------+----------------------------------+------+
-|1     |top                      |                                  |  1775|
-|2     |  Receiver               |ModemRx                           |  1124|
-|3     |    ADCInFace            |ADCInterface__parameterized0      |    59|
-|4     |    CarriageRecoveryLoop |CRloop__parameterized0            |   245|
+|1     |top                      |                                  |  1735|
+|2     |  Receiver               |ModemRx                           |  1100|
+|3     |    ADCInFace            |ADCInterface__parameterized0      |    58|
+|4     |    CarriageRecoveryLoop |CRloop__parameterized0            |   244|
 |5     |    Debug_PassThroughDAC |DAC__parameterized0_1             |    53|
-|6     |    IQToChar             |IQDeserializer__parameterized0    |    43|
-|7     |    MF_I                 |MatchedFilter                     |   298|
-|8     |    MF_Q                 |MatchedFilter_2                   |   298|
-|9     |    QPSK_Demodulator     |Demodulator                       |    58|
+|6     |    IQToChar             |IQDeserializer__parameterized0    |    41|
+|7     |    MF_I                 |MatchedFilter                     |   295|
+|8     |    MF_Q                 |MatchedFilter_2                   |   295|
+|9     |    QPSK_Demodulator     |Demodulator                       |    41|
 |10    |    Transmitter          |SerialTx                          |    67|
-|11    |  Transmitter            |ModemTx                           |   593|
-|12    |    CharacterToIQ        |CharToIQ__parameterized0          |   244|
-|13    |      CharBuffer         |CharBufferModule                  |   135|
-|14    |        Controller       |BufferController                  |    11|
-|15    |        RAM              |FifoBuffer__parameterized0        |    95|
-|16    |        ReadAddrCounter  |BufferAddrCounter__parameterized2 |     7|
-|17    |        WriteAddrCounter |BufferAddrCounter__parameterized0 |    22|
-|18    |      Serializer         |IQSerializer__parameterized0      |   109|
+|11    |  Transmitter            |ModemTx                           |   577|
+|12    |    CharacterToIQ        |CharToIQ__parameterized0          |   241|
+|13    |      CharBuffer         |CharBufferModule                  |   128|
+|14    |        Controller       |BufferController                  |    15|
+|15    |        RAM              |FifoBuffer__parameterized0        |    96|
+|16    |        ReadAddrCounter  |BufferAddrCounter__parameterized2 |     6|
+|17    |        WriteAddrCounter |BufferAddrCounter__parameterized0 |    11|
+|18    |      Serializer         |IQSerializer__parameterized0      |   113|
 |19    |    DACInterface         |DAC__parameterized0               |    53|
 |20    |    Display              |mux7seg                           |    54|
-|21    |    PSF_I                |PulseShaper                       |    51|
-|22    |    PSF_Q                |PulseShaper_0                     |    50|
-|23    |    QPSK_Modulator       |Modulator                         |    64|
-|24    |    Receiver             |SerialRx                          |    77|
+|21    |    PSF_I                |PulseShaper                       |    34|
+|22    |    PSF_Q                |PulseShaper_0                     |    37|
+|23    |    QPSK_Modulator       |Modulator                         |    78|
+|24    |    Receiver             |SerialRx                          |    80|
 +------+-------------------------+----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:43 ; elapsed = 00:02:25 . Memory (MB): peak = 647.039 ; gain = 488.238
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:02:16 . Memory (MB): peak = 645.527 ; gain = 486.465
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:01:41 . Memory (MB): peak = 647.039 ; gain = 139.496
-Synthesis Optimization Complete : Time (s): cpu = 00:01:43 ; elapsed = 00:02:26 . Memory (MB): peak = 647.039 ; gain = 488.238
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:01:31 . Memory (MB): peak = 645.527 ; gain = 137.820
+Synthesis Optimization Complete : Time (s): cpu = 00:01:39 ; elapsed = 00:02:16 . Memory (MB): peak = 645.527 ; gain = 486.465
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 106 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 56 instances were transformed.
-  LD => LDCE: 56 instances
+  A total of 16 instances were transformed.
+  LD => LDCE: 16 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-108 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+108 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:42 ; elapsed = 00:02:17 . Memory (MB): peak = 647.039 ; gain = 455.121
+synth_design: Time (s): cpu = 00:01:36 ; elapsed = 00:02:02 . Memory (MB): peak = 645.527 ; gain = 453.332
 # write_checkpoint -noxdef lab3top.dcp
 # catch { report_utilization -file lab3top_utilization_synth.rpt -pb lab3top_utilization_synth.pb }
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.610 . Memory (MB): peak = 647.039 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue May 26 00:37:10 2015...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.250 . Memory (MB): peak = 645.527 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue May 26 19:34:35 2015...

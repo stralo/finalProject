@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:24:04 MST 2014
-| Date             : Tue May 26 00:40:24 2015
-| Host             : VLAB-004 running 64-bit Service Pack 1  (build 7601)
+| Date             : Tue May 26 19:37:33 2015
+| Host             : VLAB-002 running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file lab3top_power_routed.rpt -pb lab3top_power_summary_routed.pb
 | Design           : lab3top
 | Device           : xc7a35tcpg236-1
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 0.270  |
-| Dynamic (W)              | 0.197  |
+| Total On-Chip Power (W)  | 0.267  |
+| Dynamic (W)              | 0.195  |
 | Device Static (W)        | 0.073  |
 | Effective TJA (C/W)      | 5.0    |
 | Max Ambient (C)          | 83.7   |
@@ -50,22 +50,22 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.007 |       10 |       --- |             --- |
-| Slice Logic              |     0.006 |     3203 |       --- |             --- |
-|   LUT as Logic           |     0.005 |      829 |     20800 |            3.98 |
+| Slice Logic              |     0.006 |     3156 |       --- |             --- |
+|   LUT as Logic           |     0.005 |      821 |     20800 |            3.94 |
 |   LUT as Distributed RAM |    <0.001 |       32 |      9600 |            0.33 |
-|   Register               |    <0.001 |     1270 |     41600 |            3.05 |
+|   Register               |    <0.001 |     1238 |     41600 |            2.97 |
 |   CARRY4                 |    <0.001 |       60 |      8150 |            0.73 |
 |   LUT as Shift Register  |    <0.001 |      314 |      9600 |            3.27 |
 |   F7/F8 Muxes            |    <0.001 |      234 |     32600 |            0.71 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.12 |
-|   Others                 |     0.000 |      206 |       --- |             --- |
-| Signals                  |     0.010 |     2450 |       --- |             --- |
+|   Others                 |     0.000 |      200 |       --- |             --- |
+| Signals                  |     0.010 |     2411 |       --- |             --- |
 | Block RAM                |     0.036 |        9 |        50 |           18.00 |
 | MMCM                     |     0.106 |        1 |         5 |           20.00 |
 | DSPs                     |     0.015 |       15 |        90 |           16.66 |
 | I/O                      |     0.009 |       24 |       106 |           22.64 |
 | Static Power             |     0.073 |          |           |                 |
-| Total                    |     0.270 |          |           |                 |
+| Total                    |     0.267 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,9 +75,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.090 |       0.080 |      0.010 |
+| Vccint    |       1.000 |     0.088 |       0.078 |      0.010 |
 | Vccaux    |       1.800 |     0.072 |       0.059 |      0.013 |
-| Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |
+| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -151,15 +151,15 @@ Table of Contents
 +------------------------------------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                                                         | Power (W) |
 +------------------------------------------------------------------------------------------------------------------------------+-----------+
-| lab3top                                                                                                                      |     0.190 |
-|   Receiver                                                                                                                   |     0.056 |
+| lab3top                                                                                                                      |     0.188 |
+|   Receiver                                                                                                                   |     0.055 |
 |     ADCInFace                                                                                                                |    <0.001 |
 |     CarriageRecoveryLoop                                                                                                     |     0.045 |
-|       SinCosLUT                                                                                                              |     0.035 |
-|         U0                                                                                                                   |     0.035 |
-|           i_synth                                                                                                            |     0.035 |
-|             i_dds                                                                                                            |     0.035 |
-|               I_SINCOS.i_std_rom.i_rom                                                                                       |     0.035 |
+|       SinCosLUT                                                                                                              |     0.036 |
+|         U0                                                                                                                   |     0.036 |
+|           i_synth                                                                                                            |     0.036 |
+|             i_dds                                                                                                            |     0.036 |
+|               I_SINCOS.i_std_rom.i_rom                                                                                       |     0.036 |
 |                 i_rtl.i_quarter_table.i_addr_reg_c                                                                           |    <0.001 |
 |                 i_rtl.i_quarter_table.i_phase_or.i_phase_in_zero_del                                                         |    <0.001 |
 |                 i_rtl.i_quarter_table.i_piped_map.i_cardinal_cos_ls                                                          |    <0.001 |
@@ -181,7 +181,7 @@ Table of Contents
 |               valid.cstr                                                                                                     |     0.002 |
 |                 ramloop[0].ram.r                                                                                             |     0.002 |
 |                   prim_init.ram                                                                                              |     0.002 |
-|     MF_Q                                                                                                                     |     0.005 |
+|     MF_Q                                                                                                                     |     0.004 |
 |       ROM                                                                                                                    |     0.002 |
 |         U0                                                                                                                   |     0.002 |
 |           inst_blk_mem_gen                                                                                                   |     0.002 |
@@ -194,7 +194,7 @@ Table of Contents
 |   SPIClkGenerator                                                                                                            |     0.106 |
 |     U0                                                                                                                       |     0.106 |
 |   Transmitter                                                                                                                |     0.018 |
-|     CharacterToIQ                                                                                                            |     0.001 |
+|     CharacterToIQ                                                                                                            |    <0.001 |
 |       CharBuffer                                                                                                             |    <0.001 |
 |         Controller                                                                                                           |    <0.001 |
 |         RAM                                                                                                                  |    <0.001 |

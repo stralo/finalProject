@@ -1,0 +1,7 @@
+Running: xsim.dir/PulseShaper_tb_behav/xsimk.exe -simmode gui -wdb PulseShaper_tb_behav.wdb -simrunnum 0 -socket 57038
+Design successfully loaded
+Design Loading Memory Usage: 19140 KB (Peak: 19140 KB)
+Design Loading CPU Usage: 390 ms
+Simulation completed
+Simulation Memory Usage: 21860 KB (Peak: 21860 KB)
+Simulation CPU Usage: 32359 ms

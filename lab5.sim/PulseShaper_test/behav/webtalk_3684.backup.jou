@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue May 26 03:02:52 2015
+# Process ID: 5004
+# Log file: O:/engs128/lab5/lab5.sim/PulseShaper_test/behav/webtalk.log
+# Journal file: O:/engs128/lab5/lab5.sim/PulseShaper_test/behav\webtalk.jou
+#-----------------------------------------------------------
+source O:/engs128/lab5/lab5.sim/PulseShaper_test/behav/xsim.dir/PulseShaper_tb_behav/webtalk/xsim_webtalk.tcl -notrace

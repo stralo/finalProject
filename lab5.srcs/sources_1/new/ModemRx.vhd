@@ -151,7 +151,7 @@ end COMPONENT;
     signal samplingStrobe, sampleNow : std_logic; 
     
 
-    type startHoldState is (s0, s1);  --, s4, s5, s6
+    type startHoldState is (s0, s1, s2, s3);  --, s4, s5, s6
     signal startCurrentState , startNextState : startHoldState := s0;
 
 begin
@@ -276,7 +276,13 @@ begin
             end if; 
             
         when s1 =>
-            sampleNow <= '1';
+            startNextState <= s2;
+        
+        when s2 =>
+            startNextState <= s3;
+            
+        when s3 =>
+            sampleNow <= '1'; 
             startNextState <= s0; 
                                   
             
@@ -295,7 +301,7 @@ Sampler:
 process(clk)
 begin
     if rising_edge(clk) then 
-          if sampleNow = '1' then 
+        if sampleNow = '1' then 
             if signed(iPulse) < 0 then 
                 serialI <= '0';
             elsif signed(iPulse) > 0 then  
