@@ -7,8 +7,5 @@ CRITICAL WARNING: [Common 17-183] Failed to open handle webtalk.log. Please chec
     ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 
 source O:/engs128/lab5/lab5.hw/webtalk/labtool_webtalk.tcl -notrace
-
-    while executing
-"webtalk_transmit -clientid 840362650 -regid "210643936_1777485687_210562918_123" -xml O:/engs128/lab5/lab5.hw/webtalk/usage_statistics_ext_labtool.xml..."
-    (file "O:/engs128/lab5/lab5.hw/webtalk/labtool_webtalk.tcl" line 27)
-INFO: [Common 17-206] Exiting Webtalk at Tue May 26 00:44:12 2015...
+INFO: [Common 17-186] 'O:/engs128/lab5/lab5.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Wed May 27 02:03:34 2015. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/v2014.4/Vivado/2014.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed May 27 02:03:34 2015...

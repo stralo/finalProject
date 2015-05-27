@@ -1,0 +1,20 @@
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+Failure: Not a real failure. Simulation finished successfully. Test completed successfully
+Time: 4290160 ns  Iteration: 0  Process: /tb_fir_compiler_1/stimuli  File: O:/engs128/lab5/lab5.srcs/sources_1/ip/fir_compiler_1/demo_tb/tb_fir_compiler_1.vhd
+$finish called at time : 4290160 ns : File "O:/engs128/lab5/lab5.srcs/sources_1/ip/fir_compiler_1/demo_tb/tb_fir_compiler_1.vhd" Line 216
+Failure: Not a real failure. Simulation finished successfully. Test completed successfully
+Time: 4290160 ns  Iteration: 0  Process: /tb_fir_compiler_1/stimuli  File: O:/engs128/lab5/lab5.srcs/sources_1/ip/fir_compiler_1/demo_tb/tb_fir_compiler_1.vhd
+$finish called at time : 4290160 ns : File "O:/engs128/lab5/lab5.srcs/sources_1/ip/fir_compiler_1/demo_tb/tb_fir_compiler_1.vhd" Line 216
+Failure: Not a real failure. Simulation finished successfully. Test completed successfully
+Time: 4290160 ns  Iteration: 0  Process: /tb_fir_compiler_1/stimuli  File: O:/engs128/lab5/lab5.srcs/sources_1/ip/fir_compiler_1/demo_tb/tb_fir_compiler_1.vhd
+$finish called at time : 4290160 ns : File "O:/engs128/lab5/lab5.srcs/sources_1/ip/fir_compiler_1/demo_tb/tb_fir_compiler_1.vhd" Line 216
+Failure: Not a real failure. Simulation finished successfully. Test completed successfully
+Time: 4290160 ns  Iteration: 0  Process: /tb_fir_compiler_1/stimuli  File: O:/engs128/lab5/lab5.srcs/sources_1/ip/fir_compiler_1/demo_tb/tb_fir_compiler_1.vhd
+$finish called at time : 4290160 ns : File "O:/engs128/lab5/lab5.srcs/sources_1/ip/fir_compiler_1/demo_tb/tb_fir_compiler_1.vhd" Line 216
+Failure: Not a real failure. Simulation finished successfully. Test completed successfully
+Time: 4290160 ns  Iteration: 0  Process: /tb_fir_compiler_1/stimuli  File: O:/engs128/lab5/lab5.srcs/sources_1/ip/fir_compiler_1/demo_tb/tb_fir_compiler_1.vhd
+$finish called at time : 4290160 ns : File "O:/engs128/lab5/lab5.srcs/sources_1/ip/fir_compiler_1/demo_tb/tb_fir_compiler_1.vhd" Line 216
+Failure: Not a real failure. Simulation finished successfully. Test completed successfully
+Time: 4290160 ns  Iteration: 0  Process: /tb_fir_compiler_1/stimuli  File: O:/engs128/lab5/lab5.srcs/sources_1/ip/fir_compiler_1/demo_tb/tb_fir_compiler_1.vhd
+$finish called at time : 4290160 ns : File "O:/engs128/lab5/lab5.srcs/sources_1/ip/fir_compiler_1/demo_tb/tb_fir_compiler_1.vhd" Line 216

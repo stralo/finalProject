@@ -13,6 +13,7 @@
    <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/Serializer/ser_in_char" type="array">
       <obj_property name="ElementShortName">ser_in_char[7:0]</obj_property>
       <obj_property name="ObjectShortName">ser_in_char[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/QPSK_Modulator/qpskSignal" type="array">
       <obj_property name="ElementShortName">qpskSignal[29:0]</obj_property>
@@ -64,18 +65,22 @@
       <obj_property name="ElementShortName">masterClk</obj_property>
       <obj_property name="ObjectShortName">masterClk</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/MF_I/mf_out_val" type="array">
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/MF_i/mf_out_val" type="array">
       <obj_property name="ElementShortName">mf_out_val[15:0]</obj_property>
       <obj_property name="ObjectShortName">mf_out_val[15:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
       <obj_property name="CellHeight">100</obj_property>
    </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/MF_i/compilerOutput" type="array">
+      <obj_property name="ElementShortName">compilerOutput[39:0]</obj_property>
+      <obj_property name="ObjectShortName">compilerOutput[39:0]</obj_property>
+   </wvobject>
    <wvobject db_ref_id="1" fp_name="/lab5_tb/symbolClk" type="logic">
       <obj_property name="ElementShortName">symbolClk</obj_property>
       <obj_property name="ObjectShortName">symbolClk</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/MF_Q/mf_out_val" type="array">
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/MF_q/mf_out_val" type="array">
       <obj_property name="ElementShortName">mf_out_val[15:0]</obj_property>
       <obj_property name="ObjectShortName">mf_out_val[15:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
@@ -134,9 +139,5 @@
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
       <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/peakClk" type="logic">
-      <obj_property name="ElementShortName">peakClk</obj_property>
-      <obj_property name="ObjectShortName">peakClk</obj_property>
    </wvobject>
 </wave_config>

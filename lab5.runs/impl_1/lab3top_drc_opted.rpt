@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:24:04 MST 2014
-| Date         : Tue May 26 19:35:47 2015
-| Host         : VLAB-002 running 64-bit Service Pack 1  (build 7601)
+| Date         : Wed May 27 01:31:19 2015
+| Host         : VLAB-024 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_drc
 ------------------------------------------------------------------------------------
 
@@ -20,7 +20,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
            Max violations: <unlimited>
-         Violations found: 33
+         Violations found: 31
 
 2. REPORT DETAILS
 -----------------
@@ -144,29 +144,7 @@ Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT Receiver/MF_I/romRdAddr_reg[7]_i_2__0 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
-    Receiver/MF_I/romRdAddr_reg[0] {LDCE}
-    Receiver/MF_I/romRdAddr_reg[1] {LDCE}
-    Receiver/MF_I/romRdAddr_reg[2] {LDCE}
-    Receiver/MF_I/romRdAddr_reg[3] {LDCE}
-    Receiver/MF_I/romRdAddr_reg[4] {LDCE}
-
-Related violations: <none>
-
-PLHOLDVIO-2#2 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT Receiver/MF_Q/romRdAddr_reg[7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
-    Receiver/MF_Q/romRdAddr_reg[0] {LDCE}
-    Receiver/MF_Q/romRdAddr_reg[1] {LDCE}
-    Receiver/MF_Q/romRdAddr_reg[2] {LDCE}
-    Receiver/MF_Q/romRdAddr_reg[3] {LDCE}
-    Receiver/MF_Q/romRdAddr_reg[4] {LDCE}
-
-Related violations: <none>
-
-PLHOLDVIO-2#3 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT Transmitter/PSF_Q/modemRx_in_sampleClk_BUFG_inst_i_1 is driving clock pin of 2 cells. This could lead to large hold time violations. First few involved cells are:
+A LUT Transmitter/PSF_I/modemRx_in_sampleClk_BUFG_inst_i_1 is driving clock pin of 2 cells. This could lead to large hold time violations. First few involved cells are:
     Receiver/startCurrentState_reg[1] {FDRE}
     Receiver/startCurrentState_reg[0] {FDRE}
 

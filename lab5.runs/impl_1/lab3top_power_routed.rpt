@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:24:04 MST 2014
-| Date             : Tue May 26 19:37:33 2015
-| Host             : VLAB-002 running 64-bit Service Pack 1  (build 7601)
+| Date             : Wed May 27 01:32:33 2015
+| Host             : VLAB-024 running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file lab3top_power_routed.rpt -pb lab3top_power_summary_routed.pb
 | Design           : lab3top
 | Device           : xc7a35tcpg236-1
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 0.267  |
-| Dynamic (W)              | 0.195  |
+| Total On-Chip Power (W)  | 0.270  |
+| Dynamic (W)              | 0.198  |
 | Device Static (W)        | 0.073  |
 | Effective TJA (C/W)      | 5.0    |
-| Max Ambient (C)          | 83.7   |
-| Junction Temperature (C) | 26.3   |
+| Max Ambient (C)          | 83.6   |
+| Junction Temperature (C) | 26.4   |
 | Confidence Level         | Medium |
 | Setting File             | ---    |
 | Simulation Activity File | ---    |
@@ -49,23 +49,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.007 |       10 |       --- |             --- |
-| Slice Logic              |     0.006 |     3156 |       --- |             --- |
-|   LUT as Logic           |     0.005 |      821 |     20800 |            3.94 |
+| Clocks                   |     0.008 |       10 |       --- |             --- |
+| Slice Logic              |     0.007 |     3073 |       --- |             --- |
+|   LUT as Logic           |     0.006 |      866 |     20800 |            4.16 |
+|   Register               |    <0.001 |     1463 |     41600 |            3.51 |
 |   LUT as Distributed RAM |    <0.001 |       32 |      9600 |            0.33 |
-|   Register               |    <0.001 |     1238 |     41600 |            2.97 |
-|   CARRY4                 |    <0.001 |       60 |      8150 |            0.73 |
-|   LUT as Shift Register  |    <0.001 |      314 |      9600 |            3.27 |
-|   F7/F8 Muxes            |    <0.001 |      234 |     32600 |            0.71 |
+|   CARRY4                 |    <0.001 |       64 |      8150 |            0.78 |
+|   LUT as Shift Register  |    <0.001 |       72 |      9600 |            0.75 |
+|   F7/F8 Muxes            |    <0.001 |       50 |     32600 |            0.15 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.12 |
-|   Others                 |     0.000 |      200 |       --- |             --- |
-| Signals                  |     0.010 |     2411 |       --- |             --- |
+|   Others                 |     0.000 |      240 |       --- |             --- |
+| Signals                  |     0.011 |     2545 |       --- |             --- |
 | Block RAM                |     0.036 |        9 |        50 |           18.00 |
 | MMCM                     |     0.106 |        1 |         5 |           20.00 |
-| DSPs                     |     0.015 |       15 |        90 |           16.66 |
+| DSPs                     |     0.013 |       15 |        90 |           16.66 |
 | I/O                      |     0.009 |       24 |       106 |           22.64 |
 | Static Power             |     0.073 |          |           |                 |
-| Total                    |     0.267 |          |           |                 |
+| Total                    |     0.270 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,9 +75,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.088 |       0.078 |      0.010 |
+| Vccint    |       1.000 |     0.091 |       0.080 |      0.010 |
 | Vccaux    |       1.800 |     0.072 |       0.059 |      0.013 |
-| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
+| Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -151,10 +151,10 @@ Table of Contents
 +------------------------------------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                                                         | Power (W) |
 +------------------------------------------------------------------------------------------------------------------------------+-----------+
-| lab3top                                                                                                                      |     0.188 |
-|   Receiver                                                                                                                   |     0.055 |
+| lab3top                                                                                                                      |     0.190 |
+|   Receiver                                                                                                                   |     0.056 |
 |     ADCInFace                                                                                                                |    <0.001 |
-|     CarriageRecoveryLoop                                                                                                     |     0.045 |
+|     CarriageRecoveryLoop                                                                                                     |     0.046 |
 |       SinCosLUT                                                                                                              |     0.036 |
 |         U0                                                                                                                   |     0.036 |
 |           i_synth                                                                                                            |     0.036 |
@@ -173,28 +173,58 @@ Table of Contents
 |             i_has_nd_rdy_pipe.valid_phase_read_del                                                                           |    <0.001 |
 |     Debug_PassThroughDAC                                                                                                     |    <0.001 |
 |     IQToChar                                                                                                                 |    <0.001 |
-|     MF_I                                                                                                                     |     0.004 |
-|       ROM                                                                                                                    |     0.002 |
-|         U0                                                                                                                   |     0.002 |
-|           inst_blk_mem_gen                                                                                                   |     0.002 |
-|             gnativebmg.native_blk_mem_gen                                                                                    |     0.002 |
-|               valid.cstr                                                                                                     |     0.002 |
-|                 ramloop[0].ram.r                                                                                             |     0.002 |
-|                   prim_init.ram                                                                                              |     0.002 |
-|     MF_Q                                                                                                                     |     0.004 |
-|       ROM                                                                                                                    |     0.002 |
-|         U0                                                                                                                   |     0.002 |
-|           inst_blk_mem_gen                                                                                                   |     0.002 |
-|             gnativebmg.native_blk_mem_gen                                                                                    |     0.002 |
-|               valid.cstr                                                                                                     |     0.002 |
-|                 ramloop[0].ram.r                                                                                             |     0.002 |
-|                   prim_init.ram                                                                                              |     0.002 |
+|     MF_i                                                                                                                     |     0.004 |
+|       fircompiler                                                                                                            |     0.004 |
+|         U0                                                                                                                   |     0.004 |
+|           i_synth                                                                                                            |     0.004 |
+|             g_single_rate.i_single_rate                                                                                      |     0.004 |
+|               g_semi_parallel_and_smac.g_cntrl_signals[3].i_delay                                                            |    <0.001 |
+|               g_semi_parallel_and_smac.g_cntrl_signals[7].i_delay                                                            |    <0.001 |
+|               g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay                                                            |    <0.001 |
+|               g_semi_parallel_and_smac.g_cntrl_signals[9].i_delay                                                            |    <0.001 |
+|               g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr      |     0.000 |
+|               g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff                        |    <0.001 |
+|                 g_buff.i_buff                                                                                                |    <0.001 |
+|               g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem                                                       |     0.002 |
+|                 g_packed.g_true_dual_port.i_mem                                                                              |     0.002 |
+|               g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem                                                       |    <0.001 |
+|                 g_individual.i_mem_a                                                                                         |    <0.001 |
+|               g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum                                                            |    <0.001 |
+|                 i_addsub_mult_accum                                                                                          |    <0.001 |
+|               g_semi_parallel_and_smac.i_accumulate                                                                          |    <0.001 |
+|               g_semi_parallel_and_smac.i_cntrl_coef_addr                                                                     |    <0.001 |
+|               g_semi_parallel_and_smac.i_data_in                                                                             |    <0.001 |
+|               g_semi_parallel_and_smac.i_latch_op                                                                            |    <0.001 |
+|               g_semi_parallel_and_smac.i_load                                                                                |    <0.001 |
+|     MF_q                                                                                                                     |     0.004 |
+|       fircompiler                                                                                                            |     0.004 |
+|         U0                                                                                                                   |     0.004 |
+|           i_synth                                                                                                            |     0.004 |
+|             g_single_rate.i_single_rate                                                                                      |     0.004 |
+|               g_semi_parallel_and_smac.g_cntrl_signals[3].i_delay                                                            |    <0.001 |
+|               g_semi_parallel_and_smac.g_cntrl_signals[7].i_delay                                                            |    <0.001 |
+|               g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay                                                            |    <0.001 |
+|               g_semi_parallel_and_smac.g_cntrl_signals[9].i_delay                                                            |    <0.001 |
+|               g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr      |     0.000 |
+|               g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff                        |    <0.001 |
+|                 g_buff.i_buff                                                                                                |    <0.001 |
+|               g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem                                                       |     0.002 |
+|                 g_packed.g_true_dual_port.i_mem                                                                              |     0.002 |
+|               g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem                                                       |    <0.001 |
+|                 g_individual.i_mem_a                                                                                         |    <0.001 |
+|               g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum                                                            |    <0.001 |
+|                 i_addsub_mult_accum                                                                                          |    <0.001 |
+|               g_semi_parallel_and_smac.i_accumulate                                                                          |    <0.001 |
+|               g_semi_parallel_and_smac.i_cntrl_coef_addr                                                                     |    <0.001 |
+|               g_semi_parallel_and_smac.i_data_in                                                                             |    <0.001 |
+|               g_semi_parallel_and_smac.i_latch_op                                                                            |    <0.001 |
+|               g_semi_parallel_and_smac.i_load                                                                                |    <0.001 |
 |     QPSK_Demodulator                                                                                                         |    <0.001 |
 |     Transmitter                                                                                                              |    <0.001 |
 |   SPIClkGenerator                                                                                                            |     0.106 |
 |     U0                                                                                                                       |     0.106 |
 |   Transmitter                                                                                                                |     0.018 |
-|     CharacterToIQ                                                                                                            |    <0.001 |
+|     CharacterToIQ                                                                                                            |     0.001 |
 |       CharBuffer                                                                                                             |    <0.001 |
 |         Controller                                                                                                           |    <0.001 |
 |         RAM                                                                                                                  |    <0.001 |

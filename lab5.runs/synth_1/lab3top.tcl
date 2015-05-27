@@ -4,7 +4,6 @@
 
 set_param gui.test TreeTableDev
 debug::add_scope template.lib 1
-set_msg_config -id {Common-41} -limit 4294967295
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
@@ -17,6 +16,8 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 add_files //thayerfs.thayer.dartmouth.edu/d37581q/Desktop/rrcos8-brom.coe
 add_files //thayerfs/d37581q/Desktop/rrcos8-fir-ip.coe
+add_files //thayerfs/d37581q/Desktop/newmatchedfilter_coeffs.coe
+add_files //thayerfs.thayer.dartmouth.edu/d37581q/Desktop/rrcos8-fir-ip.coe
 add_files -quiet O:/engs128/lab5/lab5.runs/BlockROM_synth_1/BlockROM.dcp
 set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/BlockROM_synth_1/BlockROM.dcp]
 add_files -quiet O:/engs128/lab5/lab5.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp
@@ -27,6 +28,8 @@ add_files -quiet O:/engs128/lab5/lab5.runs/dds_compiler_1_synth_1/dds_compiler_1
 set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/dds_compiler_1_synth_1/dds_compiler_1.dcp]
 add_files -quiet O:/engs128/lab5/lab5.runs/MMCM_synth_1/MMCM.dcp
 set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/MMCM_synth_1/MMCM.dcp]
+add_files -quiet O:/engs128/lab5/lab5.runs/fir_compiler_1_synth_1/fir_compiler_1.dcp
+set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/fir_compiler_1_synth_1/fir_compiler_1.dcp]
 read_vhdl -library xil_defaultlib {
   O:/engs128/lab3/lab2.srcs/sources_1/new/PulseShaper.vhd
   O:/engs128/lab3/lab2.srcs/sources_1/imports/new/IQDeserializer.vhd
@@ -50,6 +53,7 @@ read_vhdl -library xil_defaultlib {
   O:/engs128/lab5/lab5.srcs/sources_1/imports/new/ADC.vhd
   O:/engs128/lab5/lab5.srcs/sources_1/new/Modulator.vhd
   O:/engs128/lab5/lab5.srcs/sources_1/new/lab3top.vhd
+  O:/engs128/lab5/lab5.srcs/sources_1/new/NewMatchedFilter.vhd
 }
 read_xdc O:/engs128/lab3/lab2.srcs/constrs_1/imports/Lab1/Basys3_Master.xdc
 set_property used_in_implementation false [get_files O:/engs128/lab3/lab2.srcs/constrs_1/imports/Lab1/Basys3_Master.xdc]
