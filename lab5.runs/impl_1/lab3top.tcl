@@ -72,6 +72,8 @@ set rc [catch {
   set_property netlist_only true [get_files O:/engs128/lab5/lab5.runs/fir_compiler_1_synth_1/fir_compiler_1.dcp]
   add_files -quiet O:/engs128/lab5/lab5.runs/fifo_generator_0_synth_1/fifo_generator_0.dcp
   set_property netlist_only true [get_files O:/engs128/lab5/lab5.runs/fifo_generator_0_synth_1/fifo_generator_0.dcp]
+  add_files -quiet O:/engs128/lab5/lab5.runs/fir_compiler_2_synth_1/fir_compiler_2.dcp
+  set_property netlist_only true [get_files O:/engs128/lab5/lab5.runs/fir_compiler_2_synth_1/fir_compiler_2.dcp]
   read_xdc -mode out_of_context -ref BlockROM o:/engs128/lab3/lab2.srcs/sources_1/ip/BlockROM/BlockROM_ooc.xdc
   set_property processing_order EARLY [get_files o:/engs128/lab3/lab2.srcs/sources_1/ip/BlockROM/BlockROM_ooc.xdc]
   read_xdc -mode out_of_context -ref fir_compiler_0 -cells U0 o:/engs128/lab3/lab2.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_ooc.xdc
@@ -92,6 +94,8 @@ set rc [catch {
   set_property processing_order EARLY [get_files o:/engs128/lab5/lab5.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_ooc.xdc]
   read_xdc -ref fifo_generator_0 -cells U0 o:/engs128/lab5/lab5.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0.xdc
   set_property processing_order EARLY [get_files o:/engs128/lab5/lab5.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0.xdc]
+  read_xdc -mode out_of_context -ref fir_compiler_2 -cells U0 o:/engs128/lab5/lab5.srcs/sources_1/ip/fir_compiler_2/fir_compiler_2_ooc.xdc
+  set_property processing_order EARLY [get_files o:/engs128/lab5/lab5.srcs/sources_1/ip/fir_compiler_2/fir_compiler_2_ooc.xdc]
   read_xdc O:/engs128/lab3/lab2.srcs/constrs_1/imports/Lab1/Basys3_Master.xdc
   link_design -top lab3top -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb

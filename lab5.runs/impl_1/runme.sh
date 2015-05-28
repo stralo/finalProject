@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/v2014.4/Vivado/2014.4/ids_lite/ISE/bin/nt64;C:/Xilinx/v2014.4/Vivado/2014.4/ids_lite/ISE/lib/nt64:C:/Xilinx/v2014.4/Vivado/2014.4/bin
+  PATH=C:/Xilinx/Vivado/2014.4/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2014.4/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2014.4/bin
 else
-  PATH=C:/Xilinx/v2014.4/Vivado/2014.4/ids_lite/ISE/bin/nt64;C:/Xilinx/v2014.4/Vivado/2014.4/ids_lite/ISE/lib/nt64:C:/Xilinx/v2014.4/Vivado/2014.4/bin:$PATH
+  PATH=C:/Xilinx/Vivado/2014.4/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2014.4/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2014.4/bin:$PATH
 fi
 export PATH
 

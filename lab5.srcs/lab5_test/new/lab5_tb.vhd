@@ -78,7 +78,7 @@ end COMPONENT;
 
     -- Data definitions
 	constant bit_time : time := 8.68us;		-- 115,200 baud
-	constant TxData : std_logic_vector(143 downto 0) := x"41424344454647484950515253545556570d";
+	constant TxData : std_logic_vector(31 downto 0) := x"4142430d";
     
     -- SIGNALS
         

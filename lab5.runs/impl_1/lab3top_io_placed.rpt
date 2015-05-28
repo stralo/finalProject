@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:24:04 MST 2014
-| Date         : Wed May 27 16:20:31 2015
-| Host         : VLAB-022 running 64-bit Service Pack 1  (build 7601)
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date         : Wed May 27 22:04:24 2015
+| Host         : M210-18 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_io -file lab3top_io_placed.rpt
 | Design       : lab3top
 | Device       : xc7a35t

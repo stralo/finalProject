@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1432757842">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1432778562">
   <File Type="RDS-DCP" Name="lab3top.dcp"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
   <File Type="RDS-UTIL-PB" Name="lab3top_utilization_synth.pb"/>
@@ -192,6 +192,7 @@
   <BlockFileSet Type="BlockSrcs" Name="fir_compiler_0"/>
   <BlockFileSet Type="BlockSrcs" Name="dds_compiler_0"/>
   <BlockFileSet Type="BlockSrcs" Name="dds_compiler_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="fir_compiler_2"/>
   <BlockFileSet Type="BlockSrcs" Name="MMCM"/>
   <BlockFileSet Type="BlockSrcs" Name="fifo_generator_0"/>
   <BlockFileSet Type="BlockSrcs" Name="fir_compiler_1"/>

@@ -34,6 +34,8 @@ add_files -quiet O:/engs128/lab5/lab5.runs/fir_compiler_1_synth_1/fir_compiler_1
 set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/fir_compiler_1_synth_1/fir_compiler_1.dcp]
 add_files -quiet O:/engs128/lab5/lab5.runs/fifo_generator_0_synth_1/fifo_generator_0.dcp
 set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/fifo_generator_0_synth_1/fifo_generator_0.dcp]
+add_files -quiet O:/engs128/lab5/lab5.runs/fir_compiler_2_synth_1/fir_compiler_2.dcp
+set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/fir_compiler_2_synth_1/fir_compiler_2.dcp]
 read_vhdl -library xil_defaultlib {
   O:/engs128/lab3/lab2.srcs/sources_1/new/PulseShaper.vhd
   O:/engs128/lab3/lab2.srcs/sources_1/imports/new/IQDeserializer.vhd

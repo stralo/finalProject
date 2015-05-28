@@ -1,5 +1,5 @@
 @echo off
-set xv_path=C:\\Xilinx\\v2014.4\\Vivado\\2014.4\\bin
+set xv_path=C:\\Xilinx\\Vivado\\2014.4\\bin
 echo "xvhdl -m64 -prj lab5_tb_vhdl.prj"
 call %xv_path%/xvhdl  -m64 -prj lab5_tb_vhdl.prj -log compile.log
 if "%errorlevel%"=="1" goto END

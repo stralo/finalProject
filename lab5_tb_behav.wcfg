@@ -9,77 +9,22 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="47" />
+   <WVObjectSize size="34" />
    <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/charToIQ_in_rxData" type="array">
-      <obj_property name="ElementShortName">charToIQ_in_rxData[7:0]</obj_property>
-      <obj_property name="ObjectShortName">charToIQ_in_rxData[7:0]</obj_property>
-      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/PSF/ps_out_iSample" type="array">
+      <obj_property name="ElementShortName">ps_out_iSample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ps_out_iSample[15:0]</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/CharBuffer/buf_mod_in_clk" type="logic">
-      <obj_property name="ElementShortName">buf_mod_in_clk</obj_property>
-      <obj_property name="ObjectShortName">buf_mod_in_clk</obj_property>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/PSF/ps_out_qSample" type="array">
+      <obj_property name="ElementShortName">ps_out_qSample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ps_out_qSample[15:0]</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/CharBuffer/current_state" type="other">
-      <obj_property name="ElementShortName">current_state</obj_property>
-      <obj_property name="ObjectShortName">current_state</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/CharBuffer/fifoFull" type="logic">
-      <obj_property name="ElementShortName">fifoFull</obj_property>
-      <obj_property name="ObjectShortName">fifoFull</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/CharBuffer/fifoAlmostFull" type="logic">
-      <obj_property name="ElementShortName">fifoAlmostFull</obj_property>
-      <obj_property name="ObjectShortName">fifoAlmostFull</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/CharBuffer/fifoEmpty" type="logic">
-      <obj_property name="ElementShortName">fifoEmpty</obj_property>
-      <obj_property name="ObjectShortName">fifoEmpty</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/CharBuffer/fifoAlmostEmpty" type="logic">
-      <obj_property name="ElementShortName">fifoAlmostEmpty</obj_property>
-      <obj_property name="ObjectShortName">fifoAlmostEmpty</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/CharBuffer/fifoCoreOut" type="array">
-      <obj_property name="ElementShortName">fifoCoreOut[7:0]</obj_property>
-      <obj_property name="ObjectShortName">fifoCoreOut[7:0]</obj_property>
-      <obj_property name="Radix">ASCIIRADIX</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/charToIQ_in_rxDone" type="logic">
-      <obj_property name="ElementShortName">charToIQ_in_rxDone</obj_property>
-      <obj_property name="ObjectShortName">charToIQ_in_rxDone</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/dataFromBuffer" type="array">
-      <obj_property name="ElementShortName">dataFromBuffer[7:0]</obj_property>
-      <obj_property name="ObjectShortName">dataFromBuffer[7:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/startClearingBuffer" type="logic">
-      <obj_property name="ElementShortName">startClearingBuffer</obj_property>
-      <obj_property name="ObjectShortName">startClearingBuffer</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/enableRamRead" type="logic">
-      <obj_property name="ElementShortName">enableRamRead</obj_property>
-      <obj_property name="ObjectShortName">enableRamRead</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/Serializer/current_state" type="other">
-      <obj_property name="ElementShortName">current_state</obj_property>
-      <obj_property name="ObjectShortName">current_state</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/flushDone" type="logic">
-      <obj_property name="ElementShortName">flushDone</obj_property>
-      <obj_property name="ObjectShortName">flushDone</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/CharBuffer/wr_en" type="logic">
-      <obj_property name="ElementShortName">wr_en</obj_property>
-      <obj_property name="ObjectShortName">wr_en</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/CharBuffer/resetCharFifo" type="logic">
-      <obj_property name="ElementShortName">resetCharFifo</obj_property>
-      <obj_property name="ObjectShortName">resetCharFifo</obj_property>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/PSF/rawSample" type="array">
+      <obj_property name="ElementShortName">rawSample[63:0]</obj_property>
+      <obj_property name="ObjectShortName">rawSample[63:0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/CharBuffer/muxSel" type="array">
       <obj_property name="ElementShortName">muxSel[1:0]</obj_property>

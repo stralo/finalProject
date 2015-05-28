@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:24:04 MST 2014
-| Date         : Wed May 27 16:20:33 2015
-| Host         : VLAB-022 running 64-bit Service Pack 1  (build 7601)
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date         : Wed May 27 22:04:24 2015
+| Host         : M210-18 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_clock_utilization -file lab3top_clock_utilization_placed.rpt
 | Design       : lab3top
 | Device       : xc7a35t
@@ -49,9 +49,9 @@ Table of Contents
 | Index | BUFG Cell                      | Net Name                             | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
 +-------+--------------------------------+--------------------------------------+------+-------+-------+---------------+-----------+
 |     1 | SPIClkGenerator/U0/clkf_buf    | SPIClkGenerator/U0/clkfbout_buf_MMCM |    1 |     1 |    no |         1.636 |     0.082 |
-|     2 | modemRx_in_sampleClk_BUFG_inst | modemRx_in_sampleClk_BUFG            |   76 |    31 |    no |         2.070 |     0.594 |
-|     3 | SPIClkGenerator/U0/clkout2_buf | SPIClkGenerator/U0/clk_out2          |   77 |    26 |    no |         2.783 |     1.221 |
-|     4 | SPIClkGenerator/U0/clkout1_buf | SPIClkGenerator/U0/clk_out1          | 1383 |   374 |    no |         1.788 |     0.280 |
+|     2 | SPIClkGenerator/U0/clkout2_buf | SPIClkGenerator/U0/clk_out2          |   77 |    28 |    no |         2.783 |     1.212 |
+|     3 | modemRx_in_sampleClk_BUFG_inst | modemRx_in_sampleClk_BUFG            |   78 |    32 |    no |         2.077 |     0.601 |
+|     4 | SPIClkGenerator/U0/clkout1_buf | SPIClkGenerator/U0/clk_out1          | 1249 |   352 |    no |         1.784 |     0.276 |
 +-------+--------------------------------+--------------------------------------+------+-------+-------+---------------+-----------+
 
 
@@ -78,13 +78,13 @@ Table of Contents
 6. Details of Local Clocks
 --------------------------
 
-+-------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+--------------+-------+---------------+-----------+
-|       |                                                                                                                                               |                                                                                                                 |   Num Loads  |       |               |           |
-+-------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
-| Index | Local Clk Src                                                                                                                                 | Net Name                                                                                                        | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
-+-------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
-|     1 | Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg | Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid |  169 |    45 |    no |         1.526 |     1.051 |
-+-------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+--------------+-------+---------------+-----------+
+|       |                                                                                                                                                    |                                                                                                                      |   Num Loads  |       |               |           |
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+| Index | Local Clk Src                                                                                                                                      | Net Name                                                                                                             | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+|     1 | Transmitter/PSF/your_instance_name/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg | Transmitter/PSF/your_instance_name/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid |  168 |    39 |    no |         2.173 |     1.739 |
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
 
 
 7. Clock Regions : Key Resource Utilization
@@ -95,9 +95,9 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  530 |  9600 |   25 |  1600 |    3 |    20 |    5 |    10 |    9 |    20 |
-| X1Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  888 | 12000 |  149 |  1800 |    2 |    40 |    0 |    20 |    6 |    20 |
-| X0Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    1 |  9600 |    0 |  1600 |    0 |    20 |    2 |    10 |    0 |    20 |
+| X0Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  498 |  9600 |   15 |  1600 |    1 |    20 |    4 |    10 |    8 |    20 |
+| X1Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  795 | 12000 |  150 |  1800 |    4 |    40 |    3 |    20 |    7 |    20 |
+| X0Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    1 |  9600 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    1 | 12000 |    0 |  1800 |    0 |    40 |    0 |    20 |    0 |    20 |
 | X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 14400 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y2              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |  7600 |    0 |  1200 |    0 |    10 |    0 |     5 |    0 |    20 |
@@ -112,8 +112,8 @@ Table of Contents
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |        Clock Net Name       |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------+
 | BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   2 |     0 |        6 | modemRx_in_sampleClk_BUFG   |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  15 |     0 |        0 | SPIClkGenerator/U0/clk_out2 |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |        16 |       0 |       0 | 513 |    25 |        9 | SPIClkGenerator/U0/clk_out1 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  52 |     0 |        0 | SPIClkGenerator/U0/clk_out2 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |        10 |       0 |       0 | 444 |    15 |        8 | SPIClkGenerator/U0/clk_out1 |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------+
 
 
@@ -124,8 +124,8 @@ Table of Contents
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |            Clock Net Name            |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------+
 | BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |   0 |     0 |        0 | SPIClkGenerator/U0/clkfbout_buf_MMCM |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  59 |     0 |        0 | SPIClkGenerator/U0/clk_out2          |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         2 |       0 |       0 | 671 |   146 |        6 | SPIClkGenerator/U0/clk_out1          |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  22 |     0 |        0 | SPIClkGenerator/U0/clk_out2          |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |        12 |       0 |       0 | 615 |   147 |        7 | SPIClkGenerator/U0/clk_out1          |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------+
 
 
@@ -135,7 +135,7 @@ Table of Contents
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |        Clock Net Name       |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         4 |       0 |       0 |   1 |     0 |        0 | SPIClkGenerator/U0/clk_out1 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   1 |     0 |        0 | SPIClkGenerator/U0/clk_out1 |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------+
 
 
@@ -190,11 +190,11 @@ add_cells_to_pblock [get_pblocks  CLKAG_SPIClkGenerator/U0/clk_out2] [get_cells 
 resize_pblock [get_pblocks CLKAG_SPIClkGenerator/U0/clk_out2] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
 #endgroup
 
-# Clock net "Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid" driven by instance "Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg" located at site "SLICE_X49Y26"
+# Clock net "Transmitter/PSF/your_instance_name/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid" driven by instance "Transmitter/PSF/your_instance_name/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg" located at site "SLICE_X56Y15"
 #startgroup
-create_pblock CLKAG_Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid
-add_cells_to_pblock [get_pblocks  CLKAG_Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid"}]]]
-resize_pblock [get_pblocks CLKAG_Transmitter/PSF_I/PulseFilter/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+create_pblock CLKAG_Transmitter/PSF/your_instance_name/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid
+add_cells_to_pblock [get_pblocks  CLKAG_Transmitter/PSF/your_instance_name/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=modemRx_in_sampleClk_BUFG_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Transmitter/PSF/your_instance_name/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid"}]]]
+resize_pblock [get_pblocks CLKAG_Transmitter/PSF/your_instance_name/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/m_axis_data_tvalid] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
 #endgroup
 
 # Clock net "modemRx_in_sampleClk_BUFG" driven by instance "modemRx_in_sampleClk_BUFG_inst" located at site "BUFGCTRL_X0Y2"

@@ -55,15 +55,19 @@ COMPONENT CharToIQ is
 end COMPONENT;
 
 
-COMPONENT PulseShaper is 
+COMPONENT PulseShaper is
     Port ( clk : in STD_LOGIC;
-        ps_in_newDataAvailable : in std_logic; -- drive by symbolClk 
-        ps_in_data: in std_logic_vector( 15 downto 0);
+        ps_in_newDataAvailable : in std_logic; 
+        ps_in_iData: in std_logic_vector( 15 downto 0);
+        ps_in_qData: in std_logic_vector( 15 downto 0);
         ps_out_readyForData : out std_logic; 
-        ps_out_sampleAvailable : out std_logic; -- this is sampleClk
-        ps_out_sample : out std_logic_vector(15 downto 0)  -- sample for the matched filter 
+        ps_out_sampleAvailable : out std_logic; -- sampleClk
+        ps_out_iSample : out std_logic_vector(15 downto 0);
+        ps_out_qSample : out std_logic_vector(15 downto 0)
+          -- sample for the matched filter 
    );
-end COMPONENT; 
+        
+end COMPONENT;
 
 
 COMPONENT Modulator is
@@ -98,7 +102,7 @@ end component;
     -- SIGNALS
     signal rxDone : std_logic;
     signal rxData : std_logic_vector(7 downto 0);
-    signal serialI, serialQ, iSampleClk, qSampleClk: std_logic:= '0';
+    signal serialI, serialQ, sampleClk: std_logic:= '0';
     signal ps_in_iData, ps_in_qData : std_logic_vector(15 downto 0) := (others => '0');
     signal iSample, qSample : std_logic_vector(15 downto 0) := (others => '0');
     
@@ -150,30 +154,24 @@ ps_in_iData <= x"8000" when serialI = '0' else
                x"7fff" when serialI = '1';
 ps_in_qData <= x"8000" when serialQ = '0' else
                x"7fff" when serialQ = '1';  
-modemTx_out_sampleClk <= '1' when iSampleClk  = '1' and qSampleClk = '1' else
-             '0';
+               
+modemTx_out_sampleClk <= sampleClk ; 
 
-PSF_I:
+
+PSF:
 PulseShaper
 Port Map(
     clk => clk,
     ps_in_newDataAvailable => modemTx_in_symbolClk,
-    ps_in_data => ps_in_iData,
+    ps_in_idata => ps_in_iData,
+    ps_in_qdata => ps_in_qData,
     ps_out_readyForData => open, 
-    ps_out_sampleAvailable => iSampleClk,
-    ps_out_sample => iSample
+    ps_out_sampleAvailable => sampleClk,
+    ps_out_iSample => iSample,
+    ps_out_qSample => qSample
 );
 
-PSF_Q:
-PulseShaper
-Port Map(
-    clk => clk,
-    ps_in_newDataAvailable => modemTx_in_symbolClk,
-    ps_in_data => ps_in_qData,
-    ps_out_readyForData => open, 
-    ps_out_sampleAvailable => qSampleClk,
-    ps_out_sample => qSample
-);
+
 
 
 QPSK_Modulator:
@@ -182,7 +180,7 @@ Port Map(
     clk => clk, 
     mod_in_iPulse => iSample,
     mod_in_qPulse  => qSample,
-    mod_in_sampleClk => iSampleClk,
+    mod_in_sampleClk => sampleClk,
     mod_out_qpskSignal => qpskSignal
     );
     
@@ -197,7 +195,7 @@ Port Map(
     dacInterface_in_spiClk => modemTx_in_spiClk, 
     -- user interface to the system
     dacInterface_in_word => sixteenBitsQPSK,    
-    dacInterface_in_start => iSampleClk,                              -- start conversion
+    dacInterface_in_start => sampleClk,                              -- start conversion
     dacInterface_out_busy => dacBusy,                               -- conversion in progress
     -- interface to the pmod-da2
     dac_out_pmodSync => modemTx_out_syncForDAC,                            -- active-low sync signal
