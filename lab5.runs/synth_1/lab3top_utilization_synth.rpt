@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
-| Date         : Wed May 27 22:03:39 2015
-| Host         : M210-18 running 64-bit Service Pack 1  (build 7601)
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:24:04 MST 2014
+| Date         : Thu May 28 17:40:14 2015
+| Host         : VLAB-029 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file lab3top_utilization_synth.rpt -pb lab3top_utilization_synth.pb
 | Design       : lab3top
 | Device       : xc7a35t
@@ -170,7 +170,7 @@ Table of Contents
 +------------------+------+
 |     Ref Name     | Used |
 +------------------+------+
-| fir_compiler_1   |    2 |
+| fir_compiler_3   |    1 |
 | fir_compiler_2   |    1 |
 | fifo_generator_0 |    1 |
 | dds_compiler_1   |    1 |

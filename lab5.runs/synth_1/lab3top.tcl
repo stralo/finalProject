@@ -3,9 +3,7 @@
 # 
 
 set_param gui.test TreeTableDev
-set_param xicom.use_bs_reader 1
 debug::add_scope template.lib 1
-set_msg_config -id {Common-41} -limit 4294967295
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
@@ -36,6 +34,8 @@ add_files -quiet O:/engs128/lab5/lab5.runs/fifo_generator_0_synth_1/fifo_generat
 set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/fifo_generator_0_synth_1/fifo_generator_0.dcp]
 add_files -quiet O:/engs128/lab5/lab5.runs/fir_compiler_2_synth_1/fir_compiler_2.dcp
 set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/fir_compiler_2_synth_1/fir_compiler_2.dcp]
+add_files -quiet O:/engs128/lab5/lab5.runs/fir_compiler_3_synth_1/fir_compiler_3.dcp
+set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/fir_compiler_3_synth_1/fir_compiler_3.dcp]
 read_vhdl -library xil_defaultlib {
   O:/engs128/lab3/lab2.srcs/sources_1/new/PulseShaper.vhd
   O:/engs128/lab3/lab2.srcs/sources_1/imports/new/IQDeserializer.vhd
@@ -47,7 +47,6 @@ read_vhdl -library xil_defaultlib {
   O:/engs128/lab3/lab2.srcs/sources_1/imports/Lab1/SerialTx.vhd
   O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/new/Demodulator.vhd
   O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/imports/Desktop/CRloop.vhd
-  O:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/new/MatchedFilter.vhd
   O:/engs128/lab5/lab5.srcs/sources_1/new/ModemTx.vhd
   O:/engs128/lab5/lab5.srcs/sources_1/new/ModemRx.vhd
   O:/engs128/lab5/lab5.srcs/sources_1/new/DAC.vhd

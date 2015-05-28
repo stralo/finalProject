@@ -82,24 +82,15 @@ COMPONENT Demodulator is
                demod_out_qSample : out STD_LOGIC_VECTOR (15 downto 0));
     end COMPONENT;
 
-COMPONENT MatchedFilter is       
-    Port (  
-        clk : in STD_LOGIC;
-        mf_in_sample : in STD_LOGIC_vector( 15 downto 0); -- modulated input
-        mf_in_sampleClk : in std_logic; 
-        mf_in_symbolClk : in std_logic; 
-        mf_out_val: out std_logic_vector(15 downto 0) -- either i or q
-        );
-end COMPONENT;
-
-
 COMPONENT NewMatchedFilter is
   Port (
     clk : in STD_LOGIC;
-     mf_in_sample : in STD_LOGIC_vector( 15 downto 0); -- modulated input
+     mf_in_iSample : in std_logic_vector(15 downto 0); 
+     mf_in_qSample : in std_logic_vector(15 downto 0); 
      mf_in_sampleClk : in std_logic; 
      mf_in_symbolClk : in std_logic; 
-     mf_out_val : out std_logic_vector(15 downto 0)
+     mf_out_Ival : out std_logic_vector(15 downto 0);
+     mf_out_qVal : out std_logic_vector(15 downto 0)
              
               );
 end COMPONENT;
@@ -214,47 +205,20 @@ Port Map(
     demod_out_iSample => iSample,
     demod_out_qSample => qSample
 );
---MF_I:
---MatchedFilter
---Port Map(
---    clk => clk,
---    mf_in_sample => iSample,
---    mf_in_sampleClk => modemRx_in_sampleClk,
---    mf_in_symbolClk => modemRx_in_symbolClk, 
---    mf_out_val =>  mf_out_iPulse
---);
 
 
-MF_i:
+
+MF:
 NewMatchedFilter 
-  Port mAP(
+Port mAP(
     clk => clk,
-      mf_in_sample => iSample,
-      mf_in_sampleClk => modemRx_in_sampleClk,
-      mf_in_symbolClk => modemRx_in_symbolClk, 
-      mf_out_val =>  mf_out_iPulse
-              );
-
---MF_Q:
---MatchedFilter
---Port Map(
---    clk => clk,
---    mf_in_sample => qSample,
---    mf_in_sampleClk => modemRx_in_sampleClk,
---    mf_in_symbolClk => modemRx_in_symbolClk, 
---    mf_out_val => mf_out_qPulse
---);
-
-
-MF_q:
-NewMatchedFilter 
-  Port mAP(
-    clk => clk,
-      mf_in_sample => qSample,
-      mf_in_sampleClk => modemRx_in_sampleClk,
-      mf_in_symbolClk => modemRx_in_symbolClk, 
-      mf_out_val =>  mf_out_qPulse
-              );
+    mf_in_iSample => iSample,
+    mf_in_qSample => qSample,
+    mf_in_sampleClk => modemRx_in_sampleClk,
+    mf_in_symbolClk => modemRx_in_symbolClk, 
+    mf_out_iVal =>  mf_out_iPulse, 
+    mf_out_qVal => mf_out_qPulse
+);
 
 CarriageRecoveryLoop:
 CRLoop
