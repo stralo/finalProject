@@ -18,18 +18,12 @@ add_files //thayerfs.thayer.dartmouth.edu/d37581q/Desktop/rrcos8-brom.coe
 add_files //thayerfs/d37581q/Desktop/rrcos8-fir-ip.coe
 add_files //thayerfs/d37581q/Desktop/newmatchedfilter_coeffs.coe
 add_files //thayerfs.thayer.dartmouth.edu/d37581q/Desktop/rrcos8-fir-ip.coe
-add_files -quiet O:/engs128/lab5/lab5.runs/BlockROM_synth_1/BlockROM.dcp
-set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/BlockROM_synth_1/BlockROM.dcp]
-add_files -quiet O:/engs128/lab5/lab5.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp
-set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp]
 add_files -quiet O:/engs128/lab5/lab5.runs/dds_compiler_0_synth_1/dds_compiler_0.dcp
 set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/dds_compiler_0_synth_1/dds_compiler_0.dcp]
 add_files -quiet O:/engs128/lab5/lab5.runs/dds_compiler_1_synth_1/dds_compiler_1.dcp
 set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/dds_compiler_1_synth_1/dds_compiler_1.dcp]
 add_files -quiet O:/engs128/lab5/lab5.runs/MMCM_synth_1/MMCM.dcp
 set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/MMCM_synth_1/MMCM.dcp]
-add_files -quiet O:/engs128/lab5/lab5.runs/fir_compiler_1_synth_1/fir_compiler_1.dcp
-set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/fir_compiler_1_synth_1/fir_compiler_1.dcp]
 add_files -quiet O:/engs128/lab5/lab5.runs/fifo_generator_0_synth_1/fifo_generator_0.dcp
 set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/fifo_generator_0_synth_1/fifo_generator_0.dcp]
 add_files -quiet O:/engs128/lab5/lab5.runs/fir_compiler_2_synth_1/fir_compiler_2.dcp
@@ -39,7 +33,6 @@ set_property used_in_implementation false [get_files O:/engs128/lab5/lab5.runs/f
 read_vhdl -library xil_defaultlib {
   O:/engs128/lab3/lab2.srcs/sources_1/new/PulseShaper.vhd
   O:/engs128/lab3/lab2.srcs/sources_1/imports/new/IQDeserializer.vhd
-  O:/engs128/lab3/lab2.srcs/sources_1/imports/new/CharToIQ.vhd
   O:/engs128/lab3/lab2.srcs/sources_1/imports/new/CharBufferModule.vhd
   O:/engs128/lab3/lab2.srcs/sources_1/imports/new/IQSerializer.vhd
   O:/engs128/lab3/lab2.srcs/sources_1/imports/Lab1/mux7seg.vhd
@@ -54,6 +47,7 @@ read_vhdl -library xil_defaultlib {
   O:/engs128/lab5/lab5.srcs/sources_1/new/Modulator.vhd
   O:/engs128/lab5/lab5.srcs/sources_1/new/lab3top.vhd
   O:/engs128/lab5/lab5.srcs/sources_1/new/NewMatchedFilter.vhd
+  O:/engs128/lab5/lab5.srcs/sources_1/new/CharToIQ.vhd
 }
 read_xdc O:/engs128/lab3/lab2.srcs/constrs_1/imports/Lab1/Basys3_Master.xdc
 set_property used_in_implementation false [get_files O:/engs128/lab3/lab2.srcs/constrs_1/imports/Lab1/Basys3_Master.xdc]

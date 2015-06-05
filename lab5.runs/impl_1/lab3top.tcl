@@ -56,28 +56,18 @@ set rc [catch {
   set_property ip_repo_paths o:/engs128/lab5/lab5.cache/ip [current_project]
   set_property ip_output_repo o:/engs128/lab5/lab5.cache/ip [current_project]
   add_files -quiet O:/engs128/lab5/lab5.runs/synth_1/lab3top.dcp
-  add_files -quiet O:/engs128/lab5/lab5.runs/BlockROM_synth_1/BlockROM.dcp
-  set_property netlist_only true [get_files O:/engs128/lab5/lab5.runs/BlockROM_synth_1/BlockROM.dcp]
-  add_files -quiet O:/engs128/lab5/lab5.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp
-  set_property netlist_only true [get_files O:/engs128/lab5/lab5.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp]
   add_files -quiet O:/engs128/lab5/lab5.runs/dds_compiler_0_synth_1/dds_compiler_0.dcp
   set_property netlist_only true [get_files O:/engs128/lab5/lab5.runs/dds_compiler_0_synth_1/dds_compiler_0.dcp]
   add_files -quiet O:/engs128/lab5/lab5.runs/dds_compiler_1_synth_1/dds_compiler_1.dcp
   set_property netlist_only true [get_files O:/engs128/lab5/lab5.runs/dds_compiler_1_synth_1/dds_compiler_1.dcp]
   add_files -quiet O:/engs128/lab5/lab5.runs/MMCM_synth_1/MMCM.dcp
   set_property netlist_only true [get_files O:/engs128/lab5/lab5.runs/MMCM_synth_1/MMCM.dcp]
-  add_files -quiet O:/engs128/lab5/lab5.runs/fir_compiler_1_synth_1/fir_compiler_1.dcp
-  set_property netlist_only true [get_files O:/engs128/lab5/lab5.runs/fir_compiler_1_synth_1/fir_compiler_1.dcp]
   add_files -quiet O:/engs128/lab5/lab5.runs/fifo_generator_0_synth_1/fifo_generator_0.dcp
   set_property netlist_only true [get_files O:/engs128/lab5/lab5.runs/fifo_generator_0_synth_1/fifo_generator_0.dcp]
   add_files -quiet O:/engs128/lab5/lab5.runs/fir_compiler_2_synth_1/fir_compiler_2.dcp
   set_property netlist_only true [get_files O:/engs128/lab5/lab5.runs/fir_compiler_2_synth_1/fir_compiler_2.dcp]
   add_files -quiet O:/engs128/lab5/lab5.runs/fir_compiler_3_synth_1/fir_compiler_3.dcp
   set_property netlist_only true [get_files O:/engs128/lab5/lab5.runs/fir_compiler_3_synth_1/fir_compiler_3.dcp]
-  read_xdc -mode out_of_context -ref BlockROM o:/engs128/lab3/lab2.srcs/sources_1/ip/BlockROM/BlockROM_ooc.xdc
-  set_property processing_order EARLY [get_files o:/engs128/lab3/lab2.srcs/sources_1/ip/BlockROM/BlockROM_ooc.xdc]
-  read_xdc -mode out_of_context -ref fir_compiler_0 -cells U0 o:/engs128/lab3/lab2.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_ooc.xdc
-  set_property processing_order EARLY [get_files o:/engs128/lab3/lab2.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_ooc.xdc]
   read_xdc -mode out_of_context -ref dds_compiler_0 -cells U0 o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0_ooc.xdc
   set_property processing_order EARLY [get_files o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0_ooc.xdc]
   read_xdc -mode out_of_context -ref dds_compiler_1 -cells U0 o:/engs128/lab4_withCRLoop/lab4.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1_ooc.xdc
@@ -88,8 +78,6 @@ set rc [catch {
   set_property processing_order EARLY [get_files o:/engs128/lab5/lab5.srcs/sources_1/ip/MMCM/MMCM_board.xdc]
   read_xdc -ref MMCM -cells U0 o:/engs128/lab5/lab5.srcs/sources_1/ip/MMCM/MMCM.xdc
   set_property processing_order EARLY [get_files o:/engs128/lab5/lab5.srcs/sources_1/ip/MMCM/MMCM.xdc]
-  read_xdc -mode out_of_context -ref fir_compiler_1 -cells U0 o:/engs128/lab5/lab5.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1_ooc.xdc
-  set_property processing_order EARLY [get_files o:/engs128/lab5/lab5.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1_ooc.xdc]
   read_xdc -mode out_of_context -ref fifo_generator_0 -cells U0 o:/engs128/lab5/lab5.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_ooc.xdc
   set_property processing_order EARLY [get_files o:/engs128/lab5/lab5.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_ooc.xdc]
   read_xdc -ref fifo_generator_0 -cells U0 o:/engs128/lab5/lab5.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0.xdc

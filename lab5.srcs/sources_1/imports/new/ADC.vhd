@@ -78,7 +78,9 @@ Shifter : process(spiClk, enParalelLoad, enShiftCounter)
 begin
     if rising_edge(spiClk) then                
         if (enShiftCounter = '1') then 
-           temp1 <= temp1(14 downto 0) & serialFromADCCh1;
+--           temp1 <= temp1(14 downto 0) & serialFromADCCh1;
+           temp1(15 downto 1) <= temp1(14 downto 0); 
+           temp1(0) <= serialFromADCCh1;
             shiftCounter <= shiftCounter + '1';
         elsif (enParalelLoad = '1') then
            shiftCounter <= "0000";
