@@ -1,7 +1,159 @@
 Vivado Simulator 2014.4
 Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 3fc4a5d3650a498bba6b448194a25c23 --debug typical --relax -L blk_mem_gen_v8_2 -L xil_defaultlib -L xbip_utils_v3_0 -L axi_utils_v2_0 -L fir_compiler_v7_2 -L xbip_pipe_v3_0 -L xbip_bram18k_v3_0 -L mult_gen_v12_0 -L xbip_dsp48_wrapper_v3_0 -L xbip_dsp48_addsub_v3_0 -L xbip_dsp48_multadd_v3_0 -L dds_compiler_v6_0 -L fifo_generator_v12_0 -L secureip --snapshot lab5_tb_behav xil_defaultlib.lab5_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 3fc4a5d3650a498bba6b448194a25c23 --debug typical --relax -L xbip_utils_v3_0 -L axi_utils_v2_0 -L xbip_pipe_v3_0 -L xbip_bram18k_v3_0 -L mult_gen_v12_0 -L xbip_dsp48_wrapper_v3_0 -L xbip_dsp48_addsub_v3_0 -L xbip_dsp48_multadd_v3_0 -L dds_compiler_v6_0 -L xil_defaultlib -L fifo_generator_v12_0 -L fir_compiler_v7_2 -L secureip --snapshot lab5_tb_behav xil_defaultlib.lab5_tb -log elaborate.log 
 Multi-threading is on. Using 6 slave threads.
 Starting static elaboration
-ERROR: [VRFC 10-664] expression has 32 elements ; expected 144 [O:/engs128/lab5/lab5.srcs/lab5_test/new/lab5_tb.vhd:81]
-ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit lab5_tb in library work failed.
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package std.textio
+Compiling package xbip_utils_v3_0.xbip_utils_v3_0_pkg
+Compiling package fir_compiler_v7_2.fir_compiler_v7_2_viv_comp
+Compiling package ieee.std_logic_textio
+Compiling package fir_compiler_v7_2.globals_pkg
+Compiling package fir_compiler_v7_2.components
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xbip_utils_v3_0.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0.dds_compiler_v6_0_viv_comp
+Compiling package dds_compiler_v6_0.pkg_dds_compiler_v6_0
+Compiling package dds_compiler_v6_0.dds_compiler_v6_0_hdl_comps
+Compiling package xbip_pipe_v3_0.xbip_pipe_v3_0_viv_comp
+Compiling package axi_utils_v2_0.axi_utils_v2_0_pkg
+Compiling package axi_utils_v2_0.global_util_pkg
+Compiling package axi_utils_v2_0.axi_utils_comps
+Compiling package dds_compiler_v6_0.pkg_betas
+Compiling package dds_compiler_v6_0.pkg_alphas
+Compiling architecture behavioral of entity xil_defaultlib.SerialRx [serialrx_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux7seg [mux7seg_default]
+Compiling architecture behavioral of entity fifo_generator_v12_0.fifo_generator_v12_0_bhv_ss [\fifo_generator_v12_0_bhv_ss("ar...]
+Compiling architecture behavioral of entity fifo_generator_v12_0.fifo_generator_v12_0_conv [\fifo_generator_v12_0_conv(1,0,4...]
+Compiling architecture behavioral of entity fifo_generator_v12_0.fifo_generator_vhdl_beh [\fifo_generator_vhdl_beh(1,0,4,"...]
+Compiling architecture xilinx of entity fifo_generator_v12_0.fifo_generator_v12_0 [\fifo_generator_v12_0(1,0,4,"Bla...]
+Compiling architecture fifo_generator_0_arch of entity xil_defaultlib.fifo_generator_0 [fifo_generator_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.CharBufferModule [charbuffermodule_default]
+Compiling architecture behavioral of entity xil_defaultlib.IQSerializer [\IQSerializer(8)\]
+Compiling architecture behavioral of entity xil_defaultlib.CharToIQ [\CharToIQ(7,0)\]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,1,3,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(1,"artix7",0,1,3,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(3,"artix7",0,1,3,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.sp_mem [\sp_mem("artix7",(0,1,false,-214...]
+Compiling architecture synth of entity fir_compiler_v7_2.filt_mem [\filt_mem("artix7",((data,0,(0,1...]
+Compiling architecture synth of entity fir_compiler_v7_2.sp_mem [\sp_mem("artix7",(2,1,true,0,17,...]
+Compiling architecture synth of entity fir_compiler_v7_2.filt_mem [\filt_mem("artix7",((coef,0,(2,1...]
+Compiling architecture synth of entity fir_compiler_v7_2.cntrl_delay [\cntrl_delay(0,3,true,12,0,wrap_...]
+Compiling architecture synth of entity fir_compiler_v7_2.cntrl_delay [\cntrl_delay(0,3,true,0,0,wrap_b...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(2,"artix7",0,16,1,0,0,fal...]
+Compiling architecture synth of entity fir_compiler_v7_2.buff [\buff("artix7",2,0,false,true,fa...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,7,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,1,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,48,0,0,0,fal...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,2,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,16,1,0,0,fal...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,17,1,0,0,fal...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(1,1,1,1,"NO_RESET","DIR...]
+Compiling architecture synth of entity fir_compiler_v7_2.calc [\calc("artix7",(1,3,0,0,0,0,0,0,...]
+Compiling architecture synth of entity fir_compiler_v7_2.addsub_mult_add [\addsub_mult_add("artix7",0,0,31...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,31,1,0,0,fal...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,32,1,0,0,fal...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(1,0,1,1,"NO_RESET","DIR...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,18,1,0,0,fal...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,30,1,0,0,fal...]
+Compiling architecture synth of entity fir_compiler_v7_2.calc [\calc("artix7",(0,2,0,0,0,0,0,0,...]
+Compiling architecture synth of entity fir_compiler_v7_2.add_accum [\add_accum("artix7",31,32,31,(tr...]
+Compiling architecture synth of entity fir_compiler_v7_2.calc [\calc("artix7",(1,3,0,0,0,0,0,0,...]
+Compiling architecture synth of entity fir_compiler_v7_2.addsub_mult_add [\addsub_mult_add("artix7",0,0,31...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(7,"artix7",0,1,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(2,"artix7",0,1,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(1,"artix7",0,3,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(1,"artix7",0,32,1,0,0,fal...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,3,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(1,"artix7",0,7,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,6,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,1,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(5,"artix7",0,1,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(4,"artix7",0,1,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.dpr_mem [\dpr_mem("artix7",(2,1,false,0,1...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(1,"artix7",0,1,0,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.polyphase_interpolation [\polyphase_interpolation("artix7...]
+Compiling architecture synth of entity fir_compiler_v7_2.fir_compiler_v7_2_viv [\fir_compiler_v7_2_viv("artix7",...]
+Compiling architecture xilinx of entity fir_compiler_v7_2.fir_compiler_v7_2 [\fir_compiler_v7_2("artix7","./"...]
+Compiling architecture fir_compiler_2_arch of entity xil_defaultlib.fir_compiler_2 [fir_compiler_2_default]
+Compiling architecture behavioral of entity xil_defaultlib.PulseShaper [pulseshaper_default]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(9,1,0,0,1,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,1,0,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0.dds_compiler_v6_0_rdy [\dds_compiler_v6_0_rdy(1,0,1,9)\]
+Compiling architecture synth of entity dds_compiler_v6_0.dither_wrap [\dither_wrap(4,5,1,0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,1,0,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0.pipe_add [\pipe_add(16,1,16)\]
+Compiling architecture synth of entity dds_compiler_v6_0.accum [\accum("artix7",1,3,"10000000000...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,1,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,1,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(4,1,0,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0.sin_cos [\sin_cos("artix7",0,9,1,12,14,12...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,1,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0.dds_compiler_v6_0_core [\dds_compiler_v6_0_core("artix7"...]
+Compiling architecture synth of entity dds_compiler_v6_0.dds_compiler_v6_0_viv [\dds_compiler_v6_0_viv("artix7",...]
+Compiling architecture xilinx of entity dds_compiler_v6_0.dds_compiler_v6_0 [\dds_compiler_v6_0("artix7",0,9,...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Modulator [modulator_default]
+Compiling architecture behavioral of entity xil_defaultlib.DAC [\DAC(16)\]
+Compiling architecture behavioral of entity xil_defaultlib.ModemTx [modemtx_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADCInterface [\ADCInterface(16)\]
+Compiling architecture behavioral of entity xil_defaultlib.Demodulator [demodulator_default]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(2,"artix7",0,1,3,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(4,"artix7",0,1,3,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.dpt_mem [\dpt_mem("artix7",(1,1,false,-21...]
+Compiling architecture synth of entity fir_compiler_v7_2.filt_mem [\filt_mem("artix7",((data,0,(1,1...]
+Compiling architecture synth of entity fir_compiler_v7_2.sp_mem [\sp_mem("artix7",(2,1,true,0,16,...]
+Compiling architecture synth of entity fir_compiler_v7_2.filt_mem [\filt_mem("artix7",((coef,0,(2,1...]
+Compiling architecture synth of entity fir_compiler_v7_2.cntrl_delay [\cntrl_delay(0,3,true,22,0,wrap_...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(1,"artix7",0,16,1,0,0,fal...]
+Compiling architecture synth of entity fir_compiler_v7_2.buff [\buff("artix7",1,0,false,true,fa...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,34,0,0,0,fal...]
+Compiling architecture synth of entity fir_compiler_v7_2.calc [\calc("artix7",(1,0,0,0,0,0,0,0,...]
+Compiling architecture synth of entity fir_compiler_v7_2.addsub_mult_accum [\addsub_mult_accum("artix7",0,0,...]
+Compiling architecture synth of entity fir_compiler_v7_2.calc [\calc("artix7",(1,0,0,0,0,0,0,0,...]
+Compiling architecture synth of entity fir_compiler_v7_2.addsub_mult_accum [\addsub_mult_accum("artix7",0,0,...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(2,"artix7",0,32,1,0,0,fal...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,7,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(0,"artix7",0,8,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(3,"artix7",0,7,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.delay [\delay(1,"artix7",0,1,1,0,0,fals...]
+Compiling architecture synth of entity fir_compiler_v7_2.single_rate [\single_rate("artix7","./","fir_...]
+Compiling architecture synth of entity fir_compiler_v7_2.fir_compiler_v7_2_viv [\fir_compiler_v7_2_viv("artix7",...]
+Compiling architecture xilinx of entity fir_compiler_v7_2.fir_compiler_v7_2 [\fir_compiler_v7_2("artix7","./"...]
+Compiling architecture fir_compiler_3_arch of entity xil_defaultlib.fir_compiler_3 [fir_compiler_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.NewMatchedFilter [newmatchedfilter_default]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(6,1,0,0,1,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,1,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0.dds_compiler_v6_0_rdy [\dds_compiler_v6_0_rdy(1,0,1,6)\]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,1,0,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0.sin_cos [\sin_cos("artix7",0,9,0,16,16,14...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,1,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0.dds_compiler_v6_0_core [\dds_compiler_v6_0_core("artix7"...]
+Compiling architecture synth of entity dds_compiler_v6_0.dds_compiler_v6_0_viv [\dds_compiler_v6_0_viv("artix7",...]
+Compiling architecture xilinx of entity dds_compiler_v6_0.dds_compiler_v6_0 [\dds_compiler_v6_0("artix7",0,9,...]
+Compiling architecture dds_compiler_1_arch of entity xil_defaultlib.dds_compiler_1 [dds_compiler_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.CRloop [\CRloop(16)\]
+Compiling architecture behavioral of entity xil_defaultlib.IQDeserializer [\IQDeserializer(8)\]
+Compiling architecture behavioral of entity xil_defaultlib.SerialTx [serialtx_default]
+Compiling architecture behavioral of entity xil_defaultlib.ModemRx [modemrx_default]
+Compiling architecture behavioral of entity xil_defaultlib.lab5_tb
+Built simulation snapshot lab5_tb_behav

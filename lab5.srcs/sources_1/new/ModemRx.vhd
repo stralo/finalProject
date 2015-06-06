@@ -156,6 +156,10 @@ end COMPONENT;
 
     type startHoldState is (s0, s1, s2, s3);  --, s4, s5, s6
     signal startCurrentState , startNextState : startHoldState := s0;
+    
+    
+    signal lastTwoSampleclks : std_logic_vector(1 downto 0) := "00"; 
+    signal sampleClkRisingEdge : std_logic := '0';
 
 begin
 
@@ -286,13 +290,32 @@ begin
     end case; 
  end process;  
 
-process(modemRx_in_sampleClk)
+process(clk)
 begin
-    if rising_edge(modemRx_in_sampleClk) then 
-        startCurrentState <= startNextState; 
-    end if;
+    if rising_edge(clk) then 
+        if sampleClkRisingEdge = '1' then 
+            startCurrentState <= startNextState; 
+        end if; 
+    end if; 
 end process; 
 
+
+ -- Rising edge detector for modemRx_in_sampleClk signal. 
+ -- Technique learned from http://forums.xilinx.com/t5/Spartan-Family-FPGAs/Help-with-simple-edge-detection/td-p/19956
+process(clk)
+begin
+    if rising_edge(clk) then 
+          lastTwoSampleClks(0) <= modemRx_in_sampleClk;
+          lastTwoSampleClks(1) <= lastTwoSampleClks(0);
+          if (lastTwoSampleClks="01")then
+              sampleClkRisingEdge <= '1';
+          else
+              sampleClkRisingEdge <= '0';
+          end if;
+                     
+    end if; 
+end process; 
+   
 
 Sampler:
 process(clk)

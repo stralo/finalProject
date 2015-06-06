@@ -1,0 +1,7 @@
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 3fc4a5d3650a498bba6b448194a25c23 --debug typical --relax -L xbip_utils_v3_0 -L axi_utils_v2_0 -L xbip_pipe_v3_0 -L xbip_bram18k_v3_0 -L mult_gen_v12_0 -L xbip_dsp48_wrapper_v3_0 -L xbip_dsp48_addsub_v3_0 -L xbip_dsp48_multadd_v3_0 -L dds_compiler_v6_0 -L xil_defaultlib -L fifo_generator_v12_0 -L fir_compiler_v7_2 -L secureip --snapshot FIFO_tb_behav xil_defaultlib.FIFO_tb -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 144 elements ; expected 32 [O:/engs128/lab5/lab5.srcs/FIFO_test/new/FIFO_tb.vhd:31]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit fifo_tb in library work failed.

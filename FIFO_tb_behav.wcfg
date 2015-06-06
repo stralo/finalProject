@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="FIFO_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="FIFO_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject db_ref_id="1" fp_name="/FIFO_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/FIFO_tb/resetCharFifo" type="logic">
+      <obj_property name="ElementShortName">resetCharFifo</obj_property>
+      <obj_property name="ObjectShortName">resetCharFifo</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/FIFO_tb/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/FIFO_tb/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/FIFO_tb/bufferFull" type="logic">
+      <obj_property name="ElementShortName">bufferFull</obj_property>
+      <obj_property name="ObjectShortName">bufferFull</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/FIFO_tb/bufferAlmostFull" type="logic">
+      <obj_property name="ElementShortName">bufferAlmostFull</obj_property>
+      <obj_property name="ObjectShortName">bufferAlmostFull</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/FIFO_tb/bufferEmpty" type="logic">
+      <obj_property name="ElementShortName">bufferEmpty</obj_property>
+      <obj_property name="ObjectShortName">bufferEmpty</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/FIFO_tb/bufferAlmostEmpty" type="logic">
+      <obj_property name="ElementShortName">bufferAlmostEmpty</obj_property>
+      <obj_property name="ObjectShortName">bufferAlmostEmpty</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/FIFO_tb/bufferInput" type="array">
+      <obj_property name="ElementShortName">bufferInput[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bufferInput[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/FIFO_tb/bufferOutput" type="array">
+      <obj_property name="ElementShortName">bufferOutput[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bufferOutput[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+</wave_config>

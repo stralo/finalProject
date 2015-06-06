@@ -9,12 +9,7 @@ end FIFO_tb;
 
 architecture tb of FIFO_tb is
 
-  -----------------------------------------------------------------------
-  -- Timing constants
-  -----------------------------------------------------------------------
-  constant CLOCK_PERIOD : time := 100 ns;
-  constant T_HOLD       : time := 10 ns;
-  constant T_STROBE     : time := CLOCK_PERIOD - (1 ns);
+
 
 COMPONENT fifo_generator_0
       PORT (
@@ -30,6 +25,20 @@ COMPONENT fifo_generator_0
         almost_empty : OUT STD_LOGIC
       );
     END COMPONENT;
+    
+    
+       constant clk_period : time := 100 ns;
+        constant TxData : std_logic_vector(143 downto 0) := x"41424344454647484960515253545556570d";
+        
+        
+        
+        
+        -- Inputs
+        signal clk, resetCharFifo, wr_en, rd_en, bufferFull, bufferAlmostFull, bufferEmpty, bufferAlmostEmpty : std_logic := '0';
+        signal bufferInput, bufferOutput : std_logic_vector(7 downto 0) := (others => '0');
+        
+        
+        
 
 
 begin
@@ -37,16 +46,16 @@ begin
   uut:
   fifo_generator_0
         PORT MAP (
-          clk => buf_mod_in_clk,
+        clk => clk,
           srst => resetCharFifo,
-          din => dataForBuffer,
+          din => bufferInput,
           wr_en => wr_en,
-          rd_en => buf_mod_in_rd_en,
-          dout => fifoCoreOut,
-          full => fifoFull,
-          almost_full => fifoAlmostFull,
-          empty => fifoEmpty,
-          almost_empty => fifoAlmostEmpty
+          rd_en => rd_en,
+          dout => bufferOutput,
+          full => bufferFull,
+          almost_full => bufferAlmostFull,
+          empty => bufferEmpty,
+          almost_empty => bufferAlmostEmpty
         ); 
   
   -----------------------------------------------------------------------
@@ -55,128 +64,43 @@ begin
 
   clock_gen : process
   begin
-    aclk <= '0';
-    wait for CLOCK_PERIOD;
+    clk <= '0';
+    wait for clk_period;
     loop
-      aclk <= '0';
-      wait for CLOCK_PERIOD/2;
-      aclk <= '1';
-      wait for CLOCK_PERIOD/2;
+      clk <= '0';
+      wait for clk_period/2;
+      clk <= '1';
+      wait for clk_period/2;
     end loop;
   end process clock_gen;
 
-  -----------------------------------------------------------------------
-  -- Generate inputs
-  -----------------------------------------------------------------------
 
-  stimuli : process
 
-    -- Procedure to drive a number of input samples with specific data
-    -- data is the data value to drive on the tdata signal
-    -- samples is the number of zero-data input samples to drive
-    procedure drive_data ( data    : std_logic_vector(15 downto 0);
-                           samples : natural := 1 ) is
-      variable ip_count : integer := 0;
-    begin
-      ip_count := 0;
-      loop
-        s_axis_data_tvalid <= '1';
-        s_axis_data_tdata  <= data;
-        loop
-          wait until rising_edge(aclk);
-          exit when s_axis_data_tready = '1';
-        end loop;
-        ip_count := ip_count + 1;
-        wait for T_HOLD;
-      -- Input rate is 1 input each 156 clock cycles: drive valid inputs at this rate
-        s_axis_data_tvalid <= '0';
-        wait for CLOCK_PERIOD * 155;
-        exit when ip_count >= samples;
-      end loop;
-    end procedure drive_data;
+-- Stimulus process
+   stim_proc: process
+   begin		
+		wait for 10.25*clk_period;		
 
-    -- Procedure to drive a number of zero-data input samples
-    -- samples is the number of zero-data input samples to drive
-    procedure drive_zeros ( samples : natural := 1 ) is
-    begin
-      drive_data((others => '0'), samples);
-    end procedure drive_zeros;
-
-    -- Procedure to drive an impulse and let the impulse response emerge on the data master channel
-    -- samples is the number of input samples to drive; default is enough for impulse response output to emerge
-    procedure drive_impulse ( samples : natural := 135 ) is
-      variable impulse : std_logic_vector(15 downto 0);
-    begin
-      impulse := (others => '0');  -- initialize unused bits to zero
-      impulse(15 downto 0) := "0100000000000000";
-      drive_data(impulse);
-      if samples > 1 then
-        drive_zeros(samples-1);
-      end if;
-    end procedure drive_impulse;
-
-  begin
-
-    -- Drive inputs T_HOLD time after rising edge of clock
-    wait until rising_edge(aclk);
-    wait for T_HOLD;
-
-    -- Drive a single impulse and let the impulse response emerge
-    drive_impulse;
-
-    -- Drive another impulse, during which demonstrate use and effect of AXI handshaking signals
-    drive_impulse(2);  -- start of impulse; data is now zero
-    s_axis_data_tvalid <= '0';
-    wait for CLOCK_PERIOD * 780;  -- provide no data for 5 input samples worth
-    drive_zeros(2);  -- 2 normal input samples
-    s_axis_data_tvalid <= '1';
-    wait for CLOCK_PERIOD * 780;  -- provide data as fast as the core can accept it for 5 input samples worth
-    drive_zeros(126);  -- back to normal operation
-
-    -- End of test
-    report "Not a real failure. Simulation finished successfully. Test completed successfully" severity failure;
-    wait;
-
-  end process stimuli;
-
-  -----------------------------------------------------------------------
-  -- Check outputs
-  -----------------------------------------------------------------------
-
-  check_outputs : process
-    variable check_ok : boolean := true;
-  begin
-
-    -- Check outputs T_STROBE time after rising edge of clock
-    wait until rising_edge(aclk);
-    wait for T_STROBE;
-
-    -- Do not check the output payload values, as this requires the behavioral model
-    -- which would make this demonstration testbench unwieldy.
-    -- Instead, check the protocol of the master DATA channel:
-    -- check that the payload is valid (not X) when TVALID is high
-
-    if m_axis_data_tvalid = '1' then
-      if is_x(m_axis_data_tdata) then
-        report "ERROR: m_axis_data_tdata is invalid when m_axis_data_tvalid is high" severity error;
-        check_ok := false;
-      end if;
-
-    end if;
-
-    assert check_ok
-      report "ERROR: terminating test with failures." severity failure;
-
-  end process check_outputs;
-
-  -----------------------------------------------------------------------
-  -- Assign TDATA / TUSER fields to aliases, for easy simulator waveform viewing
-  -----------------------------------------------------------------------
-
-  -- Data slave channel alias signals
-  s_axis_data_tdata_data        <= s_axis_data_tdata(15 downto 0);
-
-  -- Data master channel alias signals: update these only when they are valid
-  m_axis_data_tdata_data        <= m_axis_data_tdata(33 downto 0) when m_axis_data_tvalid = '1';
+        -- Send enough characters to fill the buffer
+		for charcount in (TxData'length / 8)-1 downto 0 loop
+		  bufferInput <= TxData(charcount*8+7 downto charcount*8); 
+		  wr_en <= '1'; 
+		  wait for 1*clk_period; 
+		  wr_en <= '0';
+		  wait for 1*clk_period; 
+		end loop;
+		
+		wait for 2 * clk_period;
+		-- now read from the buffer
+		for i in (TxData'length /8)-1 downto 0 loop
+		  rd_en <= '1'; 
+		  wait for 1*clk_period; 
+		  rd_en <= '0';
+		  wait for 1*clk_period;
+        end loop; 
+         
+		wait for 200 us;
+        
+   end process;
 
 end tb;

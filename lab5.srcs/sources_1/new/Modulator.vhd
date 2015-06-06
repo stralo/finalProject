@@ -40,6 +40,8 @@ end COMPONENT;
     
     signal qpskSignal: signed (29 downto 0) := (others => '0');
     
+    signal iProduct, qProduct :signed(29 downto 0) := (others => '0');
+    
 begin
 
 DDSModulator:
@@ -57,11 +59,14 @@ process(clk)
 begin
     if rising_edge(clk) then 
         if mod_in_sampleClk = '1' then 
+--            iProduct <= signed(signed(mod_in_iPulse) * signed(dds_cosine));
+--            qProduct <= signed(signed(mod_in_qPulse) * signed(dds_sine));
+--            qpskSignal <= iProduct - qProduct; 
             qpskSignal <= signed(signed(mod_in_iPulse) * signed(dds_cosine)) - signed(signed(mod_in_qPulse) * signed(dds_sine)); 
         end if; 
     end if; 
 end process; 
 
-mod_out_qpskSignal <= std_logic_vector(qpskSignal(28 downto 28-12+1));
+mod_out_qpskSignal <= std_logic_vector(qpskSignal(28 downto 17));
 
 end Behavioral;

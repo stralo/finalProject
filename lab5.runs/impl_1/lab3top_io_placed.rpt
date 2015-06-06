@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
-| Date         : Fri Jun 05 14:36:33 2015
-| Host         : MECHA-6 running 64-bit Service Pack 1  (build 7601)
+| Date         : Fri Jun 05 22:00:01 2015
+| Host         : t1539 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_io -file lab3top_io_placed.rpt
 | Design       : lab3top
 | Device       : xc7a35t
@@ -243,7 +243,7 @@ Table of Contents
 | V8         | seg[3]               | High Range | IO_L14N_T2_SRCC_34           | OUTPUT        | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | V9         |                      | Dedicated  | VCCO_0                       | VCCO          |             |       0 |            |      |                     |                      |   any** |            |           |      |                  |
 | V10        |                      | Dedicated  | PROGRAM_B_0                  | Config        |             |       0 |            |      |                     |                      |         |            |           |      |                  |
-| V11        |                      | Dedicated  | CFGBVS_0                     | Config        |             |       0 |            |      |                     |                      |         |            |           |      |                  |
+| V11        |                      | Dedicated  | CFGBVS_0                     | Config        |             |       0 |            |      |                     |                      |    3.30 |            |           |      |                  |
 | V12        |                      | Dedicated  | M0_0                         | Config        |             |       0 |            |      |                     |                      |         |            |           |      |                  |
 | V13        |                      | High Range | IO_L24P_T3_A01_D17_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |      |                  |
 | V14        |                      | High Range | IO_L24N_T3_A00_D16_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |      |                  |
