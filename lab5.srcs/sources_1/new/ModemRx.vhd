@@ -43,9 +43,7 @@ COMPONENT ADCInterface is
             -- user interface to the system
             start : in std_logic;                                -- start conversion
             conversionDone : out std_logic;                     -- conversion in progress
-            convertedValue : out std_logic_vector(15 downto 0);
---                        convertedValue : out std_logic_vector(11 downto 0);
-
+            convertedValue : out std_logic_vector(11 downto 0);
             -- interface to the pmod-da2
             syncForADC : out std_logic; 
             serialFromADCCh1 : in std_logic;
@@ -137,12 +135,12 @@ end COMPONENT;
     signal mf_out_iPulse, mf_out_qPulse, iPulse, qPulse : std_logic_vector(15 downto 0) := (others=>'0');
     
     signal adcStart, ADCConversionDone : std_logic := '0';
-    signal ADCConvertedValue : std_logic_vector(15 downto 0) := (others => '0');
+    signal ADCConvertedValue : std_logic_vector(11 downto 0) := (others => '0');
 --        signal ADCConvertedValue : std_logic_vector(11 downto 0) := (others => '0');
 
     
     
-    signal valFromADC, qpskSignal: std_logic_vector(11 downto 0);
+    signal valFromADC, qpskSignal: std_logic_vector(11 downto 0):= (others => '0');
     
     type StateType is (idle, awaitingConversionDone);  
     signal currentState, nextState : StateType := idle;

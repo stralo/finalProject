@@ -9,7 +9,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="35" />
+   <WVObjectSize size="25" />
    <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -17,26 +17,16 @@
    <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/PSF/ps_out_iSample" type="array">
       <obj_property name="ElementShortName">ps_out_iSample[15:0]</obj_property>
       <obj_property name="ObjectShortName">ps_out_iSample[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/PSF/ps_out_qSample" type="array">
       <obj_property name="ElementShortName">ps_out_qSample[15:0]</obj_property>
       <obj_property name="ObjectShortName">ps_out_qSample[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/PSF/rawSample" type="array">
-      <obj_property name="ElementShortName">rawSample[63:0]</obj_property>
-      <obj_property name="ObjectShortName">rawSample[63:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/CharBuffer/muxSel" type="array">
-      <obj_property name="ElementShortName">muxSel[1:0]</obj_property>
-      <obj_property name="ObjectShortName">muxSel[1:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/CharBuffer/lineFeedDetected" type="logic">
-      <obj_property name="ElementShortName">lineFeedDetected</obj_property>
-      <obj_property name="ObjectShortName">lineFeedDetected</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/CharBuffer/nullReadFromBuffer" type="logic">
-      <obj_property name="ElementShortName">nullReadFromBuffer</obj_property>
-      <obj_property name="ObjectShortName">nullReadFromBuffer</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/CharacterToIQ/Serializer/ser_in_char" type="array">
       <obj_property name="ElementShortName">ser_in_char[7:0]</obj_property>
@@ -44,11 +34,13 @@
       <obj_property name="Radix">ASCIIRADIX</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" fp_name="/lab5_tb/Transmitter/QPSK_Modulator/qpskSignal" type="array">
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">qpskSignal[29:0]</obj_property>
       <obj_property name="ObjectShortName">qpskSignal[29:0]</obj_property>
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="label">transmitterQPSKSignal[29:0]</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" fp_name="/lab5_tb/spiClk" type="logic">
       <obj_property name="ElementShortName">spiClk</obj_property>
@@ -58,36 +50,14 @@
       <obj_property name="ElementShortName">sampleClk</obj_property>
       <obj_property name="ObjectShortName">sampleClk</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/syncForDAC" type="logic">
-      <obj_property name="ElementShortName">syncForDAC</obj_property>
-      <obj_property name="ObjectShortName">syncForDAC</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/serialClkForDAC" type="logic">
-      <obj_property name="ElementShortName">serialClkForDAC</obj_property>
-      <obj_property name="ObjectShortName">serialClkForDAC</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/serialForDAC" type="logic">
-      <obj_property name="ElementShortName">serialForDAC</obj_property>
-      <obj_property name="ObjectShortName">serialForDAC</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/dacConversionDone" type="logic">
-      <obj_property name="ElementShortName">dacConversionDone</obj_property>
-      <obj_property name="ObjectShortName">dacConversionDone</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/rawQPSKSignal" type="array">
-      <obj_property name="ElementShortName">rawQPSKSignal[11:0]</obj_property>
-      <obj_property name="ObjectShortName">rawQPSKSignal[11:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/RsRx" type="logic">
-      <obj_property name="ElementShortName">RsRx</obj_property>
-      <obj_property name="ObjectShortName">RsRx</obj_property>
-   </wvobject>
    <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/qpskSignal" type="array">
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">qpskSignal[11:0]</obj_property>
       <obj_property name="ObjectShortName">qpskSignal[11:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
       <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="label">receiverQPSKSignal[11:0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/mf_out_iPulse" type="array">
       <obj_property name="ElementShortName">mf_out_iPulse[15:0]</obj_property>
@@ -121,13 +91,13 @@
       <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
       <obj_property name="AnalogHorizLine">0.000000</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/samplingStrobe" type="logic">
-      <obj_property name="ElementShortName">samplingStrobe</obj_property>
-      <obj_property name="ObjectShortName">samplingStrobe</obj_property>
-   </wvobject>
    <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/sampleNow" type="logic">
       <obj_property name="ElementShortName">sampleNow</obj_property>
       <obj_property name="ObjectShortName">sampleNow</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/lab5_tb/Receiver/samplingStrobe" type="logic">
+      <obj_property name="ElementShortName">samplingStrobe</obj_property>
+      <obj_property name="ObjectShortName">samplingStrobe</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" fp_name="/lab5_tb/masterClk" type="logic">
       <obj_property name="ElementShortName">masterClk</obj_property>

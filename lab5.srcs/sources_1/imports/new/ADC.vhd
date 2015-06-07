@@ -18,7 +18,7 @@ entity ADCInterface is
     serialClkForADC     : out std_logic;
     syncForADC      : out std_logic;
     --User interface signals
-    convertedValue    : out std_logic_vector(15 downto 0);
+    convertedValue    : out std_logic_vector(11 downto 0);
     START    : in std_logic; 
     conversionDone     : out std_logic
 );
@@ -78,13 +78,11 @@ Shifter : process(spiClk, enParalelLoad, enShiftCounter)
 begin
     if rising_edge(spiClk) then                
         if (enShiftCounter = '1') then 
---           temp1 <= temp1(14 downto 0) & serialFromADCCh1;
-           temp1(15 downto 1) <= temp1(14 downto 0); 
-           temp1(0) <= serialFromADCCh1;
+           temp1 <= temp1(14 downto 0) & serialFromADCCh1;
             shiftCounter <= shiftCounter + '1';
         elsif (enParalelLoad = '1') then
            shiftCounter <= "0000";
-           convertedValue <= temp1;
+           convertedValue <= temp1(11 downto 0);
         end if;
     end if;
 end process;

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_ext_xsim.xml'  majorVersion='1' minorVersion='0' timeStamp='Fri Jun 05 22:24:10 2015'>
+<webTalkData  fileName='usage_statistics_ext_xsim.xml'  majorVersion='1' minorVersion='0' timeStamp='Sun Jun 07 03:59:16 2015'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="1071353" description="" />
-  <keyValuePair key="date_generated" value="Fri Jun 05 22:24:08 2015" description="" />
+  <keyValuePair key="date_generated" value="Sun Jun 07 03:59:12 2015" description="" />
   <keyValuePair key="os_platform" value="WIN64" description="" />
   <keyValuePair key="product_version" value="XSIM v2014.4 (64-bit)" description="" />
   <keyValuePair key="project_id" value="3fc4a5d3650a498bba6b448194a25c23" description="" />
@@ -19,12 +19,12 @@
   <keyValuePair key="tool_flow" value="xsim_vivado" description="" />
  </section>
  <section name="user_environment" level="1" order="2" description="">
-  <keyValuePair key="cpu_name" value="Intel(R) Xeon(R) CPU           W3520  @ 2.67GHz" description="" />
-  <keyValuePair key="cpu_speed" value="2666 MHz" description="" />
+  <keyValuePair key="cpu_name" value="Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz" description="" />
+  <keyValuePair key="cpu_speed" value="2599 MHz" description="" />
   <keyValuePair key="os_name" value="Microsoft Windows 7 , 64-bit" description="" />
   <keyValuePair key="os_release" value="Service Pack 1  (build 7601)" description="" />
-  <keyValuePair key="system_ram" value="17.000 GB" description="" />
-  <keyValuePair key="total_processors" value="1" description="" />
+  <keyValuePair key="system_ram" value="4.000 GB" description="" />
+  <keyValuePair key="total_processors" value="2" description="" />
  </section>
  <section name="vivado_usage" level="1" order="3" description="">
  </section>
@@ -40,13 +40,13 @@
    <keyValuePair key="vhdl2008" value="false" description="" />
   </section>
   <section name="usage" level="2" order="2" description="">
-   <keyValuePair key="compiler_memory" value="188704_KB" description="" />
-   <keyValuePair key="compiler_time" value="42.15_sec" description="" />
-   <keyValuePair key="simulation_image_code" value="760 KB" description="" />
-   <keyValuePair key="simulation_image_data" value="4110 KB" description="" />
+   <keyValuePair key="compiler_memory" value="207592_KB" description="" />
+   <keyValuePair key="compiler_time" value="93.75_sec" description="" />
+   <keyValuePair key="simulation_image_code" value="762 KB" description="" />
+   <keyValuePair key="simulation_image_data" value="4113 KB" description="" />
    <keyValuePair key="total_instances" value="270" description="" />
-   <keyValuePair key="total_nets" value="4081" description="" />
-   <keyValuePair key="total_processes" value="2271" description="" />
+   <keyValuePair key="total_nets" value="4091" description="" />
+   <keyValuePair key="total_processes" value="2273" description="" />
    <keyValuePair key="xilinx_hdl_libraries_used" value="secureip " description="" />
   </section>
  </section>

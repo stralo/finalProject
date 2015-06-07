@@ -1,0 +1,7 @@
+Running: xsim.dir/multichannelMatchedFilter_tb_behav/xsimk.exe -simmode gui -wdb multichannelMatchedFilter_tb_behav.wdb -simrunnum 0 -socket 61787
+Design successfully loaded
+Design Loading Memory Usage: 22468 KB (Peak: 22468 KB)
+Design Loading CPU Usage: 202 ms
+Simulation completed
+Simulation Memory Usage: 25244 KB (Peak: 25244 KB)
+Simulation CPU Usage: 7175 ms

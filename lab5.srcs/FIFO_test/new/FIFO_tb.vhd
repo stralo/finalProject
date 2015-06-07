@@ -28,7 +28,7 @@ COMPONENT fifo_generator_0
     
     
        constant clk_period : time := 100 ns;
-        constant TxData : std_logic_vector(143 downto 0) := x"41424344454647484960515253545556570d";
+        constant TxData : std_logic_vector(143 downto 0) := x"4142434445464748494A4B4C4D4E4F50510d";
         
         
         

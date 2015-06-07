@@ -42,6 +42,14 @@ end COMPONENT;
     
     signal iProduct, qProduct :signed(29 downto 0) := (others => '0');
     
+    type DSPStateType is(dspIdle, dspState1, dspState2, dspState3);
+    signal dspCurrState, dspNextState : DSPStateType := dspIdle;
+    
+    signal dspReg_Mult, dspReg_Accum : signed(29 downto 0) := (others => '0');
+    
+    signal regEn1, regEn2, accumEn1, accumEn2 : std_logic := '0';
+    
+    signal multReset, accumReset : std_logic := '0';
 begin
 
 DDSModulator:
@@ -52,20 +60,100 @@ Port Map(
     m_axis_data_tdata => dds_data
 );
 
-    dds_cosine <= dds_data(13 downto 0) when dataReady = '1' else (others => '0'); 
-    dds_sine <= dds_data(29 downto 16) when dataReady = '1' else (others => '0');
-
 process(clk)
 begin
     if rising_edge(clk) then 
-        if mod_in_sampleClk = '1' then 
---            iProduct <= signed(signed(mod_in_iPulse) * signed(dds_cosine));
---            qProduct <= signed(signed(mod_in_qPulse) * signed(dds_sine));
---            qpskSignal <= iProduct - qProduct; 
-            qpskSignal <= signed(signed(mod_in_iPulse) * signed(dds_cosine)) - signed(signed(mod_in_qPulse) * signed(dds_sine)); 
+        if dataReady = '1' then 
+            dds_cosine <= dds_data(13 downto 0);
+            dds_sine <= dds_data(29 downto 16);
+        else
+            dds_cosine <= (others => '0'); 
+            dds_sine <= (others => '0');
         end if; 
     end if; 
 end process; 
+
+
+--process(clk)
+--begin
+--    if rising_edge(clk) then 
+--        if mod_in_sampleClk = '1' then 
+----            iProduct <= signed(signed(mod_in_iPulse) * signed(dds_cosine));
+----            qProduct <= signed(signed(mod_in_qPulse) * signed(dds_sine));
+----            qpskSignal <= iProduct - qProduct; 
+----            qpskSignal <= signed(signed(mod_in_iPulse) * signed(dds_cosine)) - signed(signed(mod_in_qPulse) * signed(dds_sine)); 
+--        end if; 
+--    end if; 
+--end process; 
+
+
+
+process(clk, mod_in_iPulse, dds_cosine, mod_in_qPulse, dds_sine, multReset, regEn1, regEn2)
+begin
+    if rising_edge(clk) then
+        if multReset = '1' then 
+            dspReg_Mult <= (others => '0');
+        elsif regEn1 = '1' then
+            dspReg_Mult <= signed(signed(mod_in_iPulse) * signed(dds_cosine));
+        elsif regEn2 = '1' then
+            dspReg_Mult <= signed(signed(mod_in_qPulse) * signed(dds_sine));
+        end if;
+    end if;
+end process;
+
+process(clk, accumReset, accumEn1, accumEn2)
+begin
+    if rising_edge(clk) then
+        if accumReset = '1' then 
+            dspReg_Accum <= (others => '0');
+        elsif accumEn1 = '1' then
+            dspReg_Accum <= dspReg_Mult; 
+        elsif accumEn2 = '1' then
+            qpskSignal <= dspReg_Accum  - dspReg_Mult;
+        end if; 
+    end if;
+end process;
+
+process(clk)
+begin
+    if rising_edge(clk)then 
+        dspCurrState <= dspNextState; 
+    end if; 
+end process; 
+
+process(dspCurrState, mod_in_sampleClk, mod_in_iPulse, dds_cosine, mod_in_qPulse, dds_sine)
+begin
+    dspNextState <= dspCurrState;
+    regEn1 <= '0';
+    regEn2 <= '0';
+    accumEn1 <= '0';
+    accumEn2 <= '0'; 
+    multReset <= '0';
+    accumReset <= '0';
+    
+    case dspCurrState is
+        when dspIdle =>
+            if mod_in_sampleClk = '1' then 
+                multReset <= '1'; 
+                accumReset <= '1';
+                dspNextState <= dspState1; 
+            end if; 
+        
+        when dspState1 =>
+            regEn1 <= '1';
+            dspNextState <= dspState2; 
+        
+        when dspState2 =>
+            accumEn1 <= '1';
+            regEn2 <= '1';
+            dspNextState <= dspState3; 
+        
+        when dspState3 =>
+            accumEn2 <= '1';
+            dspNextState <= dspIdle; 
+    end case; 
+end process; 
+
 
 mod_out_qpskSignal <= std_logic_vector(qpskSignal(28 downto 17));
 
